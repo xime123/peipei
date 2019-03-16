@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_fireworks1"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/archway_animation_foreworks1"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fireworks2"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/archway_animation_foreworks2"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fireworks3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/archway_animation_foreworks3"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fireworks4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/archway_animation_foreworks4"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fireworks5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/archway_animation_foreworks4"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fireworks6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/archway_animation_foreworks4"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fireworks7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/archway_animation_foreworks4"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fireworks8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginBottom="150dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/archway_animation_foreworks4"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fireworks9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/archway_animation_foreworks2"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fireworks10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="-50dp"
+        android:background="@drawable/archway_animation_foreworks1"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fireworks11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/archway_animation_foreworks4"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fireworks12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/archway_animation_foreworks4"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fireworks13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/archway_animation_foreworks4"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fireworks14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/archway_animation_foreworks4"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fireworks15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/archway_animation_foreworks4"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fireworks16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/archway_animation_foreworks3"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fireworks17"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="right"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/archway_animation_foreworks1"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/fl_door"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center_horizontal"
+        android:visibility="visible" >
+
+        <ImageView
+            style="@style/WrapContentStyle"
+            android:background="@drawable/archway_animation_door"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/tv_des"
+            style="@style/WrapContentStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="67dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxWidth="90dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/default_specfic_gift_txt" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_fire1"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/archway_animation_fire333"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fire2"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/archway_animation_fire33"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fire3"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/archway_animation_fire3"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fire4"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/archway_animation_fire3"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_fire5"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/archway_animation_fire33"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_crackers"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/archway_animation_crackers"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+</FrameLayout>

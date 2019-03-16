@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop_bg_white"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding_view_text" >
+
+    <RelativeLayout
+        android:id="@+id/ll_broadcase_content"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/main_img_list0_un"
+        android:padding="@dimen/default_padding_gridview_edge" >
+
+        <EditText
+            android:id="@+id/edt_interestin_skill_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:hint="@string/str_one_message_moved_by_er"
+            android:imeOptions="actionSend|flagNoEnterAction"
+            android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+            android:minLines="3"
+            android:paddingBottom="@dimen/default_padding_view_edge"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_15" />
+
+        <TextView
+            android:id="@+id/tv_interestin_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="0/20"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/default_textsize_12" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ok_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/default_padding_view_text"
+            android:layout_weight="1"
+            android:background="@drawable/main_btn_big_selector"
+            android:paddingBottom="@dimen/default_padding_gridview_edge"
+            android:paddingTop="@dimen/default_padding_gridview_edge"
+            android:text="@string/cancel"
+            android:textSize="@dimen/default_textsize_15" />
+
+        <Button
+            android:id="@+id/ok_sure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/main_btn_big_selector"
+            android:paddingBottom="@dimen/default_padding_gridview_edge"
+            android:paddingTop="@dimen/default_padding_gridview_edge"
+            android:text="@string/send"
+            android:textColor="@color/peach"
+            android:textSize="@dimen/default_textsize_15" />
+    </LinearLayout>
+
+</LinearLayout>

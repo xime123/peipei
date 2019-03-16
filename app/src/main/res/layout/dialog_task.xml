@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_dialog_select_sex_root"
+    android:layout_width="250dip"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="176dip"
+        android:background="@drawable/hall_prize_bg" >
+
+        <TextView
+            android:id="@+id/tv_task_getpoint"
+            android:layout_width="130dip"
+            android:layout_height="70dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/hall_prize_bg_silver_pic"
+            android:gravity="center_vertical"
+            android:paddingLeft="68dip"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/hall_prize_bg2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_padding_view_text"
+            android:layout_marginRight="@dimen/default_padding_view_text"
+            android:layout_marginTop="@dimen/default_padding_view_text"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/default_padding_view_edge"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/hall_prize_horizontal" />
+
+            <TextView
+                android:id="@+id/tv_start_point"
+                android:layout_width="33dip"
+                android:layout_height="33dip"
+                android:background="@drawable/hall_prize_circle_press"
+                android:gravity="center"
+                android:text="100"
+                android:textColor="@color/task_point_c_color"
+                android:textSize="@dimen/default_textsize_12" />
+
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/hall_prize_horizontal" />
+
+            <TextView
+                android:id="@+id/tv_middle_point"
+                android:layout_width="33dip"
+                android:layout_height="33dip"
+                android:background="@drawable/hall_prize_circle_un"
+                android:gravity="center"
+                android:text="100"
+                android:textColor="@color/task_point_c_color"
+                android:textSize="@dimen/default_textsize_12" />
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hall_prize_horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/ll_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/hall_prize_circle_grey" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dip"
+                        android:layout_marginRight="6dip"
+                        android:src="@drawable/hall_prize_circle_grey" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/hall_prize_circle_grey" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_end_point"
+                android:layout_width="33dip"
+                android:layout_height="33dip"
+                android:background="@drawable/hall_prize_circle_un"
+                android:gravity="center"
+                android:text="100"
+                android:textColor="@color/task_point_c_color"
+                android:textSize="@dimen/default_textsize_12" />
+
+            <ImageView
+                android:layout_width="@dimen/default_padding_view_edge"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/hall_prize_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_marginLeft="@dimen/default_padding_view_text"
+            android:layout_marginRight="@dimen/default_padding_view_text"
+            android:layout_marginTop="@dimen/default_padding_gridview_edge"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/default_padding_view_edge"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/hall_prize_horizontal"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_start_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="100"
+                android:textColor="@color/task_point_c_color"
+                android:textSize="@dimen/default_textsize_14" />
+
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/hall_prize_horizontal"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_middle_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="100"
+                android:textColor="@color/task_point_c_color"
+                android:textSize="@dimen/default_textsize_14" />
+
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/hall_prize_horizontal"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_end_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="第7天"
+                android:textColor="@color/task_point_c_color"
+                android:textSize="@dimen/default_textsize_14" />
+
+            <ImageView
+                android:layout_width="@dimen/default_padding_view_edge"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/hall_prize_horizontal"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_view_other_task"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginBottom="@dimen/default_padding_view_text"
+            android:layout_marginLeft="@dimen/default_padding_view_text"
+            android:layout_marginRight="@dimen/default_padding_view_text"
+            android:layout_marginTop="@dimen/default_padding_view_edge"
+            android:background="@drawable/viewothertask_selector"
+            android:text="@string/str_view_other_task"
+            android:textColor="#fea400"
+            android:textSize="@dimen/default_textsize_16" />
+    </LinearLayout>
+
+</LinearLayout>

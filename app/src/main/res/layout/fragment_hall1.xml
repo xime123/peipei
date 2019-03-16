@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_head_chat"
+        android:background="@drawable/main_bar_nav_un"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/default_padding_gridview_edge"
+        android:paddingTop="@dimen/default_padding_gridview_edge" >
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/hall_text_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/main_bar_tab_pr"
+            android:gravity="center"
+            android:text="@string/hall_time"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_14" />
+
+        <TextView
+            android:id="@+id/hall_text_new"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/hall_new"
+            android:textColor="@color/peach"
+            android:textSize="@dimen/default_textsize_14" />
+
+        <TextView
+            android:id="@+id/hall_text_skill"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/hall_skill"
+            android:textColor="@color/peach"
+            android:textSize="@dimen/default_textsize_14" />
+
+        <TextView
+            android:id="@+id/hall_text_near"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/near"
+            android:textColor="@color/peach"
+            android:textSize="@dimen/default_textsize_14" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/hall_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+</LinearLayout>

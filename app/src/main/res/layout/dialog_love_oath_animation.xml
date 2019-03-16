@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/fl_love_oath"
+        style="@style/FullScreenStyle" >
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_petal1"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:background="@drawable/broadcast_magic_petal_more1"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_petal2"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:background="@drawable/broadcast_magic_petal_more2"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_heart"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:background="@anim/dialog_flower_anim_heart"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_left_head"
+            style="@style/WrapContentStyle"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/broadcast_magic_flower_head"
+            android:contentDescription="@null"
+            android:padding="2dp" />
+
+        <ImageView
+            android:id="@+id/iv_right_head"
+            style="@style/WrapContentStyle"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/broadcast_magic_flower_head"
+            android:contentDescription="@null"
+            android:padding="2dp" />
+    </LinearLayout>
+
+</FrameLayout>

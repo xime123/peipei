@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WrapContentStyle"
+    android:background="@drawable/activity_rank_popupwindow_bg"
+    android:paddingLeft="@dimen/default_padding_view_edge"
+    android:paddingRight="@dimen/default_padding_view_edge"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_rank1"
+        style="@style/WrapContentStyle"
+        android:layout_marginBottom="@dimen/default_padding_view_edge"
+        android:layout_marginTop="@dimen/default_padding_view_edge"
+        android:gravity="center"
+        android:minWidth="50dp"
+        android:text="@string/beauty"
+        android:textColor="@color/space_black"
+        android:textSize="@dimen/default_textsize_16" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/space_bottom_line" />
+
+    <TextView
+        android:id="@+id/tv_rank2"
+        style="@style/WrapContentStyle"
+        android:layout_marginTop="@dimen/default_padding_view_edge"
+        android:layout_marginBottom="@dimen/default_padding_view_edge"
+        android:gravity="center"
+        android:minWidth="50dp"
+        android:text="@string/handsome"
+        android:textColor="@color/space_black"
+        android:textSize="@dimen/default_textsize_16" />
+
+</LinearLayout>

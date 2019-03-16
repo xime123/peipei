@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/head_custom_include"
+        android:visibility="visible" />
+
+    <!-- 魅力、访问量、粉丝量 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_mine_head_size"
+        android:background="@color/new_bg_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_space_glamour"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/new_bg_color"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_space_glamour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/space_black"
+                android:textSize="@dimen/default_textsize_16" />
+
+            <TextView
+                android:id="@+id/tv_space_glamour_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/default_padding_gridview_edge"
+                android:text="@string/glamour"
+                android:textColor="@color/space_black"
+                android:textSize="@dimen/default_textsize_13" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_line_2" />
+
+        <LinearLayout
+            android:id="@+id/ll_space_vistor"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/new_bg_color"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_space_vistor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/space_black"
+                android:textSize="@dimen/default_textsize_16" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_vistor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="@dimen/default_padding_gridview_edge"
+                    android:text="@string/str_vistor"
+                    android:textColor="@color/space_black"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <TextView
+                    android:id="@+id/tv_new_increase_vistor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/default_padding_gridview_edge"
+                    android:layout_toRightOf="@+id/tv_vistor"
+                    android:textColor="@color/peach"
+                    android:textSize="@dimen/default_textsize_12"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_line_2" />
+
+        <LinearLayout
+            android:id="@+id/ll_space_fans"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/new_bg_color"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_space_fans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/space_black"
+                android:textSize="@dimen/default_textsize_16" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_fans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="@dimen/default_padding_gridview_edge"
+                    android:text="@string/str_fans"
+                    android:textColor="@color/space_black"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <TextView
+                    android:id="@+id/tv_new_increase_fans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/default_padding_gridview_edge"
+                    android:layout_toRightOf="@+id/tv_fans"
+                    android:textColor="@color/peach"
+                    android:textSize="@dimen/default_textsize_12"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 相册 -->
+
+    <LinearLayout
+        style="@style/FullScreenStyle"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_space_album"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/homepage_classification_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="11dp"
+            android:text="@string/album"
+            android:textColor="@color/space_black"
+            android:textSize="@dimen/default_textsize_11" />
+
+        <TextView
+            android:id="@+id/tv_space_album_num"
+            style="@style/FullScreenStyle"
+            android:textColor="@color/space_photo_num" />
+    </LinearLayout>
+
+    <com.tshang.peipei.view.UnScrollGridview
+        android:id="@+id/space_custom_head_gv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/transparent"
+        android:fadingEdge="@android:color/transparent"
+        android:horizontalSpacing="@dimen/default_padding_image_text_small"
+        android:listSelector="@drawable/click_selector_peach"
+        android:numColumns="4"
+        android:padding="@dimen/default_margin_view"
+        android:scrollbars="none" />
+
+    <!-- 女神技 -->
+
+    <LinearLayout
+        android:id="@+id/ll_skill_title"
+        android:layout_width="fill_parent"
+        android:layout_height="28dp"
+        android:background="@drawable/homepage_classification_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_skill_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="11dp"
+            android:text="@string/str_what_can_i_do_for_you"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_11" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/default_margin_view"
+            android:gravity="center_vertical"
+            android:text="("
+            android:textColor="@color/space_photo_num"
+            android:textSize="@dimen/default_textsize_10" />
+
+        <TextView
+            android:id="@+id/tv_skill_second_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/str_select_skill_for_service"
+            android:textColor="@color/red"
+            android:textSize="@dimen/default_textsize_10" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/default_margin_view"
+            android:gravity="center_vertical"
+            android:text=")"
+            android:textColor="@color/space_photo_num"
+            android:textSize="@dimen/default_textsize_10" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_skill_content"
+        style="@style/FullWdithStyle" >
+
+        <com.tshang.peipei.view.UnScrollGridview
+            android:id="@+id/gv_skill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/transparent"
+            android:fadingEdge="@android:color/transparent"
+            android:horizontalSpacing="@dimen/default_padding_image_text_small"
+            android:listSelector="@color/transparent"
+            android:minHeight="80dp"
+            android:numColumns="4"
+            android:padding="@dimen/default_margin_view"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/ll_skill_empty"
+            style="@style/FullScreenStyle"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_skill_empty_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:minHeight="80dp"
+                android:textSize="@dimen/default_textsize_15"
+                android:textColor="@color/peach" />
+
+            <TextView
+                android:id="@+id/tv_add_skill"
+                style="@style/WrapContentStyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/default_padding_queen_bottom"
+                android:layout_marginTop="@dimen/default_padding_queen_bottom"
+                android:background="@drawable/space_add_skill_bg"
+                android:gravity="center_horizontal"
+                android:minWidth="@dimen/activity_space_create_harem_btn_width"
+                android:padding="@dimen/default_padding_view_edge"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_15" />
+        </LinearLayout>
+        
+        <View
+            android:id="@+id/view_skill"
+            style="@style/FullScreenStyle" />
+    </FrameLayout>
+
+    <!-- 动态 -->
+
+    <TextView
+        android:id="@+id/tv_space_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@drawable/homepage_classification_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="11dp"
+        android:text="@string/queena_dynamic"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textsize_11" />
+
+    <RelativeLayout
+        android:id="@+id/rl_dynamic_layout"
+        style="@style/FullWdithStyle"
+        android:padding="@dimen/default_margin_view"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/dynamic_iv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <LinearLayout
+            style="@style/FullWdithStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/iv_dynamic_arrow"
+            android:layout_toRightOf="@id/dynamic_iv"
+            android:minHeight="60dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_dynamic_time"
+                style="@style/WrapContentStyle"
+                android:textColor="@color/space_photo_num"
+                android:textSize="@dimen/default_textsize_11" />
+
+            <TextView
+                android:id="@+id/dynamic_content_tv"
+                style="@style/WrapContentStyle"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="@color/space_black"
+                android:textSize="@dimen/default_textsize_13" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_dynamic_arrow"
+            style="@style/WrapContentStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/default_padding_view_edge"
+            android:contentDescription="@null"
+            android:src="@drawable/activity_space_item_more" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/space_custom_footer_empyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="5dip"
+        android:drawableTop="@drawable/homepage_dynamic_not"
+        android:gravity="center"
+        android:padding="20dip"
+        android:text="@string/no_dynamic"
+        android:textColor="@color/gray"
+        android:visibility="gone" />
+    <!-- 礼物 -->
+
+    <TextView
+        android:id="@+id/tv_space_gift"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@drawable/homepage_classification_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="11dp"
+        android:text="@string/str_gift_success_find_her_chat"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textsize_11" />
+
+    <RelativeLayout
+        android:id="@+id/rl_space_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.tshang.peipei.view.UnScrollGridview
+            android:id="@+id/space_custom_head_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/transparent"
+            android:fadingEdge="@android:color/transparent"
+            android:horizontalSpacing="@dimen/default_padding_image_text_small"
+            android:listSelector="@drawable/click_selector_peach"
+            android:numColumns="4"
+            android:padding="@dimen/default_padding_image_text_small"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/space_custom_gift_empty_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/str_no_gift"
+            android:textColor="@color/peach"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- 后宫 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@drawable/homepage_classification_bg" >
+
+        <TextView
+            android:id="@+id/tv_harem"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:gravity="center_vertical"
+            android:text="@string/str_my_harem"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_11" />
+
+        <TextView
+            android:id="@+id/tv_harem_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:gravity="center_vertical"
+            android:text="@string/str_harem_rule"
+            android:textColor="@color/show_share_color"
+            android:textSize="@dimen/default_textsize_11" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_harem_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/default_padding_view_edge"
+            android:paddingLeft="@dimen/default_padding_view_edge"
+            android:paddingRight="@dimen/default_padding_view_edge"
+            android:paddingTop="@dimen/default_padding_view_edge"
+            android:text="@string/str_not_join_harem"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/default_textsize_14"
+            android:visibility="gone" />
+
+        <com.tshang.peipei.view.ReplyChildListView
+            android:id="@+id/lv_harem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/main_line"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/click_selector_peach"
+            android:overScrollMode="never" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_space_group"
+        style="@style/FullWdithStyle"
+        android:layout_marginTop="@dimen/default_padding_view_edge"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/default_padding_view_edge"
+            android:background="@color/space_bottom_line" />
+
+        <TextView
+            style="@style/WrapContentStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/default_padding_queen_bottom"
+            android:text="@string/str_not_create_harem"
+            android:textColor="@color/space_black" />
+
+        <TextView
+            android:id="@+id/tv_space_group"
+            style="@style/WrapContentStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/default_padding_queen_bottom"
+            android:layout_marginTop="@dimen/default_padding_queen_bottom"
+            android:background="@drawable/homepage_harem_btn_selector"
+            android:gravity="center_horizontal"
+            android:minWidth="@dimen/activity_space_create_harem_btn_width"
+            android:padding="@dimen/default_padding_view_edge"
+            android:text="@string/str_create_harem"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_15"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

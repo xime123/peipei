@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/mine_iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/person_img_defaultpic_small" />
+
+    <LinearLayout
+        android:id="@+id/head_feamale_ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/main_bg_black30"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="90dp"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/head_female_include_tv_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="8"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <TextView
+                android:id="@+id/head_female_include_tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <TextView
+                android:id="@+id/head_female_include_tv_constellation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rank_img_purple1"
+                android:padding="2dp"
+                android:text="魅力值"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_11" />
+
+            <TextView
+                android:id="@+id/head_female_include_tv_glamour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/person_img_inforbg"
+                android:padding="2dp"
+                android:textColor="@color/purple"
+                android:textSize="@dimen/default_textsize_11" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/rank_img_orange1"
+                android:padding="2dp"
+                android:text="积分"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_11" />
+
+            <TextView
+                android:id="@+id/head_female_include_tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/person_img_inforbg"
+                android:padding="2dp"
+                android:textColor="@color/orange2"
+                android:textSize="@dimen/default_textsize_11" />
+
+            <TextView
+                android:id="@+id/head_female_include_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="ID："
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_11" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/head_female_include_iv_head"
+        android:layout_width="@dimen/default_head_update_height"
+        android:layout_height="@dimen/default_head_update_height"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/main_img_defaulthead_un"
+        android:src="@drawable/main_img_defaulthead_un" />
+
+</FrameLayout>

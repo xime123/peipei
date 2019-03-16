@@ -1,0 +1,31 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/casino_openbox_tip"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/casino_openbox_tip1"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/casino_openbox_tip2"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/casino_openbox_tip3"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/casino_openbox_tip4"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/casino_openbox_tip5"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/casino_openbox_tip6"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/casino_openbox_tip7"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/casino_openbox_tip8"
+        android:duration="150"/>
+</animation-list>

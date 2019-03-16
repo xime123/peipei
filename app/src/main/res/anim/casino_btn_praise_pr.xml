@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 指定动画循环播放 -->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <!-- 添加多个帧 -->
+    <item
+        android:drawable="@drawable/casino_btn_praise_pr1"
+        android:duration="180"/>
+    <item
+        android:drawable="@drawable/casino_btn_praise_pr2"
+        android:duration="180"/>
+    <item
+        android:drawable="@drawable/casino_btn_praise_pr3"
+        android:duration="180"/>
+    <item
+        android:drawable="@drawable/casino_btn_praise_pr4"
+        android:duration="180"/>
+
+</animation-list>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_bg_pink"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/str_finger"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <TextView
+                    android:id="@+id/play_finger_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_finger_record"
+                    android:textColor="@color/peach"
+                    android:textSize="@dimen/default_textsize_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_broadcast_finger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/makefriend_list_bg"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/default_padding_view_edge"
+                android:paddingLeft="@dimen/default_padding_view_text"
+                android:paddingRight="@dimen/default_padding_view_edge"
+                android:paddingTop="@dimen/default_padding_view_edge" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_finger_select"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_15" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <com.tshang.peipei.view.PeiPeiCheckButton1
+                        android:id="@+id/broadcast_finger_gold"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <com.tshang.peipei.view.PeiPeiCheckButton1
+                        android:id="@+id/broadcast_finger_silver"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_finger_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_15" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <com.tshang.peipei.view.PeiPeiCheckButton
+                        android:id="@+id/broadcast_finger_100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.tshang.peipei.view.PeiPeiCheckButton
+                        android:id="@+id/broadcast_finger_1000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.tshang.peipei.view.PeiPeiCheckButton
+                        android:id="@+id/broadcast_finger_5000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/str_finger_content1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_15" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <com.tshang.peipei.view.PeiPeiCheckButton
+                        android:id="@+id/broadcast_finger_stone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.tshang.peipei.view.PeiPeiCheckButton
+                        android:id="@+id/broadcast_finger_scissors"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.tshang.peipei.view.PeiPeiCheckButton
+                        android:id="@+id/broadcast_finger_cloth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/play_game_sure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/main_btn_big_selector"
+                    android:paddingBottom="@dimen/default_padding_view_edge"
+                    android:paddingTop="@dimen/default_padding_view_edge"
+                    android:text="@string/submit"
+                    android:textColor="@color/peach"
+                    android:textSize="@dimen/default_textsize_15" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/str_game_center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_13"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_play_games"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height_title"
+                android:background="@drawable/makefriend_list_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/default_padding_view_edge"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/person_img_game" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_padding_view_edge"
+                    android:layout_weight="1"
+                    android:text="@string/str_game_three"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_15" />
+
+                <include layout="@layout/layout_right_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <GridView
+        android:id="@+id/space_new_dynamic_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:listSelector="@color/transparent"
+        android:numColumns="1"
+        android:scrollbars="none"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/space_custom_pulllistview_empty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20dip"
+        android:drawablePadding="5dip"
+        android:drawableTop="@drawable/homepage_dynamic_not"
+        android:gravity="center"
+        android:text="@string/no_dynamic"
+        android:textColor="@color/gray"
+        android:visibility="gone" />
+
+</LinearLayout>

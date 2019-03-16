@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/default_padding_between_view"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/setting_userinfo_rlt_head"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height_head_title"
+                android:background="@drawable/userinfo_list_selector"
+                android:paddingLeft="@dimen/default_padding_view_edge"
+                android:paddingRight="@dimen/default_padding_view_edge" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/head_image"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_15" />
+
+                <ImageView
+                    android:id="@+id/setting_userinfo_iv_head"
+                    android:layout_width="55dip"
+                    android:layout_height="55dip"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_head_arrow"
+                    android:background="@drawable/main_img_defaulthead_un"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside" />
+
+                <ImageView
+                    android:id="@+id/iv_head_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/default_padding_view_edge"
+                    android:background="@drawable/activity_space_item_more"
+                    android:contentDescription="@null" />
+
+                <View style="@style/UserInfoDeviderLine" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_userinfo_nick_rlt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height_title"
+                android:background="@drawable/userinfo_list_selector"
+                android:paddingLeft="@dimen/default_padding_view_edge"
+                android:paddingRight="@dimen/default_padding_view_edge" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/nick"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_15" />
+
+                <TextView
+                    android:id="@+id/setting_userinfo_tv_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_nick_arrow"
+                    android:gravity="right"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <ImageView
+                    android:id="@+id/iv_nick_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/default_padding_view_edge"
+                    android:background="@drawable/activity_space_item_more"
+                    android:contentDescription="@null" />
+
+                <View style="@style/UserInfoDeviderLine" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_userinfo_id_rlt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height_title"
+                android:background="@drawable/userinfo_list_selector"
+                android:paddingLeft="@dimen/default_padding_view_edge"
+                android:paddingRight="@dimen/default_padding_view_edge" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/ID"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_15" />
+
+                <TextView
+                    android:id="@+id/setting_userinfo_tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_id_arrow"
+                    android:gravity="right"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <ImageView
+                    android:id="@+id/iv_id_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/default_padding_view_edge"
+                    android:background="@drawable/activity_space_item_more"
+                    android:contentDescription="@null"
+                    android:visibility="invisible" />
+
+                <View style="@style/UserInfoDeviderLine" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_userinfo_gender_rlt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height_title"
+                android:background="@drawable/userinfo_list_selector"
+                android:paddingLeft="@dimen/default_padding_view_edge"
+                android:paddingRight="@dimen/default_padding_view_edge" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/gender"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_15" />
+
+                <TextView
+                    android:id="@+id/setting_userinfo_tv_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_sex_arrow"
+                    android:gravity="right"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <ImageView
+                    android:id="@+id/iv_sex_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/default_padding_view_edge"
+                    android:background="@drawable/activity_space_item_more"
+                    android:contentDescription="@null"
+                    android:visibility="invisible" />
+
+                <View style="@style/UserInfoDeviderLine" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_userinfo_birthday_rlt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height_title"
+                android:background="@drawable/userinfo_list_selector"
+                android:paddingLeft="@dimen/default_padding_view_edge"
+                android:paddingRight="@dimen/default_padding_view_edge" >
+
+                <TextView
+                    android:id="@+id/tv_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/birthday"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_15" />
+
+                <TextView
+                    android:id="@+id/setting_userinfo_tv_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_birth_arrow"
+                    android:gravity="right"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <ImageView
+                    android:id="@+id/iv_birth_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/default_padding_view_edge"
+                    android:background="@drawable/activity_space_item_more"
+                    android:contentDescription="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_goddess_skill"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height_title"
+                android:layout_marginTop="@dimen/default_padding_view_edge"
+                android:background="@drawable/userinfo_list_selector"
+                android:paddingLeft="@dimen/default_padding_view_edge"
+                android:paddingRight="@dimen/default_padding_view_edge" >
+
+                <TextView
+                    style="@style/WrapContentStyle"
+					android:layout_centerVertical="true"                    
+                    android:text="@string/str_goddess_me_do"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_15" />
+
+                <TextView
+                    android:id="@+id/tv_edit_skill"
+                    style="@style/WrapContentStyle"
+					android:layout_centerVertical="true"    
+                    android:gravity="center"
+                    android:layout_toLeftOf="@+id/iv_goddess_arrow"
+                    android:text="@string/str_edit_goddess_skill"
+                    android:textColor="@color/userinfo_goddess_skill_color"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <ImageView
+                    android:id="@+id/iv_goddess_arrow"
+                    style="@style/WrapContentStyle"
+					android:layout_centerVertical="true"
+					android:layout_alignParentRight="true"    
+                    android:layout_marginLeft="@dimen/default_padding_view_edge"
+                    android:background="@drawable/activity_space_item_more"
+                    android:contentDescription="@null" />
+
+                <View style="@style/UserInfoDeviderLine" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height_title"
+                android:background="@drawable/userinfo_list_selector"
+                android:paddingLeft="@dimen/default_padding_view_edge"
+                android:paddingRight="@dimen/default_padding_view_edge"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/WrapContentStyle"
+					android:layout_centerVertical="true"                    
+                    android:text="@string/str_sig"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_15" />
+
+                <TextView
+                    android:id="@+id/tv_edit_sig"
+                    style="@style/WrapContentStyle"
+					android:layout_centerVertical="true"    
+                    android:gravity="center"
+                    android:layout_toLeftOf="@+id/iv_sig_arrow"
+                    android:text="@string/str_edit_sig"
+                    android:textColor="@color/userinfo_goddess_skill_color"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <ImageView
+                    android:id="@+id/iv_sig_arrow"
+                    style="@style/WrapContentStyle"
+					android:layout_centerVertical="true"
+					android:layout_alignParentRight="true"    
+                    android:layout_marginLeft="@dimen/default_padding_view_edge"
+                    android:background="@drawable/activity_space_item_more"
+                    android:contentDescription="@null" />
+
+                <View style="@style/UserInfoDeviderLine" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_phone"
+                style="@style/FullWdithStyle"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/setting_userinfo_phone_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_height_title"
+                    android:background="@drawable/userinfo_list_selector"
+                    android:drawableRight="@drawable/activity_space_item_more"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/default_padding_view_edge"
+                    android:text="@string/str_bind_phone"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_15"
+                    android:visibility="gone" />
+
+                <View
+                    style="@style/UserInfoDeviderLine"
+                    android:layout_marginLeft="@dimen/default_padding_view_edge"
+                    android:layout_marginRight="@dimen/default_padding_view_edge"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_update_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height_title"
+                android:background="@drawable/userinfo_list_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/default_padding_view_edge"
+                android:paddingRight="@dimen/default_padding_view_edge" >
+
+                <TextView
+                    android:id="@+id/setting_userinfo_modify_pwd_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/modify_password"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_15" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="1dip"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_distance_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_padding_gridview_edge"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_13"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iv_updatepwd_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_padding_view_edge"
+                    android:background="@drawable/activity_space_item_more"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dip" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

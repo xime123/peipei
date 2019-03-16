@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/default_height_title"
+    android:padding="0dp" >
+
+    <TextView
+        android:id="@+id/dialog_report_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/default_padding_view_text"
+        android:gravity="center_vertical"
+        android:padding="0dp"
+        android:text="@string/yellow_ad"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/dialog_report_rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/default_padding_view_text"
+        android:clickable="true"
+        android:focusable="false"
+        android:gravity="center_vertical" />
+
+</RelativeLayout>

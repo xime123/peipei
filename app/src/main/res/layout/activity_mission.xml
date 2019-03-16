@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dip"
+                android:layout_margin="@dimen/default_padding_view_edge"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_balance"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/rank_img_orange1"
+                    android:text="@string/gold_money"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <TextView
+                    android:id="@+id/mission_gold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rank_img_orange2"
+                    android:textColor="@color/orange2"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/rank_img_grey1"
+                    android:padding="@dimen/default_padding_image_text_small"
+                    android:text="@string/silver_money"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <TextView
+                    android:id="@+id/mission_silver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rank_img_grey2"
+                    android:padding="@dimen/default_padding_image_text_small"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/my_task_list1_bg"
+                android:gravity="center_vertical"
+                android:minHeight="50dp"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/daily_checked"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_15" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/never_judges"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/default_textsize_13" />
+
+                    <TextView
+                        android:id="@+id/mission_never_judges"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/default_textsize_13" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mission_domd_points"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height_title"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/main_img_list2_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/default_padding_view_edge"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/ponits_wall"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="银币1000+"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <ImageView
+                    android:id="@+id/img_ponits_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/homepage_newlogo" />
+
+                <include layout="@layout/layout_right_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mission_noviciate_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_task_classification_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/default_padding_view_edge"
+                        android:text="@string/noviciate_missions"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/default_textsize_13" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="@string/missions_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/default_textsize_13" />
+                </LinearLayout>
+
+                <com.tshang.peipei.view.ReplyChildListView
+                    android:id="@+id/mission_noviciate_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@drawable/main_line"
+                    android:dividerHeight="0.5dp"
+                    android:footerDividersEnabled="true"
+                    android:headerDividersEnabled="true"
+                    android:listSelector="@android:color/transparent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mission_daily_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_task_classification_bg"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/default_padding_view_edge"
+                        android:text="@string/daily_missions"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/default_textsize_13" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="@string/missions_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/default_textsize_13" />
+                </LinearLayout>
+
+                <com.tshang.peipei.view.ReplyChildListView
+                    android:id="@+id/mission_daily_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@drawable/main_line"
+                    android:dividerHeight="0.5dp"
+                    android:footerDividersEnabled="true"
+                    android:headerDividersEnabled="true"
+                    android:listSelector="@android:color/transparent" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

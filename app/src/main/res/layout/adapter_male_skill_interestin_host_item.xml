@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_padding_view_edge"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_padding_view_edge" >
+
+        <ImageView
+            android:id="@+id/adapter_interestin_head_item_iv"
+            android:layout_width="@dimen/default_height_head_chat"
+            android:layout_height="@dimen/default_height_head_chat" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/default_padding_view_edge" >
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_padding_view_edge"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/default_textsize_11" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/homepage_skill_reward_particulars_btnbg_mid"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_skill_chat_item"
+            android:layout_width="70dip"
+            android:layout_height="29dip"
+            android:background="@drawable/btn_skill_chat_selector"
+            android:text="@string/str_chat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_15" />
+
+        <Button
+            android:id="@+id/btn_skill_order_item"
+            android:layout_width="70dip"
+            android:layout_height="29dip"
+            android:layout_marginLeft="@dimen/default_padding_view_edge"
+            android:layout_marginRight="@dimen/default_padding_view_edge"
+            android:background="@drawable/btn_skill_order_selector"
+            android:text="@string/str_order"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_15" />
+    </LinearLayout>
+
+</LinearLayout>

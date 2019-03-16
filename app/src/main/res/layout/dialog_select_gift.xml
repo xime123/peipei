@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop_bg_white90"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_popuptitle"
+        android:background="@drawable/main_bg_pink2"
+        android:gravity="center"
+        android:text="@string/str_select_gift"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_textsize_13" />
+
+    <ListView
+        android:id="@+id/lv_select_gift"
+        android:layout_width="match_parent"
+        android:layout_height="253dip"
+        android:cacheColorHint="@null"
+        android:divider="@android:color/transparent"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/click_selector_peach"
+        android:overScrollMode="never" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/tv_select_gift_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_popuplist"
+        android:background="@drawable/click_selector_peach"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textsize_13" />
+
+</LinearLayout>

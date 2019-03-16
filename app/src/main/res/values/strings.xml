@@ -1,0 +1,1233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- 基础字符串 -->
+    <string name="app_name">静静</string>
+    <string name="ok">确定</string>
+    <string name="str_select">选取</string>
+    <string name="cancel">取消</string>
+    <string name="hall_hot">最受追捧</string>
+    <string name="hall_time">在线</string>
+    <string name="hall_skill">技能</string>
+    <string name="hall_new">新人</string>
+    <string name="login">登录</string>
+    <string name="str_set_passwd">找回密码</string>
+    <string name="str_set_passwd_content">重置密码（6-12字符）</string>
+    <string name="str_set_passwd_title">若你未绑定手机号，请选择邮箱找回</string>
+    <string name="register">注册</string>
+    <string name="hall">交友</string>
+    <string name="rank">排行</string>
+    <string name="hot_rank">热榜</string>
+    <string name="message">消息</string>
+    <string name="mine">我的</string>
+    <string name="find">发现</string>
+    <string name="submit">提交</string>
+    <string name="pass">跳过</string>
+    <string name="setting">设置</string>
+    <string name="rank_list">排行榜</string>
+    <string name="back">返回</string>
+    <string name="manage">管理</string>
+    <string name="private_page">个人主页</string>
+    <string name="photo_album">相册列表</string>
+    <string name="photo_public">公开相册</string>
+    <string name="follower">我的好友</string>
+    <string name="str_friends">好友</string>
+    <string name="dynamic">我的动态</string>
+    <string name="str_my_follower">关注人的动态</string>
+    <string name="myfans">粉丝</string>
+    <string name="myfollower">关注</string>
+    <string name="myfriends">关注的人</string>
+    <string name="voucher_center">充值中心</string>
+    <string name="get_reward">领取奖励</string>
+    <string name="album_manage">相册管理</string>
+    <string name="integral_center">积分商城</string>
+    <string name="gifts">礼物</string>
+    <string name="send_gift">已送出的礼物</string>
+    <string name="receive_gift">已收到的礼物</string>
+    <string name="str_send_gifts">送礼</string>
+    <string name="invite_friends">积分奖励</string>
+    <string name="str_points">攻略</string>
+    <string name="str_activities">活动专区</string>
+    <string name="str_game_three">游戏专区</string>
+    <string name="str_title_three">时时彩</string>
+    <string name="un_read">对方未读</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新</string>
+    <string name="pull_to_load_pull_label">上拉加载更多</string>
+    <string name="pull_to_load_release_label">松开加载</string>
+    <string name="pull_to_load_loading_label">正在加载</string>
+    <string name="loading">正在加载&#8230;</string>
+    <string name="no_pic">图片不存在！</string>
+    <string name="nosdcard">没有SD卡</string>
+    <string name="submitting">正在提交&#8230;</string>
+    <string name="input_album_name">1.输入相册名称</string>
+    <string name="input_album_loyalty">2.设置访问魅力贡献值</string>
+    <string name="share_title">分享到</string>
+    <string name="share_to_qq">QQ好友</string>
+    <string name="share_to_qqzone">QQ空间</string>
+    <string name="share_to_winxin">微信好友</string>
+    <string name="share_to_winxinline">微信朋友圈</string>
+    <string name="share_to_sina">新浪微博</string>
+    <string name="share_to_tencent">腾讯微博</string>
+    <string name="report_select_reason">请选择举报原因</string>
+    <string name="report_title">该用户涉及以下内容违规：</string>
+    <string name="report_abuse">恶意辱骂</string>
+    <string name="report_sex">黄色信息</string>
+    <string name="report_ad">垃圾广告</string>
+    <string name="report_political">政治敏感信息</string>
+    <string name="report_other">其他</string>
+    <string name="more">更多</string>
+    <string name="openpicfaill">图片打开失败，请稍后再试！</string>
+    <string name="my_space">我的主页</string>
+    <string name="take_photo">拍照</string>
+    <string name="choose_picutre">图片</string>
+    <string name="my_dynamic">我的动态</string>
+    <string name="queena_dynamic">她的动态</string>
+    <string name="str_king_dynamic">他的动态</string>
+    <string name="str_my_gift">我的礼物</string>
+    <string name="str_he_gift">他的礼物</string>
+    <string name="str_her_gift">她的礼物</string>
+    <string name="str_dynamic">动态</string>
+    <string name="delete">删除</string>
+    <string name="all_dynamic">全部回复</string>
+    <string name="space_detail">动态详情</string>
+    <string name="save">保存</string>
+    <string name="weibosdk_demo_not_support_api_hint">微博客户端不支持 SDK 分享或微博客户端未安装或微博客户端是非官方版本。</string>
+    <string name="format1"><xliff:g id="format">%2d</xliff:g></string>
+    <string name="format2"><xliff:g id="format">yyyyMMdd</xliff:g></string>
+    <string name="about_beiai">Copyright@2013&#8211;2014土人科技有限公司</string>
+    <string name="check_new_version">检查新版本</string>
+    <string name="version_update_date">版本更新日期</string>
+    <string name="about_beiai2">关于静静</string>
+    <string name="updateinfo_content">已经是最新版本！</string>
+    <string name="updateinfo_title">检测到最新版的静静，是否下载？</string>
+    <string name="updateinfo_tolow">您的版本号过低，请下载最新版本的静静!</string>
+    <string name="apk_download_error">下载应用文件失败!</string>
+    <string name="need_login">你还没有登录，是否去登录？</string>
+    <string name="cofirm_exit">确定退出？</string>
+    <string name="to_login">去登录</string>
+    <string name="str_i_know">我知道啦</string>
+    <string name="online">在线</string>
+    <string name="offline">离线</string>
+    <string name="near">附近</string>
+    <string name="str_message_notify">消息通知</string>
+    <string name="str_message_toast">开启后，系统将自动屏蔽23：00&#8211;08：00间的任何提醒 </string>
+    <string name="str_no_data">暂无数据</string>
+    <string name="str_logining">正在登录</string>
+    <string name="str_reset_success">默认密码已发到该邮箱</string>
+    <string name="str_gift_content">赠送给%1$s的礼物%2$s将会增加你对TA的魅力贡献值%3$s点，并提高TA的魅力值%4$s点！</string>
+    <string name="str_gift_pendat_content">赠送对方%1$s挂件礼物，让对方出现在大厅是戴上%2$s,</string>
+    <string name="input_invite">请输入邀请码</string>
+    <string name="share_mm">静静分享</string>
+    <string name="share_content">我是%1$s，我在静静，快来找我吧</string>
+    <string name="share_mm1">分享美女</string>
+    <string name="share_content1">超人气应用《静静》,网络不再虚拟，静静拉近距离</string>
+    <string name="share_success">分享成功</string>
+    <string name="goto_rechanrge">去充值</string>
+    <string name="no_share">您还未分享，暂时不能领取</string>
+    <string name="no_weixin">您还没有安装微信客户端，请先下载微信客户端</string>
+    <string name="operate_faile">操作失败</string>
+    <string name="recharge_context">为了您能够正常充值，请在网络畅通状态下购买，购买过程中，请勿退出应用</string>
+    <string name="delete_follow">取消关注</string>
+    <string name="delete_black">取消拉黑</string>
+    <string name="str_remark">备注</string>
+    <string name="str_sdcard_not_exist">sd卡不存在</string>
+    <string name="str_upload_head">正在上传头像</string>
+    <string name="str_attention_people">关注的人</string>
+    <string name="skill_join">%1$s 人参与</string>
+    <string name="str_want_to_see_user">想看到的用户</string>
+    <string name="str_view_other_task">查看其它任务</string>
+    <string name="sound">声音</string>
+    <string name="shake">震动</string>
+    <string name="next_operate">下一步</string>
+    <string name="invite">邀请码</string>
+    <string name="who_saw_me">谁看过我</string>
+    <string name="who_saw_me1">看过我的人</string>
+    <string name="xiaopei">静静</string>
+    <string name="str_patronize">宠幸</string>
+    <string name="str_chat_gueess_finger_failed">本局已失效--超过1分钟或已被其他用户抢中</string>
+    <string name="str_chat_gueess_finger_private_failed">本局已失效--超过1分钟</string>
+    <string name="str_need_reidentity">更换头像，须重新申请认证</string>
+    <string name="str_at_maxnum">最多只能@3个用户</string>
+    <string name="str_mobile_phone_content">请填写手机号，仅限中国大陆手机。手机号仅用系统中绑定，可作帐号登录静静，注意：手机号登录需要设置对应的密码；</string>
+    <string name="str_mobile_phone_content1">任何人看不到您的手机号码</string>
+    <string name="str_mobile_phone_null">请输入你的手机号</string>
+    <string name="str_mobile_phone_error">请输入正确的手机号</string>
+    <string name="str_set_password_hint">设置密码（6至16位）</string>
+    <string name="str_right_code">请输入正确的验证码</string>
+    <string name="str_code_no_null">请输入验证码</string>
+    <string name="str_bind_phone_ok">您已成功绑定手机号：</string>
+    <string name="str_bind_phone_hint">注：暂时不能更换手机号</string>
+    <string name="str_register_activity1">注册（1/2）</string>
+    <string name="str_register_activity2">注册（2/2）</string>
+    <string name="str_register_activity3">注册（3/3）</string>
+    <string name="str_phone_black">手机号找回</string>
+    <string name="str_email_black">邮箱找回</string>
+    <string name="str_about_me_title">关于我</string>
+    <string name="str_clean_dynamic_content">是否确认清空动态？</string>
+    <string name="str_main_select">筛选</string>
+    <string name="input_newpassword1">请输入新密码</string>
+    <string name="input_newpassword2">请再次输入新密码</string>
+    <string name="str_scene_shop">道具商城</string>
+    <string name="str_find_apps">发现应用</string>
+    <string name="string_crashandler_error_info">很抱歉,程序出现异常,即将关闭.</string>
+
+    <!-- 技能模块 -->
+    <string name="str_my_skills">我的技能</string>
+    <string name="str_man_my_skill">我的打赏</string>
+    <string name="str_my_album">我的相册</string>
+    <string name="str_others_skills">她的技能</string>
+    <string name="str_other_man_skills">他的技能</string>
+    <string name="str_others_album">她的照片</string>
+    <string name="str_others_album1">他的照片</string>
+    <string name="str_skills">技能</string>
+    <string name="str_new_skills">新建技能</string>
+    <string name="str_describe">描述</string>
+    <string name="str_need_gifts">需要礼物</string>
+    <string name="str_give_gift">赠送\n礼物</string>
+    <string name="str_need_gift">需要\n礼物</string>
+    <string name="str_gifts_count">礼物数量</string>
+    <string name="str_limit_six_length">不超过8个字</string>
+    <string name="str_not_lower_ten_length">不少于10个字</string>
+    <string name="str_select_gift">选择礼物</string>
+    <string name="str_please_select_gift">请选择礼物</string>
+    <string name="str_skill_name_not_empty">技能名称不能为空</string>
+    <string name="str_describe_not_lower_ten_length">技能描述不能够少于10个字</string>
+    <string name="str_submit_failed">提交失败</string>
+    <string name="str_select_need_gift">请选择需要的礼物</string>
+    <string name="str_get_gift_error">获取礼物失败</string>
+    <string name="str_skill_detail">技能详情</string>
+    <string name="str_man_skill_detail">打赏详情</string>
+    <string name="str_please_graded">送指定礼物后才可评分</string>
+    <string name="str_enjoy_step">拍下>打赏方支付>参与方确认>合作>完成</string>
+    <string name="str_send_skill_gift_step">送指定礼物>发布方确认>合作>点评</string>
+    <string name="str_delete_skill">删除技能</string>
+    <string name="str_edit_skill">编辑技能</string>
+    <string name="str_delete_enjoy">删除打赏</string>
+    <string name="str_edit_enjoy">编辑打赏</string>
+    <string name="str_skill_delete_mind">删除后技能将不在主页展示，确定需要删除吗？</string>
+    <string name="str_male_skill_detele_mind">删除后打赏将不在主页展示，确定需要删除吗？</string>
+    <string name="str_check_relationsship">正在检测魅力贡献值</string>
+    <string name="str_send_skill_gift">正在赠送</string>
+    <string name="str_gold_is_not_enough">金币不足，充点小钱花花吧~~~</string>
+    <string name="str_silver_is_not_enough">银币不足，去免费赚点吧~</string>
+    <string name="str_have_been_graded">您已评分</string>
+    <string name="str_give_her_graded">给她评分</string>
+    <string name="str_click_the_stars_to_score">轻点星星来评分</string>
+    <string name="str_rating_score_failed">评分失败</string>
+    <string name="str_loading_failed">加载失败</string>
+    <string name="str_add_skill_failed">提交失败，技能礼物的魅力贡献值小于私聊门槛，会导致送礼后无法聊天（注：魅力贡献值=魅力值)</string>
+    <string name="str_please_enjoy">求赏(求)</string>
+    <string name="str_give_enjoy">打赏(赏)</string>
+    <string name="str_give">打赏</string>
+    <string name="str_interested_in">我有兴趣</string>
+    <string name="str_leaving_message">正在留言&#8230;</string>
+    <string name="str_leave_messave_success">留言成功，等待对方确认~</string>
+    <string name="str_leave_message_repeat">您已经感兴趣过了</string>
+    <string name="str_leave_messave_failed">留言失败，请检查网络是否连接正常</string>
+    <string name="str_leave_messave_not_empty">请输入留言</string>
+    <string name="str_one_message_moved_by_er">用一句话打动他吧~</string>
+    <string name="str_have_sign_up">已报名的人</string>
+    <string name="str_no_sign_up">暂无报名</string>
+    <string name="str_order">下单</string>
+    <string name="str_chat">聊天</string>
+    <string name="str_leave_message">留言:</string>
+    <string name="str_order_skill_confirm">确认给%1$s下单，系统将暂扣您%2$s的金币?</string>
+    <string name="str_enjoy">打赏</string>
+    <string name="str_skill_send_skill_toast">送出后您的礼物暂压在静静平台，对方确认后，礼物送出；如果对方5分钟内未确认，您可手动去我的技能订单里把礼物要回！</string>
+    <string name="str_skill_order_success">Ta已支付\"%1$s\"的%2$s技能，从%3$s技能进入聊天</string>
+    <string name="str_skill_order_step_one">5分钟内未确认，对方可手动把礼物收回</string>
+    <string name="str_skill_order_step_two">由于您在对方送出礼物后未确认订单，对方已退礼物(%1$s)</string>
+    <string name="str_skill_order_step_three">已接受，开始Happy吧~</string>
+    <string name="str_skill_intergerin_success">您的打赏\"%1$s\"报名啦!快去查看您的打赏\"%2$s\"</string>
+    <string name="str_skill_order_step_four">对方已经接受，如果对方没让您满意，可进入技能订单或%1$s详情内退礼物(如果恶意退礼物，将严肃处理)</string>
+    <string name="str_skill_order_step_five">对方拒绝了您的%1$s请求;看来还是没打动Ta的心呐~礼物的金币已归还</string>
+    <string name="str_new_skill">最新技能:</string>
+
+    <!-- 广播模块 -->
+    <string name="str_all_broadcast">全部广播</string>
+    <string name="str_system_broadcast">系统广播</string>
+    <string name="str_my_broadcast">我的广播</string>
+    <string name="str_about_me">\@我</string>
+    <string name="str_system_user">系统消息</string>
+    <string name="str_no_more">已经没有更多数据了</string>
+    <string name="str_no_broadcast_data">暂无发送的广播</string>
+    <string name="str_no_about_me_broadcast_data">还没有\@您的广播哦！</string>
+    <string name="str_no_my_send_broadcast_data">您还没有发过广播哦!</string>
+    <string name="str_no_system_broadcast_data">暂无系统广播</string>
+    <string name="str_broadcast">大厅</string>
+    <string name="str_send_broadcast">发布广播</string>
+    <string name="str_send_game">发布游戏</string>
+    <string name="str_input_broadcast">请输入广播</string>
+    <string name="str_long_lenth">您输入了过长的字数</string>
+    <string name="str_not_enough_money">余额不足</string>
+    <string name="str_only_gold">仅金币</string>
+    <string name="str_silver_fifty">-50银币</string>
+    <string name="str_gold_coin_five">-5金币</string>
+    <string name="str_gold_coin_hundred">-%1$s金币</string>
+    <string name="str_about_yourself">不能够\@自己</string>
+    <string name="str_text_broadcast">文字广播</string>
+    <string name="str_voice_broadcast">语音广播</string>
+    <string name="str_rerecording">重录</string>
+    <string name="str_click_recording">点击录音</string>
+    <string name="str_toast_is_recording">您的语音还在录制，无法发送</string>
+    <string name="str_not_start_record">您还没有录音~</string>
+    <string name="str_give_up_voice">您的语音还在录制，需要放弃吗</string>
+    <string name="str_find_finger">找人猜拳</string>
+    <string name="str_finger_record">猜拳记录</string>
+    <string name="str_finger_select">请选择币种：</string>
+    <string name="str_finger_content">您发起了一次猜拳，您可以下注金额数额：</string>
+    <string name="str_finger_content1">您出的拳是：</string>
+    <string name="str_finger_broadcast_content">发起了一局猜拳游戏，下注%2$s。</string>
+    <string name="str_finger_broadcast_content1">对方发起了一次猜拳游戏，赌注%1$s，玩一把吧，你要出</string>
+    <string name="str_finger_winner_content">%1$s赢了这局游戏，赌注%2$s，人品好不如赌品好！</string>
+    <string name="str_finger_ante">赌注%1$s，</string>
+    <string name="str_finger">猜拳</string>
+    <string name="str_game_center">游戏中心</string>
+    <string name="str_peipei_talk_room">静静畅聊间</string>
+    <string name="str_open_show">我\n要\n开\n秀</string>
+
+    <!-- 登录注册,帐号相关 -->
+    <string name="login_hint">使用静静帐号能更好的保护您的隐私</string>
+    <string name="username">帐号</string>
+    <string name="input_usernameoremail">请输入邮箱/手机号</string>
+    <string name="password">密码</string>
+    <string name="password_hint">6&#8211;16字符</string>
+    <string name="repassword">重置密码</string>
+    <string name="findpassword">忘记密码</string>
+    <string name="register_username">注册帐号</string>
+    <string name="another_login_method">其它登录方式</string>
+    <string name="qq">QQ</string>
+    <string name="sina">新浪微博</string>
+    <string name="nick">昵称</string>
+    <string name="gender">性别</string>
+    <string name="str_sex">性别:</string>
+    <string name="str_type">类型:</string>
+    <string name="age">年龄</string>
+    <string name="constellation">星座</string>
+    <string name="regist_nick_hint">3&#8211;8个字符</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="captcha">邀请人ID（选填）</string>
+    <string name="captcha_hint">请输入邀请码，没有的童鞋请忽略</string>
+    <string name="user_face">头像</string>
+    <string name="user_id">ID(不可修改)</string>
+    <string name="user_gender">性别(不可修改)</string>
+    <string name="user_birthday">生日</string>
+    <string name="user_changepwd">修改密码</string>
+    <string name="setting_userinfo">个人信息</string>
+    <string name="setting_chat">私聊门槛</string>
+    <string name="str_need_gift_to_chat">对方需送对应的礼物才能够聊天</string>
+    <string name="setting_message">消息提醒</string>
+    <string name="setting_help">系统帮助</string>
+    <string name="str_level">等级</string>
+    <string name="setting_feedback">意见反馈</string>
+    <string name="setting_about">关于</string>
+    <string name="setting_exit">退出登录</string>
+    <string name="ignore_at_night">夜间防骚扰模式</string>
+    <string name="chat_toggle">私聊通知/群通知</string>
+    <string name="sys_toggle">系统通知</string>
+    <string name="gift_toggle">礼物通知</string>
+    <string name="str_no_change">不可修改</string>
+    <string name="str_set_success">设置成功</string>
+    <string name="her_dynamic">我关注的人动态</string>
+    <string name="no_loyalty">您的魅力贡献值不够，请提高与Ta的魅力贡献值</string>
+    <string name="no_loyalty_femail">对方设置了魅力贡献值，无法私聊</string>
+    <string name="str_check_loyalty_failed">检测魅力贡献值失败，请重试</string>
+    <string name="setting_head">设置头像</string>
+    <string name="handsome">帅哥</string>
+    <string name="beauty">美女</string>
+    <string name="str_input_phone">输入手机号</string>
+    <string name="str_input_code">输入验证码</string>
+    <string name="str_get_code">获取验证码</string>
+    <string name="str_get_code_again">%1$s秒后重新获取</string>
+    <string name="str_bind_success">绑定成功</string>
+    <string name="str_bind_error1">该手机已被占用，请重新填写</string>
+    <string name="str_bind_error2">请输入正确的验证码</string>
+    <string name="str_bind_error3">该手机号未被注册</string>
+    <string name="str_wetchat_install">未安装手机微信客户端，该功能暂不能使用</string>
+    <string name="str_setpwd_success">重置密码成功</string>
+    <string name="emulator_login_toast">静静不支持模拟器运行，请在手机上使用。</string>
+
+    <!-- 红包 -->
+    <string name="str_send_red_packet">发红包</string>
+    <string name="str_red_packet">红包</string>
+    <string name="str_my_receiver_red_packet">收到的红包</string>
+    <string name="str_my_send_red_packet">我发的红包</string>
+    <string name="str_account_coin">帐户金币</string>
+    <string name="str_send_count">发多少份</string>
+    <string name="str_send_total_money">共发多少钱</string>
+    <string name="str_get_random_coin">后宫每人抽到的金额随机</string>
+    <string name="str_fen">份</string>
+    <string name="str_pay_coin">支付金币：</string>
+    <string name="str_charity">恩赐</string>
+    <string name="str_harm_redpacket">后宫红包</string>
+    <string name="str_harm_redpacket_content">发红包了，赶紧去拆！说：$</string>
+    <string name="str_redpacket_detail">详情</string>
+    <string name="str_unpacket_failed">领取红包失败，请检查网络是否正常!</string>
+    <string name="str_check_account">快去账户看看吧</string>
+    <string name="str_congratulations_to_you">恭喜你\n成功领取俸禄</string>
+    <string name="str_have_get_redpacket">您已经领到该俸禄了</string>
+    <string name="str_redpacket_get_over">您来晚了，红包已经领完了</string>
+    <string name="str_redpacket_timeout">领取失败，该红包已过期</string>
+    <string name="str_get_content">有一份俸禄被\"%1$s\"领走了\n俸禄金额：%2$s金币\n%3$s份俸禄，共%4$s金币（已领取%5$s个）</string>
+    <string name="str_get_redpacket_count">已领%1$s个,</string>
+    <string name="str_total_redpacket_count">共%1$s个红包</string>
+    <string name="str_redpacketget_complete">已领完</string>
+    <string name="str_redpacket_getting">领取中</string>
+    <string name="str_redpacket_time_out">已过期</string>
+    <string name="str_redpacket_no_deliver_data">暂未派发红包</string>
+    <string name="str_redpacet_no_receiver_data">暂未收到红包</string>
+
+    <!-- 账户 -->
+    <string name="str_account">账户</string>
+    <string name="user_balance">您的财富</string>
+    <string name="gold_money">金币</string>
+    <string name="silver_money">银币</string>
+    <string name="add_loyalty">魅力贡献值+ %1$s</string>
+    <string name="show_all_gift">查看所有礼物</string>
+    <string name="show_gift_today">今天收到的礼物</string>
+    <string name="feed_kiss">回赠飞吻</string>
+    <string name="recharge">充值</string>
+    <string name="gold_money_add">%1$s金币</string>
+    <string name="silver_money_add">%1$s银币</string>
+    <string name="buy_num">购买数量：</string>
+    <string name="present">赠送</string>
+    <string name="chat">私聊</string>
+    <string name="attention">关注</string>
+    <string name="str_no_attention_me">暂无粉丝关注我</string>
+    <string name="str_attention_other">你还没有关注任何人</string>
+    <string name="share">分享</string>
+    <string name="consumption_record">消费记录</string>
+    <string name="recharge_money">  =  ￥ %1$s</string>
+    <string name="recharge_gold">%1$s金币</string>
+    <string name="receive">领取</string>
+    <string name="received">已领取</string>
+    <string name="reward_daily">每日奖励</string>
+    <string name="reward_daily_silver">100银币</string>
+    <string name="reward_share">每日分享</string>
+    <string name="record_gold">金币记录</string>
+    <string name="record_silver">银币记录</string>
+    <string name="record_integral">积分记录</string>
+    <string name="daily_login_content">每日首次登录静静，恭喜您获得100银币奖励！</string>
+    <string name="receive_now">马上领取</string>
+    <string name="receive_never">不再提示</string>
+    <string name="receive_content">使用银币可以购买礼物送给你喜爱的Ta~</string>
+    <string name="gift_from">来自： %1$s</string>
+    <string name="gift_to">送给：%1$s</string>
+    <string name="gift_feed_ok">确认回赠</string>
+    <string name="gift_feed_cancel">取消回赠</string>
+    <string name="gift_feeded">已回赠</string>
+    <string name="all_gifts">所有礼物</string>
+    <string name="yestoday_gold">今日消费</string>
+    <string name="week_gold">本周消费</string>
+    <string name="str_please_input_account">请输入账号</string>
+    <string name="integral"> 积分  </string>
+    <string name="glamour">魅力值</string>
+    <string name="str_vistor">访问量</string>
+    <string name="str_fans">粉丝数</string>
+    <string name="loyalty">魅力贡献值</string>
+    <string name="integral_change">使用积分换东西</string>
+    <string name="give_gift_content">赠送礼物：   %1$s </string>
+    <string name="feedkiss_success">回赠飞吻成功</string>
+    <string name="feedkiss_failed">回赠飞吻失败</string>
+    <string name="str_no_consume_recode">暂无消费记录</string>
+    <string name="str_need_consume">需要消耗：</string>
+    <string name="str_complete">完成</string>
+    <string name="str_say_later_again">稍后再说</string>
+    <string name="str_find_her_chat">找TA聊天</string>
+    <string name="str_gift_success_find_her_chat">礼物赠送成功，可以找TA聊天了</string>
+    <string name="gift_sent_success">礼物赠送成功，可以找TA聊天了</string>
+    <string name="daily_checked">每日签到</string>
+    <string name="never_judges">连续登录获取更多银币</string>
+    <string name="noviciate_missions">新手任务</string>
+    <string name="daily_missions">日常任务</string>
+    <string name="missions_hall">免费赚币</string>
+    <string name="find_apps">发现应用</string>
+    <string name="ponits_wall">获取更多</string>
+    <string name="missions_receive_s">领取%1$s银币</string>
+    <string name="missions_received_s">%1$s银币</string>
+    <string name="missions_receive_g">领取%1$s金币</string>
+    <string name="missions_received_g">%1$s金币</string>
+    <string name="missions_content">(完成任务自动获得奖励)</string>
+    <string name="anonymous_gifts">匿名赠送</string>
+    <string name="limit_talk">对不起，您已被禁言</string>
+    <string name="tips_phone">对不起，由于你严重违反社区规范，已被封号。</string>
+    <string name="identify_title">认证说明:</string>
+    <string name="identify_head">头像认证</string>
+    <string name="identify_content2">认证照片必须加手写静静ID</string>
+    <string name="identify_content3">认证照片是和您的头像进行比对，所以上传照片前先保证头像的真实性</string>
+    <string name="identify_content4">我们仅保证头像的真实性，空间照片的真实性由用户自我把控</string>
+    <string name="identify_content5">认证的照片仅供系统审核，任何人不可见</string>
+    <string name="identify_content6">如需要更换头像，须重新申请认证</string>
+    <string name="identify_hint">请确保照片五官清晰可见，没有遮挡物</string>
+    <string name="chick_photo">点击拍照</string>
+    <string name="upload_identify">上传认证</string>
+    <string name="indentify_uploading_content">您的头像正在审核中&#8230;</string>
+    <string name="indentify_uploading_content2">您的头像已通过审核</string>
+    <string name="indentify_need_head">认证前先上传您的头像</string>
+    <string name="upload">上传</string>
+    <string name="indentify_upload_success">上传成功，请耐心等待审核</string>
+    <string name="indentify_upload_failed">上传失败，请重试</string>
+    <string name="click_download">点击下载</string>
+    <string name="update_voice">上传录音</string>
+    <string name="play_voice">播放录音</string>
+    <string name="str_select_add_user">请选择你要施仙术的用户</string>
+
+    <!-- 相册 -->
+    <string name="album">相册</string>
+    <string name="chose_photo">选择照片</string>
+    <string name="chose_album">选择相册</string>
+    <string name="photo_album_delete">删除相册</string>
+    <string name="photo_album_new">新建私密相册</string>
+    <string name="photo_album_manage">管理相册</string>
+    <string name="photo_list_delete">删除照片</string>
+    <string name="photo_list_upload">上传照片</string>
+    <string name="photo_list_manage">管理照片</string>
+    <string name="upload_photos_ok">确定上传</string>
+    <string name="upload_photos_cancel">取消上传</string>
+    <string name="sure_delete">确认删除</string>
+    <string name="cancel_delete">取消删除</string>
+    <string name="close">关闭</string>
+    <string name="no_message">暂无消息</string>
+    <string name="private_album">私密相册</string>
+    <string name="select_private_album">请选择需要开放的相册：</string>
+    <string name="no_photos">暂无照片</string>
+    <string name="no_gifts1">还没有送出礼物</string>
+    <string name="no_gifts2">还没有收到礼物</string>
+    <string name="str_no_gift">暂无礼物</string>
+    <string name="no_fans">你还没有粉丝</string>
+    <string name="str_deleting">正在删除</string>
+    <string name="no_dynamic">暂无动态</string>
+    <string name="no_reply">暂无回复</string>
+    <string name="str_only_yourself">此相册仅自己可见 </string>
+    <string name="str_album_exist">此相片已经存在</string>
+    <string name="str_new_album_failed">新建相册失败</string>
+    <string name="str_delete_failed">删除失败</string>
+    <string name="str_please_select_photo">请选择一张相片</string>
+    <string name="str_please_select_album">请选择一个相册</string>
+    <string name="str_delete_success">删除成功</string>
+    <string name="str_forbit_speak">小黑屋</string>
+
+    <!-- 网络 -->
+    <string name="no_network_connection_toast">没有网络</string>
+    <string name="network_problem">您当前网络有问题！是否设置？</string>
+    <string name="never_remind">不再提示该信息</string>
+    <string name="user_not_send">此帐户已被封禁，预计解封时间%1$s，导致原因可能是：\n1、发表黄色信息\n2、发表广告\n3、发表辱骂性话语、人身攻击\n4、发表敏感政治信息 </string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载&#8230;</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="errcode_success">分享成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="yellow_ad">黄色广告</string>
+    <string name="str_check_your_network">请求失败，请检查您的网络是否连接正常？</string>
+
+    <!-- 聊天 相关 -->
+    <string name="up_cancel">向上滑动可取消</string>
+    <string name="chat_remind">此模式下发送的语音和图片将在对方阅后焚毁</string>
+    <string name="chat_first_str">聊天时出现广告、欺骗、粗鲁、等不文明行为都会被处罚，请文明聊天!</string>
+    <string name="press_on_record">按住录音</string>
+    <string name="send">发送</string>
+    <string name="prefDefault_recordType">audio/3gpp</string>
+    <string name="emoji">表情</string>
+    <string name="photo">照片</string>
+    <string name="camera">拍照</string>
+    <string name="burn_after_reading">阅后即焚</string>
+    <string name="from_camera">拍照</string>
+    <string name="from_gallery">从手机相册选择</string>
+    <string name="from_network">网络获取图片</string>
+    <string name="msg_rechoice_gallery">选择当前应用图片无数据,请重新选择其他相册应用!</string>
+    <string name="release_cancel">释放取消</string>
+    <string name="release_finish">松开结束</string>
+    <!-- Do not translate. Format of the timer that shows how much has been recorded so far -->
+    <string name="timer_format"><xliff:g id="format">%2d</xliff:g>/<xliff:g id="format">%02d</xliff:g>\"</string>
+    <string name="clean_chat">清空聊天记录</string>
+    <string name="delete_session">删除消息</string>
+    <string name="add_black">拉黑并举报</string>
+    <string name="my_black">我的黑名单</string>
+    <string name="str_blacklist">黑名单列表</string>
+    <string name="str_to_read">置为已读</string>
+    <string name="str_clean">清空</string>
+    <string name="str_clean_content">是否确定清空黑名单？</string>
+    <string name="add_black_content">消息已发出，但被对方拒收了</string>
+    <string name="report">举报</string>
+    <string name="voicelength_too_short">朋友！你说的也太短了，重录试试！</string>
+    <string name="voicelength_too_long">朋友！你说的也太长了，重录试试！</string>
+    <string name="session_voice">[语音]</string>
+    <string name="session_image">[图片]</string>
+    <string name="burn">焚烧</string>
+    <string name="chat_album_content">我为你开放了我的私密相册“ %1$s ”，魅力贡献值达到 %1$d 以上即可访问~</string>
+    <string name="chat_noticetion">你有 %1$d条新的聊天消息</string>
+    <string name="push_chat_noticetion">你有 %1$s条新消息</string>
+    <string name="no_chats">暂无聊天消息</string>
+    <string name="loyalty_content">主人设定了门槛：%1$s</string>
+    <string name="loyalty_content1"></string>
+    <string name="long_press">长按查看</string>
+    <string name="chat_get_gift_context">您收到TA送的礼物</string>
+    <string name="chat_get_gift_context2">您收到TA送的回赠</string>
+    <string name="chat_gift_context_message">亲爱的 %1$s ，我太喜欢你了，送你一份礼物以表达我的爱意！</string>
+    <string name="chat_gift_context_message2">感谢你送我的礼物，我很喜欢，以后要多多支持我哦！</string>
+    <string name="finger_dialog_content1">您发起了一局猜拳游戏，您可以下注数额(选填):</string>
+    <string name="str_finger_dialog_content">您出的拳是：</string>
+    <string name="finger_left_content1">对方向你发起了一局猜拳游戏，%1$s玩一把吧，您要出</string>
+    <string name="finger_right_content1">您已经向对方发起了一局猜拳游戏，%1$s耐心等会，对方出拳需要时间，您出的是</string>
+    <string name="finger_right_content2">您已经回复了对方的猜拳游戏，这一局您出的是</string>
+    <string name="finger_winner_content1">%1$s 赢的了这一局，人品好不如赌品好！</string>
+    <string name="finger_winner_content2">这一局你们打平了，棋逢对手，没有输赢，再来一局吧！</string>
+    <string name="version_low">您的版本过低，需要升级才能显示此功能</string>
+    <string name="str_peipei_vedio">静静视频</string>
+    <string name="str_local_vedio">本地视频</string>
+    <string name="str_vedio">视频</string>
+    <string name="str_compressioning">正在压缩视频，压缩时间可能比较久，请耐心等待~</string>
+    <string name="str_compression_success">视频压缩成功</string>
+    <string name="str_compression_failed">视频压缩失败</string>
+    <string name="str_video_send_toast">视频文件过大，系统截取前30秒，压缩后文件大小为%1$s,确定需要发送吗?</string>
+    <string name="sure_addblack">您确定拉黑此用户吗？建议截图保留证据发给静静！</string>
+    <string name="dare_pass_title">您输了大冒险，是否消耗100金币，使用跪求通过功能？</string>
+    <string name="dare_pass_content">您输了大冒险，使用跪求通过成功，已消耗100金币！</string>
+    <string name="str_truth">真心话</string>
+
+    <!-- 写贴 -->
+    <string name="publish">发布</string>
+    <string name="upload_photo">照片</string>
+    <string name="upload_text">心情</string>
+    <string name="publish_feelings">发布动态</string>
+    <string name="write_hint">写点什么吧~</string>
+    <string name="write_failure">发送失败</string>
+    <string name="write_sending">正在发送</string>
+    <string name="str_success_thanks">感谢您宝贵意见或建议～</string>
+    <string name="write_next">下一步</string>
+    <string name="publish_success">发布成功</string>
+    <string name="publish_error">发布失败</string>
+    <string name="get_data_failure">获取失败</string>
+    <string name="adapter_failure">配图失败</string>
+    <string name="adapter_loading">正在配图&#8230;</string>
+    <string name="publish_loading">发布中&#8230;</string>
+    <string name="delete_loading">正在删除&#8230;</string>
+    <string name="publish_reply">发表评论&#8230;</string>
+    <string name="publish_parise">发表点赞&#8230;</string>
+    <string name="dynamic_details">动态详情</string>
+    <string name="reply_failure">评论失败</string>
+    <string name="delete_failure">删除失败</string>
+    <string name="thump_up_failure">点赞失败</string>
+    <string name="me">我</string>
+    <string name="namypic_data_null">没有更多的数据</string>
+    <string name="anonymous">匿名</string>
+
+    <!-- 后宫 -->
+    <string name="str_my_harem">我的后宫</string>
+    <string name="str_harem_rule">后宫规则</string>
+    <string name="str_create_harem">创建后宫</string>
+    <string name="str_my_join_harem">我加入的后宫</string>
+    <string name="str_he_join_harem">他加入的后宫</string>
+    <string name="str_her_join_harem">她加入的后宫</string>
+    <string name="str_not_join_harem">你暂未加入后宫，快快加入吧~</string>
+    <string name="str_he_not_create_harem">他暂未创建后宫</string>
+    <string name="str_her_not_create_harem">她暂未创建后宫</string>
+    <string name="str_he_not_join_harem">他暂未加入后宫</string>
+    <string name="str_her_not_join_harem">她暂未加入后宫</string>
+    <string name="str_female_other_harem">她的后宫</string>
+    <string name="str_male_other_harem">他的后宫</string>
+    <string name="str_harem_name">宫名</string>
+    <string name="str_harem_id">后宫ID</string>
+    <string name="str_harem_image">图标</string>
+    <string name="str_click_change_image">点击可更换图标</string>
+    <string name="str_harem_sign">宫告</string>
+    <string name="str_harem_member">后宫成员</string>
+    <string name="str_harem_fourty_length_limit">不超过40个字</string>
+    <string name="str_harem_name_not_empty">后宫名字不能够为空</string>
+    <string name="str_harem_image_not_empty">请上传后宫图标</string>
+    <string name="str_harem_create_success">创建成功</string>
+    <string name="str_harem_dialog_level_lower">您还未达到创建后宫的等级，再接再厉喔~</string>
+    <string name="str_harem_owner">宫主</string>
+    <string name="str_harem_kicked_out">踢出</string>
+    <string name="str_req_join_harem">申请加入</string>
+    <string name="str_confirm_join_this_harem">确定申请加入此后宫？</string>
+    <string name="str_requesting">正在申请&#8230;</string>
+    <string name="str_join_success">加入成功</string>
+    <string name="str_join_failed">加入失败</string>
+    <string name="str_apply_join_success">申请成功，等待宫主同意~</string>
+    <string name="str_apply_join_failed">申请失败</string>
+    <string name="str_request_exit">退出此宫</string>
+    <string name="str_kicked_member">您确定将$从本后宫踢出吗?</string>
+    <string name="str_req_join_your_harem">申请加入您的后宫~</string>
+    <string name="str_ignore">忽略</string>
+    <string name="str_receive">接受</string>
+    <string name="str_have_ignore">已忽略</string>
+    <string name="str_have_recivie">已接受</string>
+    <string name="str_have_join_your_harem">对方已经加入您的后宫，快去聊聊吧~</string>
+    <string name="str_sannomiya_six_homes">三宫六院</string>
+    <string name="str_turn_over_the_brand">翻牌子</string>
+    <string name="str_not_create_harem">您还没有创建后宫哟</string>
+    <string name="str_other_side_not_create_harem">还没有创建后宫</string>
+
+    <!-- 排行版 -->
+    <string name="new_rank">新人榜</string>
+    <string name="glamour_rank">魅力榜</string>
+    <string name="riches_rank">财富榜</string>
+    <string name="queen">魅力女人</string>
+    <string name="king">财富英雄</string>
+    <string name="game_rank">活跃榜</string>
+    <string name="day_rank">日榜</string>
+    <string name="week_rank">周榜</string>
+    <string name="final_rank">总榜</string>
+    <string name="str_game_week_rank">游戏周榜</string>
+    <string name="str_harem_week_rank">后宫周榜</string>
+    <string name="str_harem">后宫</string>
+    <string name="str_game_hall">娱乐场</string>
+    <string name="str_riches_num">财富值</string>
+
+    <!-- 个人资料 -->
+    <string name="head_image">头像</string>
+    <string name="ID">ID</string>
+    <string name="birthday">出生日期</string>
+    <string name="modify_password">修改密码</string>
+    <string name="str_upload_head_image_success">头像上传成功</string>
+    <string name="str_update_birthday_success">修改成功</string>
+    <string name="str_update_error">上传失败</string>
+    <string name="str_write_something">写点意见吧</string>
+    <string name="str_summiting">提交中</string>
+    <string name="str_person_info">个人资料</string>
+    <string name="str_custom_no_video">该用户没有录制语音</string>
+    <string name="str_bind_phone">绑定手机号</string>
+    <string name="str_edit">编辑</string>
+    <string name="str_sig">个性签名</string>
+    <string name="str_edit_sig">点击修改个性签名</string>
+    <string name="str_my_sig">我的个性签名</string>
+
+    <!-- toast 提示消息 -->
+    <string name="toast_register_account_exist">该手机号已被注册</string>
+    <string name="toast_register_account_null">请输入帐号</string>
+    <string name="toast_register_account_illegal">您的用户名少于4个字符/大于12个字符，请修改</string>
+    <string name="toast_register_account_mustbe_numorchar">帐号格式不正确</string>
+    <string name="toast_register_pwd_null">请输入密码</string>
+    <string name="toast_register_pwd_illegal">您的密码少于6个字符/大于16个字符，请修改</string>
+    <string name="toast_register_nick_null">请输入昵称</string>
+    <string name="toast_register_nick_illegal">您的昵称少于3个字符/大于8个字符，请修改</string>
+    <string name="toast_register_gender_null">请选择一个性别</string>
+    <string name="toast_login_account_null">您的帐号为空,请填写一个哦~</string>
+    <string name="toast_login_account_illegal">您的帐号少于4个字符,请修改</string>
+    <string name="toast_login_account_illegal2">您的帐号大于8个字符,请修改</string>
+    <string name="toast_login_pwd_null">您的密码为空,请填写一个哦~</string>
+    <string name="toast_login_pwd_illegal">您的密码少于6个字符/大于16个字符,请修改</string>
+    <string name="toast_need_relogin">该帐号已在其他设备登录，请重新登录！</string>
+    <string name="toast_login_success">登录成功!</string>
+    <string name="toast_login_failure">网络连接失败，请重置网络</string>
+    <string name="toast_user_not_exist">用户不存在!</string>
+    <string name="toast_user_pwd_error">密码错误!</string>
+    <string name="toast_login_one">一机登录</string>
+    <string name="toast_exit_txt">再按一次退出程序</string>
+    <string name="toast_bitmap_error">选择当前应用图片无数据,请重新选择其他相册应用!</string>
+    <string name="toast_bitmap_too_heavy">选择的图片过大，请重选一张图片！</string>
+    <string name="toast_register_gender_hint">您的性别提交后将无法修改</string>
+    <string name="str_real_info">请输入注册时填写的电子邮箱</string>
+    <string name="i_know">我知道了</string>
+    <string name="i_know2">我知道啦</string>
+    <string name="str_loyalty_failed">设置失败，私聊门槛大于技能礼物的魅力贡献值，会导致送礼后无法聊天（注：魅力贡献值=魅力值）</string>
+    <!-- Dialog 提示消息 -->
+    <string name="dialog_msg1">是否删除?</string>
+    <string name="toast_remark_long">您的备注大于8个字符，请修改</string>
+    <string name="toast_reward_end">该悬赏已经结束</string>
+    <string name="toast_reward_full">该悬赏参加人数已满</string>
+    <string name="toast_reward_join_forbid">男性不能参加男性发布的悬赏</string>
+
+    <!-- 技能 -->
+    <string name="skills_list">我的技能订单</string>
+    <string name="skills_history">查看技能历史订单</string>
+    <string name="mine_skills_order">我的技能订单</string>
+    <string name="skill_status">订单状态</string>
+    <string name="no_skills_order">没有正在进行的技能订单~</string>
+    <string name="str_skill_order_content1">参加求赏者：</string>
+    <string name="str_skill_order_content2">发布求赏者：</string>
+    <string name="str_skill_order_content3">参加打赏者：</string>
+    <string name="str_skill_order_content4">发布打赏者：</string>
+    <string name="str_skill_order_type1">求赏</string>
+    <string name="str_skill_order_type2">打赏</string>
+    <string name="str_skill_order_result_gift">退礼物</string>
+    <string name="str_skill_order_refuse">拒绝</string>
+    <string name="str_skill_order_appeal">申诉</string>
+    <string name="str_skill_order_agree">点评</string>
+    <string name="str_skill_order_appeal_gift">申诉退礼物</string>
+    <string name="str_skill_order_appealing">已申诉退礼物</string>
+    <string name="str_skill_order_refuse1">参加打赏者已拒绝订单</string>
+    <string name="str_skill_order_refuse2">发布求赏者已拒绝订单</string>
+    <string name="str_skill_order_end">订单已结束</string>
+    <string name="str_skill_order_content_start1">注：5分钟内未确认，对方可手动把礼物收回</string>
+    <string name="str_skill_order_content_start2">注：下单5分钟后才可点击退礼物</string>
+    <string name="str_skill_order_content_accept1">注：对方24小时未申诉，该订单结束</string>
+    <string name="str_skill_order_content_accept2">注：24小时内未申诉，默认状态为已结束</string>
+    <string name="str_skill_order_status_start1">状　　　态：打赏者已支付，请确认</string>
+    <string name="str_skill_order_status_start2">状　　　态：待对方确认是否能参加</string>
+    <string name="str_skill_order_status_start3">状　　　态：参加求赏者已送指定礼物，请确认</string>
+    <string name="str_skill_order_status_accept1">状　　　态：订单已确认，交流中...</string>
+    <string name="str_skill_order_status_accept2">状　　　态：打赏已完成</string>
+    <string name="str_skill_order_status_accept3">状　　　态：求赏已完成，待点评</string>
+    <string name="str_skill_order_status_accept4">状　　　态：求赏已完成，已点评</string>
+    <string name="str_skill_order_status_appeal1">状　　　态：申诉中...</string>
+    <string name="str_skill_order_status_appeal2">状　　　态：申诉退礼物中...</string>
+    <string name="str_skill_order_status_appealend">状　　　态：申诉退礼物成功</string>
+    <string name="str_skill_order_status_refuse">状　　　态：订单已取消</string>
+    <string name="str_skill_order_status_end">状　　　态：订单已结束</string>
+    <string name="str_skill_order_operate_content1">发布打赏者已退回礼物</string>
+    <string name="str_skill_order_operate_content2">成功退回礼物</string>
+    <string name="str_skill_order_operate_content3">已成功点评</string>
+    <string name="str_skill_order_appeal_toast">5分钟内不能退礼物</string>
+    <string name="str_skill_order_appeal_content">此订单对方没有按打赏要求进行，请求静静仲裁要求退款（恶意退款，一经查实，封号处理）</string>
+
+    <!-- 秀场 -->
+    <string name="str_show_out_room">离开房间</string>
+    <string name="str_show_menber">房间成员</string>
+    <string name="str_show_devote_hank">贡献排行</string>
+    <string name="str_show_devote_day">贡献日榜</string>
+    <string name="str_show_devote_all">贡献总榜</string>
+    <string name="str_show_delete_vip">取消嘉宾</string>
+    <string name="str_show_devote_day_1">日贡献</string>
+    <string name="str_show_devote_all_1">总贡献</string>
+    <string name="str_show_level_low">女性>=嫔妃，男性>=将军；您的等级不够，赶紧去升级吧~</string>
+    <string name="str_show_rooms_full">秀场已满，等会再来吧~</string>
+    <string name="str_show_room_owner">房主</string>
+    <string name="str_show_room_set_vip">设为嘉宾</string>
+    <string name="str_show_room_vip">嘉宾</string>
+    <string name="str_show_gift_other_num">其他数量</string>
+    <string name="str_show_gift_num_1314">一生一世</string>
+    <string name="str_show_gift_num_520">我爱你</string>
+    <string name="str_show_gift_num_188">要抱抱</string>
+    <string name="str_show_gift_num_99">长长久久</string>
+    <string name="str_show_gift_num_10">十全十美</string>
+    <string name="str_show_gift_num_1">一心一意</string>
+    <string name="str_show_open_show_title">如果中途想关闭，可退出秀场；如若被人举报开着房人却不在，一经核实立即取消开秀资格！开秀不易，且开且珍惜</string>
+    <string name="str_show_change_room">您的秀场正在秀，确定关闭后进入其它秀场？</string>
+    <string name="str_show_report_ok">举报成功</string>
+    <string name="str_show_close">关闭秀场</string>
+    <string name="str_show_time_left">您的秀场5分钟后将会关闭，请把握好时间喔~</string>
+    <string name="str_show_time_left1">您的秀场即将关闭，如果还意犹未尽，继续去抢开吧~（10秒）</string>
+    <string name="str_show_time_left2">您的秀场1分钟后将会关闭，请把握好时间喔~</string>
+    <string name="str_show_time_left3">由于当前秀场涉嫌违规，已被系统强制关闭</string>
+    <string name="str_show_close_room">您确定要关闭秀场吗？</string>
+    <string name="str_show_close_timeover">该秀场已到期！</string>
+    <string name="str_show_close_timeover1">秀场已关闭，您被迫离开房间！</string>
+    <string name="str_show_room_isfinish">房间已关闭</string>
+    <string name="str_show_open_busy">歇会吧，5分钟后再来，老占着秀场是件没节操的事。</string>
+    <string name="str_show_set_vip">您已被设为嘉宾</string>
+    <string name="str_show_inorout_in">欢迎    %1$s进入房间</string>
+    <string name="str_show_inorout_out">%1$s 离开房间</string>
+    <string name="str_show_inorout_kick">%1$s 被踢出房间</string>
+    <string name="str_show_role_vip">%1$s 被设为嘉宾</string>
+    <string name="str_show_role_normal">%1$s 被取消嘉宾</string>
+    <string name="str_show_add_hot">%1$s 觉得这个房间很赞</string>
+    <string name="str_show_kick_room">您被秀主踢出了房间</string>
+    <string name="str_show_long_time_left">因为太久没在秀场活动了，您的秀场将被关闭（%1$s秒）</string>
+    <string name="str_show_into_room">进入秀场</string>
+    <string name="str_show_room_is_finish">您确定要关闭或离开您的秀场吗？</string>
+    <string name="str_show_share_mm">分享房间</string>
+    <string name="str_show_share_content">这房间让我太激动了~强烈推荐这个房间，安装后查找id：%1$s就能看到啦</string>
+    <string name="str_show_gift_title">本场礼物动态</string>
+    <string name="str_show_openbox_failed">您没有宝箱，每消费10000金币能获得一个宝箱哦~</string>
+    <string name="voice_live_show">公屏</string>
+    <string name="voice_live_ranking">排行榜</string>
+    <string name="voice_live_online">在线</string>
+    <string name="voice_live_attention">关注</string>
+
+    <!-- 真心话 -->
+    <string name="truth_head">我们来玩真心话吧</string>
+    <string name="truth_pass">本局真心话你已经参加过</string>
+    <string name="truth_reply">你已经问了好几个真心话，等对方回复了再问吧</string>
+    <string name="truth_error">操作失败</string>
+    <string name="dialog_hint">温馨提示</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_confirm">确定</string>
+
+    <!-- 悬赏 -->
+    <string name="publish_reward_title">发布悬赏</string>
+    <string name="publist_reward_failure">发布悬赏失败</string>
+    <string name="reward_skill_null">请选择女神为我做的事</string>
+    <string name="reward_gift_null">请选择打赏悬赏礼物</string>
+    <string name="join_reward">参加悬赏</string>
+    <string name="get_reward_list_failure">获取悬赏列表失败</string>
+    <string name="join_reward_failure">参加悬赏失败</string>
+    <string name="reward_seletor">已选</string>
+    <string name="reward_slete_age">再看看</string>
+    <string name="reward_skill_woman_title">想让女神为我做的事 </string>
+    <string name="reward_skill_man_title">想让男神为我做的事</string>
+    <string name="reward_skill_seletor">(任意选择一项)</string>
+    <string name="reward_gift_title">选择打赏的礼物</string>
+    <string name="reward_agree_hint">温馨提示：</string>
+    <string name="reward_dialog_join_time">成功参加悬赏</string>
+    <string name="reward_dialog_join_content">(匿名参与，仅赏主可见)</string>
+    <string name="reward_dialog_join_content_str">参加悬赏后请记得秀出相应表演哦，恶意欺骗等行为将会受到处罚哟！</string>
+    <string name="reward_req_chat">请求私聊&#8230;</string>
+    <string name="reward_req_paritici_dialog">请求参加&#8230;</string>
+    <string name="rewarding_dialog">悬赏中&#8230;</string>
+    <string name="reard_chat_toast_error">请求失败</string>
+    <string name="reward_all">全部悬赏</string>
+    <string name="reward_progress">进行中的悬赏</string>
+    <string name="reward_end">已结束的悬赏</string>
+    <string name="reward_mine">我的悬赏</string>
+    <string name="reward_list_empty">没有悬赏</string>
+    <string name="cost">价值：</string>
+    <string name="charm_str">魅力值：</string>
+    <string name="pariti_str">人参与:</string>
+    <string name="reward_lead">赏主</string>
+    <string name="reward_receive">受赏者</string>
+    <string name="reward_join_full">人数已满</string>
+    <string name="reward_join">参加</string>
+    <string name="surplus_time">剩余时间：</string>
+    <string name="reward_content">悬赏内容：</string>
+    <string name="reward_award">奖励</string>
+    <string name="reward_paritici_end_toast">悬赏已超时</string>
+    <string name="reward_failure">悬赏失败</string>
+    <string name="reward_session">[悬赏]</string>
+    <string name="reward_end_str">已结束</string>
+    <string name="reward_affirm_info">悬赏信息</string>
+    <string name="reward_affirm_skill_man_tile">你选择女神为你</string>
+    <string name="reward_affirm_skill_woman_title">你选择男神为你</string>
+    <string name="reward_affirm_gift">礼物名称：</string>
+    <string name="reward_affirm_cost">礼物价值：</string>
+    <string name="reward_affirm_integral">礼物积分：</string>
+    <string name="reward_affirm_charm">魅     力     值：</string>
+    <string name="partici_dialog_content">你确定选择她为获得悬赏者吗？</string>
+    <string name="reward_woman_str">悬赏给她</string>
+    <string name="reward_man_str">悬赏给他</string>
+    <string name="str_reward">悬赏</string>
+    
+
+    <!-- 匿名悬赏 -->
+    <string name="anonym_dialog_title">选择属于你的悬赏昵称</string>
+    <string name="anonym_dialog_nick_explain">此昵称只用于悬赏，不影响静静昵称</string>
+    <string name="anonym_dialog_next_btn_str">换一个</string>
+    <string name="anonym_dialog_nick_past_toast">该昵称已过期,不能继续使用,请更换其他昵称!</string>
+    <string name="anonym_dialog_nick_change_error">昵称更换失败</string>
+    <string name="anonym_dialog_nick_limit_24">24小时只能绑定一个昵称</string>
+    <string name="anonym_dialog_nick_user_error">昵称使用失败</string>
+
+    <!-- 新版动态 -->
+    <string name="all_dynamic2">全部动态</string>
+    <string name="about_me">关于我</string>
+
+    <!-- 女神技 -->
+    <string name="str_goddess_me_do">我能为您做的事</string>
+    <string name="str_edit_goddess_skill">点击修改女神技</string>
+    <string name="str_select_skill">请选择1-%1$s个你在聊天中擅长做的事情</string>
+    <string name="str_hope_goddess_skill">我希望女神为我做的事</string>
+    <string name="str_what_can_i_do_for_you">我能为你做的事</string>
+    <string name="str_what_can_he_do_for_you">他能为你做的事</string>
+    <string name="str_what_can_she_do_for_you">她能为你做的事</string>
+    <string name="str_select_skill_for_service">选择感兴趣的，让女神秀出她的技能</string>
+    <string name="str_select_skill_for_service_to_me">选择你擅长的，秀出你的技能</string>
+    <string name="str_she_can_do_for_you">她愿意为你做的事</string>
+    <string name="str_invite_show_skill">邀请她秀出女神技:</string>
+    <string name="str_invite_show_skill_you">邀请你秀出女神技:</string>
+    <string name="str_invite_effevtive_time">技能邀请有效时间:</string>
+    <string name="str_accept_skill_notice">收到礼物以后，请别忘了秀出女神技！</string>
+    <string name="str_has_accept_invite_other_side">对方已接受你的邀请</string>
+    <string name="str_no_response">对方未响应，倒计时中</string>
+    <string name="str_you_has_accept_invite">你已经接受%1$s的邀请</string>
+    <string name="str_add">增加</string>
+    <string name="str_add_new">添加</string>
+    <string name="str_save_success">保存成功</string>
+    <string name="str_get_skill_fail">获取技能失败</string>
+    <string name="str_goddess_skill_invite">女神技邀请</string>
+    <string name="str_send_invite">发送邀请</string>
+    <string name="str_input_postscript">请输入附言</string>
+    <string name="str_skill_size_exception">您当前的技能个数已超过限制（%1$s个）了哦\n您可选择取消已选技能后再添加其他技能</string>
+    <string name="str_please_select_skill">请选着技能</string>
+    <string name="str_please_select_skill_gift">请选择打赏女神技的礼物</string>
+    <string name="str_skill_session">[女神技]</string>
+    <string name="str_postscript">附言：</string>
+    <string name="str_refuse_invite">你已拒绝%1$s的邀请</string>
+    <string name="str_she">她</string>
+    <string name="str_he">他</string>
+    <string name="str_turned_out">已失效</string>
+    <string name="str_wait_time_out">等待超时,邀请失效</string>
+    <string name="str_no_response_invite_fail">对方未响应,邀请失效</string>
+    <string name="str_has_refuse_invite_other_side">对方已拒绝你的邀请</string>
+    <string name="str_minute">分钟</string>
+    <string name="str_accept_skill_success">你已经成功接受邀请,玩的开心哟!</string>
+    <string name="str_accept_skill_success_other_side">%1$s已经成功接受了你邀请,玩的开心哟!</string>
+    <string name="str_skill_safety_notice">若接受邀请，请记得秀出相应表演哦，如出现恶意欺骗等行为将会受到处罚，严重违规者将会被封号</string>
+    <string name="str_refuse_invite_for_skill">你拒绝了%1$s的邀请</string>
+    <string name="str_refuse_invite_for_skill_other_side">很遗憾,%1$s拒绝了你的邀请哦</string>
+    <string name="str_no_response_invite_fail_other_side">对方未响应,邀请失效;礼物已经退回你的账户</string>
+    <string name="str_unadd_skill_talk_it">%1$s还未添加女神技，快去喊%1$s添加吧。</string>
+    <string name="str_unadd_skill">作为女神，怎能没有女神技？</string>
+    <string name="str_talk">私聊TA</string>
+    <string name="str_space_add_skill">添加女神技</string>
+    <string name="str_send">送出:</string>
+    <string name="str_millis">秒</string>
+    <string name="str_has_accept">已接受</string>
+    <string name="str_has_refuse">已拒绝</string>
+    <string name="str_skill_info_no_exits">技能信息不存在</string>
+    <string name="str_gift_no_exits">礼物不存在</string>
+    <string name="str_the_invite_has_fail">邀请已失效</string>
+    <string name="str_you_no_response_invite_fail">你在%1$s分钟内未作出任何响应,邀请失效</string>
+    <string name="str_space_skill_add">点击添加</string>
+
+    <!-- Dialog -->
+    <string name="dialog_btn_confirm_str">确认</string>
+    
+    <!-- 红包接龙 -->
+    <string name="str_redpacket_money">红包金额</string>
+    <string name="str_money_to_redpacket">开始红包接龙</string>
+    <string name="str_solitaire_redpacket">红包接龙</string>
+    <string name="str_harem_solitaire_redpacket_rule">后宫红包接龙规则</string>
+    <string name="str_current_redpacket_join_person">%1$s发起的红包接龙，当前参与%2$s人</string>
+    <string name="str_current_redpacket_money_type">当前红包%1$s</string>
+    <string name="str_open_redpacket">开启红包</string>
+    <string name="str_group_error">群错误</string>
+    <string name="str_current_money">当前%1$s数：%2$s</string>
+    <string name="str_has_join_person">已有%1$s人次参与</string>
+    <string name="str_open_redpacket_pay_for">尝试开启红包需要支付</string>
+    <string name="str_the_redpacket_is_overdue">该红包已被领取或已过期</string>
+    <string name="str_so_sorry">很遗憾</string>
+    <string name="str_redpacket_gold_add">开启红包失败，红包%1$s增加到：</string>
+    <string name="str_congratulations">恭喜你</string>
+    <string name="str_open_solitaire_redpacket_success">开启红包成功，获得%1$s:</string>
+    <string name="str_send_solitaire_redpacket_fail">发送接龙红包失败</string>
+    <string name="str_the_redpacket_open_success_by_other">该红包已被领取或已过期</string>
+    <string name="str_the_redpacket_open_success_by_you">该红包已被领取或已过期</string>
+    <string name="str_the_redpacket_open_success">%1$s的运气逆天了，开启%2$s红包成功，共获得金币%3$s，大家快来打劫呀。</string>
+    <string name="str_the_redpacket_time_out">经过了%1$s分钟，%2$s的红包依然没有被大家开启，连本带利收到金币%3$s。</string>
+    <string name="str_the_redpacket_time_out2">经过了%1$s秒，%2$s的红包依然没有被大家开启，连本带利收到金币%3$s。</string>
+    <string name="str_system_error">系统错误</string>
+    <string name="str_sotaire_redpacket_des">红包接龙说明</string>
+    <string name="str_get_redpacket">领取红包</string>
+    <string name="str_wait_you_open_redpacket">还有很多红包等你来开启，加油哟！</string>
+    
+    <!-- v认证 -->
+    <string name="str_unauth">未认证</string>
+    <string name="str_auth">已认证</string>
+    <string name="str_new_version">最新版本</string>
+    
+    <string name="str_car_run">开着</string>
+    <string name="str_car_login">闪亮登场</string>
+    
+    <!-- 大厅红包 -->
+    <string name="str_hall_solitaire_redpacket_rule">大厅红包接龙规则</string>
+    <string name="str_someone_a_redpacket_everyone_grap">%1$s的红包，大家加油抢哟!</string>
+    <string name="str_please_select_gold_or_silver_redpacket">请选择金币或是银币红包:</string>
+    <string name="str_redpacket_num">红包个数</string>
+    <string name="str_a">个</string>
+    <string name="str_hall_send_redpacket">大厅发红包</string>
+    <string name="str_single_amount">单个金额</string>
+    <string name="str_total_amount_fight">总金额&#160;(拼)</string>
+    <string name="str_get_amount_random_everyone">每个人抽取的金额随机</string>
+    <string name="str_get_amount_fixed_everyone">每个人抽取的金额固定</string>
+    <string name="str_change_normal_redpacket">改为普通红包</string>
+    <string name="str_change_luck_redpacket">改为拼手气红包</string>
+    <string name="str_good_luck">恭喜发财,大吉大利!</string>
+    <string name="str_the_money_to_redpacket">塞钱进红包</string>
+    <string name="str_solitaire_redpacket_unuse">红包接龙暂停使用，请稍后再试。</string>
+    <string name="str_click_get_redpacket">点击领取红包</string>
+    <string name="str_official_redpacket">静静官方红包</string>
+    <string name="str_someone_a_redpacket">的红包</string>
+    <string name="str_see_everyone_luck">查看大家的手气>></string>
+    <string name="str_the_redpacket_not_money">手慢了，红包派完了</string>
+    <string name="str_the_hall_redpacket_time_out">超过%1$s未领取，红包已失效</string>
+    <string name="str_the_redpacket_list">红包列表</string>
+    <string name="str_hall_redpacket_detail">红包详情</string>
+    <string name="str_fight">&#160;(拼)</string>
+    <string name="str_normal">&#160;(普)</string>
+    <string name="str_official">静静官方</string>
+    <string name="str_money_has_deposit_id">金额已存入账户</string>
+    <string name="str_the_redpacket_desc">%1$s个红包，共%2$s</string>
+    <string name="str_the_redpacket_time_no_money">，%1$s被抢光</string>
+    <string name="str_luck_no1">手气最佳</string>
+    <string name="str_peipei_redpacket">静静红包</string>
+    <string name="str_redpacket_unable">红包已失效</string>
+    <string name="str_please_input_redpacket_num">请输入红包个数</string>
+    <string name="str_please_input_redpacket_money">请输入红包金额</string>
+    <string name="str_hall_current_money">当前%1$s：%2$s</string>
+    <string name="str_archway_des">%1$s送给%2$s%3$s</string>
+
+    <string-array name="specific_man_array">
+        <item>流星雨</item>
+        <item>万箭阵</item>
+        <item>一箭钟情</item>
+        <item>变变变</item>
+        <item>真爱永恒</item>
+    </string-array>
+    <string-array name="specific_woman_array">
+        <item>鸿毛雨</item>
+        <item>玫瑰花语</item>
+        <item>烈焰红唇</item>
+        <item>天马流星拳</item>
+        <item>甜蜜热气球</item>
+    </string-array>
+    <string-array name="chat_button_array">
+        <item>照片</item>
+        <item>拍照</item>
+        <item>阅后即焚</item>
+        <item>视频</item>
+    </string-array>
+    <string-array name="chat_button_array_group">
+        <item>照片</item>
+        <item>拍照</item>
+        <item>猜拳</item>
+        <item>发红包</item>
+        <item>大冒险</item>
+        <item>红包接龙</item>
+    </string-array>
+    <string-array name="chat_button_array_group2">
+        <item>照片</item>
+        <item>拍照</item>
+        <item>发红包</item>
+    </string-array>
+    <string-array name="chat_buttom_array_reward">
+        <item>照片</item>
+        <item>拍照</item>
+        <item>阅后即焚</item>
+        <item>视频</item>
+    </string-array>
+    <string-array name="show_button_array">
+        <item>广播</item>
+        <item>宝箱</item>
+    </string-array>
+
+    <!-- 服务协议 -->
+    <string name="agreement">用户服务协议</string>
+    <string name="login_agreement_content">使用静静，就表示您同意静静的</string>
+    <string name="service_agreement">一、服务协议的确认和接纳\n
+静静及其涉及到的产品、相关软件的所有权和运作权归深圳土人科技有限公司（以下简称土人科技）所有， 土人科技享有对静静上一切活动的监督、提示、检查、纠正及处罚等权利。用户通过注册程序阅读本服务条款完成注册，即表示用户与土人科技已达成协议，自愿接受本服务条款的所有内容。如果用户不同意服务条款的条件，则不能获得使用静静服务以及注册成为静静用户的权利。
+\n\n
+二、服务保护条款
+\n1、 土人科技运用自己的应用通过国际互联网络为用户提供各项服务，用户必须:
+\n（a）提供移动上网设备。
+\n（b）个人上网和支付与此服务有关的相关费用。
+\n2、考虑到土人科技产品服务的重要性，当有需要时用户同意:
+\n（a）提供及时、详尽及准确的个人资料。
+\n（b）不断更新注册资料，符合及时、详尽准确的要求。所有原始键入的资料将引用为注册资料。
+\n3、用户可授权土人科技向第三方透露其注册资料，否则土人科技不能公开用户的姓名、住址、出件地址、电子邮箱、帐号。除非:
+\n（a）事先获得用户明确授权后，用户要求土人科技或授权某人通过电子邮件服务或其他方式透露这些信息。
+\n（b）相应的法律、法规要求以及按照有关政府主管部门的要求，需要土人科技提供用户的个人资料。
+\n（c）为了维护公众以及静静合法利益。
+\n（d）静静可能会与第三方合作向用户提供相关的网络服务，在此情况下，如该第三方同意承担与静静同等的保护用户隐私的责任，则静静有权将用户的注册资料等提供给该第三方。
+\n（e）在不透露单个用户隐私资料的前提下，静静有权对整个用户数据库进行分析并对用户数据库进行商业上的利用。
+\n4、如果用户提供的资料不准确，不真实，不合法有效，土人科技保留结束用户使用静静各项服务的权利。
+\n用户在享用土人科技各项服务的同时，同意接受土人科技提供的各类信息服务。
+\n5、土人科技定义的信息内容包括:文字、软件、声音、相片、录像、图表；在广告中全部内容；土人科技为用户提供的商业信息等，所有这些内容受版权、商标权、和其它知识产权及所有权法律的保护。所以，用户只能在土人科技授权下才能使用这些内容，而不能擅自复制、修改、编撰这些内容、或创造与内容有关的衍生产品。
+\n6、如果用户未遵守本服务条款的任何一项，土人科技有权利即终止提供一切服务，并保留通过法律手段追究责任的权利。
+\n7、使用静静提供的服务由用户自己承担风险，在适用法律允许的最大范围内，土人科技在任何情况下不就因使用或不能使用静静提供的服务所发生的特殊的、意外的、直接或间接的损失承担赔偿责任。即使已事先被告知该损害发生的可能性。
+\n8、用户须明白，使用静静提供的服务涉及到Internet服务和电信服务，可能会受到各个环节不稳定因素的影响。因此服务存在因不可抗力、计算机病毒或黑客攻击、国家相关行业主管部门及电信运营商的调整、系统不稳定、用户所在位置、用户关机以及其他任何技术、互联网络、通信线路原因等造成的服务中断或不能满足用户要求的风险。用户须承担以上风险，土人科技不作担保。对因此导致用户不能发送、上传和接受阅读消息、或接发错消息，或无法实现其他通讯条件，土人科技不承担任何责任。
+\n9、用户须明白，在使用静静提供的服务存在有来自任何他人的包括威胁性的、诽谤性的、令人反感的或非法的内容或行为或对他人权利的侵犯（包括知识产权、肖像权）的匿名或冒名的信息的风险，用户须承担以上风险，土人科技和合作公司对服务不作任何类型的担保，不论是明确的或隐含的，包括所有有关信息真实性、适用性、所有权和非侵权性的默示担保和条件，
+对因此导致任何因用户不正当或非法使用服务产生的直接、间接、偶然、特殊及后续的损害，不承担任何责任。
+
+\n\n三、用户使用规则
+\n1、特别提示用户，使用互联网必须遵守国家有关的政策和法律，包括刑法、国家安全法、保密法、计算机信息系统安全保护条例等，保护国家利益，保护国家安全，对于违法使用互联网络而引起的一切责任，由用户负全部责任。 
+\n2、用户启动软件后，土人科技将给予每个用户一个用户帐号，该用户帐号和密码由用户负责保管；用户应当对以其用户帐号进行的所有活动和事件负法律责任。
+\n3、用户不得使用静静服务发送或传播敏感信息和违反国家法律制度的信息，包括但不限于下列信息:
+\n(a) 反对宪法所确定的基本原则的；
+\n(b) 危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；
+\n(c) 损害国家荣誉和利益的；
+\n(d) 煽动民族仇恨、民族歧视，破坏民族团结的；
+\n(e) 破坏国家宗教政策，宣扬邪教和封建迷信的；
+\n(f) 散布谣言，扰乱社会秩序，破坏社会稳定的；
+\n(g) 散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；
+\n(h) 侮辱或者诽谤他人，侵害他人合法权益的；
+\n(i) 含有法律、行政法规禁止的其他内容的。
+\n4、用户在使用静静络服务过程中，必须遵循以下原则:
+\n(a) 遵守中国有关的法律和法规；
+\n(b) 不得为任何非法目的而使用网络服务系统；
+\n(c) 遵守所有与网络服务有关的网络协议、规定和程序；
+\n(d) 不得利用静静网络服务系统进行任何可能对互联网的正常运转造成不利影响的行为；
+\n(e) 不得利用静静网络服务系统传输任何骚扰性的、中伤他人的、辱骂性的、恐吓性的、庸俗淫秽的或其他任何非法的信息资料；
+\n(f) 不得利用静静网络服务系统进行任何不利于土人科技的行为。
+\n5、使用静静服务，用户应加强个人资料的保护意识，并注意个人密码的密码保护。
+\n6、盗取他人用户帐号或利用网络通讯骚扰他人，均属于非法行为。用户不得采用测试、欺骗等任何非法手段，盗取其他用户的帐号和对他人进行骚扰。
+
+\n\n四、服务条款的修改
+\n土人科技会在必要时修改服务条款，服务条款一旦发生变动，公司将会在用户进入下一步使用前的页面提示修改内容。如果你不接受，则及时取消你的用户使用服务资格。
+\n用户要继续使用静静各项服务需要两方面的确认:
+\n1、首先确认静静服务条款及其变动。
+\n2、同意接受所有的服务条款限制。
+
+\n\n五、服务修订
+\n土人科技特别提示用户，土人科技为了保障公司业务发展和调整的自主权， 土人科技拥有随时修改或中断服务而不需通知用户的权利，土人科技行使修改或中断服务的权利不需对用户或任何第三方负责。用户必须在同意本条款的前提下，土人科技才开始对用户提供服务。
+
+\n\n六、用户隐私制度
+\n尊重用户个人隐私是土人科技的一项基本政策。所以，作为对以上第二点个人注册资料分析的补充，土人科技一定不会公开、编辑或透露用户的注册资料及保存在土人科技各项服务中的非公开内容，除非土人科技在诚信的基础上认为透露这些信息在以下几种情况是必要的:
+\n1、遵守有关法律规定，包括在国家有关机关查询时，提供用户在静静的网页上发布的信息内容及其发布时间、互联网地址或者域名以及其他用户上传至静静的信息。
+\n2、遵从静静产品服务程序。
+\n3、保持维护土人科技的商标所有权。
+\n4、在紧急情况下维护用户个人和社会大众的隐私安全。
+\n5、土人科技认为必要的其他情况下。
+\n用户在此授权土人科技可以向其电子邮箱发送商业信息。
+
+\n\n七、拒绝提供担保
+\n土人科技明确表示不提供任何类型的担保，不论是明确的或隐含的。 土人科技不担保服务一定能满足用户的要求，也不担保服务不会受中断，对服务的及时性、安全性、出错发生都不作担保。土人科技拒绝提供任何担保，包括信息能否准确、及时、顺利地传送。 用户理解并接受下载或通过土人科技产品服务取得的任何信息资料取决于用户自己，并由其承担系统受损或资料丢失的所有风险和责任。土人科技对在服务网上得到的任何商品购物服务或交易进程，都不作担保。用户不会从土人科技收到口头或书面的意见或信息，土人科技也不会在这里作明确担保。
+
+\n\n八、有限责任
+\n土人科技对直接、间接、偶然、特殊及继起的损害不负责任，这些损害来自:不正当使用产品服务，在网上购买商品或类似服务，在网上进行交易，非法使用服务或用户传送的信息有所变动。用户的上述行为引起对土人科技或第三方的损害，应当依法承担责任并向土人科技进行赔偿，土人科技可以自行或协助第三方使用用户提供的任何信息进行维权。
+
+\n\n九、未经土人科技同意禁止进行商业性行为
+\n用户承诺不经土人科技书面同意，不能利用土人科技各项服务在静静或相关网站上进行销售或其他商业性行为。用户违反此约定，土人科技将依法追究其违约责任，由此给土人科技造成损失的，土人科技有权进行追偿。
+
+\n\n十、静静用户信息的储存及限制
+\n土人科技不对用户所发布信息的删除或储存失败负责。土人科技保留判定用户的行为是否符合静静服务条款的要求和精神的权利，如果用户违背了服务条款的规定，则中断或删除其虚拟社区服务。
+
+\n\n十一、保障
+\n用户同意保障和维护土人科技全体成员的利益，负责支付由用户违反本服务条款或为纠正用户的违反行为所引起的律师费用、诉讼费用、公正费用、鉴定费用、执行费用等，以及因违反服务条款的引起损害赔偿费用，其他人使用用户的电脑、帐号和其它知识产权的追索费。 如用户的密码、帐户被盗用，除非该事件由于土人科技的过失导致，否则用户应承担被盗用期间产生的一切责任和后果。
+
+\n\n十二、结束服务
+\n用户或土人科技可随时根据实际情况中断服务。土人科技不需对任何个人或第三方负责而随时中断服务。用户若反对任何服务条款的建议或对后来的条款修改有异议，或对土人科技服务不满，用户享有以下的追索权:
+\n1、不再使用土人科技及（或）静静的服务。
+\n2、结束用户使用土人科技及（或）静静服务的资格。
+\n3、书面通告土人科技停止该用户的服务。
+\n结束用户服务后，用户使用土人科技服务的权利马上中止。从那时起，土人科技不再对用户承担任何义务。
+
+\n\n十三、通告
+\n所有发给用户的通告都可通过电子邮件、及时消息或常规的信件传送。土人科技会通过邮件服务发报消息给用户，告诉他们服务条款的修改、服务变更、或其它重要事情。同时， 土人科技保留对静静用户投放商业性广告的权利。
+
+\n\n十四、参与广告策划
+\n在土人科技书面许可下用户可在他们发表的信息中加入宣传资料或参与广告策划，在静静各项免费服务上展示他们的产品。任何这类促销方法，包括运输货物、付款、服务、商业条件、担保及与广告有关的描述都只是在相应的用户和广告销售商之间发生。 土人科技不承担任何责任，土人科技没有义务为这类广告销售负任何一部分的责任。
+
+\n\n十五、关于静静增值服务业务
+\n1、只有同意静静制订的使用条件和条款的用户才能使用静静增值服务。
+\n2、支付确认是指用户用选择的支付方法申请结算后, 静静进行的确认。 静静在结算时将把用户填写的内容默认为全部是事实, 填写虚假内容的用户不受到法律保护以及不会获得静静各项服务的保障。另外对违反本款的用户静静有权终止其使用静静提供的服务、取消其用户资格, 并不允许重新加入用户。
+\n3、静静对信誉不良的注册用户或延期支付的用户有权限制其使用相关的静静服务。
+\n4、如由于可归责于静静单方的原因致使用户购买的内容出现破损、被无故删除的情况，静静将为用户提供再充值或复原相应内容。
+
+\n\n十六、知识产权
+\n用户保证和声明对其所提供的作品拥有完整的合法的著作权或完整的合法的授权可以用于其在静静上从事的活动，保证土人科技使用该作品不违反国家的法律法规，也不侵犯第三方的合法权益或承担任何义务。用户应对其所提供作品因形式、内容及授权的不完善、不合法所造成的一切后果承担完全责任。对于经用户本人创作并上传到静静的文本、图片、图形、音频或视频等，土人科技保留对其网站所有内容进行实时监控的权利，并有权依其独立判断对任何违反本协议约定的作品实施删除。土人科技对于删除用户作品引起的任何后果或导致用户的任何损失不负任何责任。因用户作品的违法或侵害第三人的合法权益而导致土人科技或其关联公司对第三方承担任何性质的赔偿、补偿或罚款而遭受损失（直接的、间接的、偶然的、惩罚性的和继发的损失），用户对于土人科技或其关联公司蒙受的上述损失承担全面的赔偿责任。
+
+\n\n十七、言论
+\n用户承诺发表言论要:爱国、守法、自律、真实、文明。不传输任何非法的、骚扰性的、中伤他人的、辱骂性的、恐吓性的、伤害性的、庸俗的，淫秽的、危害国家安全的、泄露国家机密的、破坏国家宗教政策和民族团结的以及其它违反法律法规及政策的内容。 若用户的行为不符合以上提到的服务条款， 土人科技将作出独立判断立即取消用户服务。用户需对自己在网上的行为承担法律责任。
+
+\n\n十八、内容的所有权
+\n内容的定义包括:文字、软件、声音、相片、录象、图表；在广告中的全部内容；电子邮件的全部内容；静静虚拟社区服务为用户提供的商业信息。所有这些内容均受版权、商标、标签和其它财产所有权法律的保护。所以，用户只能在土人科技和广告商授权下才能使用这些内容，而不能擅自复制、再造这些内容、或创造与内容有关的派生产品。
+
+\n\n十九、免责与赔偿声明
+\n1、若土人科技已经明示其网络服务提供方式发生变更并提醒用户应当注意事项，用户未按要求操作所产生的一切后果由用户自行承担。
+\n2、用户明确同意其使用土人科技服务所存在的风险将完全由其自己承担；因其使用土人科技服务而产生的一切后果也由其自己承担，土人科技对用户不承担任何责任。
+\n3、土人科技不担保网络服务一定能满足用户的要求，也不担保网络服务不会中断，对网络服务的及时性、安全性、准确性也都不作担保。
+\n4、用户同意保障和维护土人科技及其他用户的利益，由于用户发布内容违法、不真实、不正当、侵犯第三方合法权益，或用户违反本协议项下的任何条款而给土人科技或任何其他第三人造成损失，用户同意承担由此造成的损害赔偿责任。
+
+\n\n二十、法律
+\n用户和土人科技一致同意有关本协议以及使用土人科技的服务产生的争议交由仲裁解决，但是土人科技有权选择采取诉讼方式，并有权选择受理该诉讼的有管辖权的法院。若有任何服务条款与法律相抵触，那这些条款将按尽可能接近的方法重新解析，而其它条款则保持对用户产生法律效力和影响。
+
+\n\n二十一、青少年用户特别提示
+\n1、青少年及使用静静服务应该在父母和老师的指导下，正确学习使用网络。青少年避免沉迷虚拟的网络世界而影响日常的学习生活。
+\n2、青少年用户必须遵守全国青少年网络文明公约:
+\n要善于网上学习，不浏览不良信息；
+\n要诚实友好交流，不侮辱欺诈他人；
+\n要增强自护意识，不随意约会网友；
+\n要维护网络安全，不破坏网络秩序；
+\n要有益身心健康，不沉溺虚拟时空。
+
+
+\n\n二十二、活动和礼物
+静静中所有涉及到的活动礼物及奖品均由土人科技提供，与苹果公司无关
+
+
+\n\n二十三、其他
+\n1、土人科技将视向用户所提供服务内容之特性，要求用户在注册土人科技提供的有关服务时，遵守特定的条件和条款；如该特定条件和条款与以上服务条款有任何不一致之处，则已特定条件和条款为准。
+\n2、本服务条款中的任何条款无论因何种原因完全或部分无效或不具有执行力，其余条款仍应有效并且有约束力。
+\n3、本服务条款执行过程中所产生的任何问题本网站和用户都将友好协商解决。
+\n4、以上条款的解释权归土人科技最终所有。</string>
+
+</resources>

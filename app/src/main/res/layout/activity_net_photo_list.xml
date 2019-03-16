@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.tshang.peipei.view.PullToRefreshHeaderGridView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/photolist_gvw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/photolist_photo_bottom"
+            android:layout_below="@+id/net_photolist_ll_upload"
+            android:cacheColorHint="@null"
+            android:fadingEdge="none"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/default_padding_image_text_small"
+            android:listSelector="#00000000"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/default_padding_image_text_small" />
+
+        <LinearLayout
+            android:id="@+id/photolist_photo_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title_tabhost"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/photo_album_manager_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/photolist_photo_upload"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/default_height_title_tabhost"
+                    android:layout_weight="1"
+                    android:background="@drawable/click_bottom_selector_bg"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_padding_gridview_edge"
+                        android:src="@drawable/album_icon_upload" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/photo_list_upload"
+                        android:textColor="@color/peach"
+                        android:textSize="@dimen/default_textsize_15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/photolist_photo_manage"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/default_height_title_tabhost"
+                    android:layout_weight="1"
+                    android:background="@drawable/click_bottom_selector_bg"
+                    android:clickable="false"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/iv_photo_manage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_padding_gridview_edge"
+                        android:src="@drawable/album_icon_manage_un" />
+
+                    <TextView
+                        android:id="@+id/tv_photo_manage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/photo_list_manage"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/default_textsize_15" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/photo_album_delete_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/photolist_photo_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/default_height_title_tabhost"
+                    android:layout_weight="1"
+                    android:background="@drawable/click_bottom_selector_bg"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_padding_gridview_edge"
+                        android:src="@drawable/album_icon_yes" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/photo_list_delete"
+                        android:textColor="@color/peach"
+                        android:textSize="@dimen/default_textsize_15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/photolist_photo_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/default_height_title_tabhost"
+                    android:layout_weight="1"
+                    android:background="@drawable/click_bottom_selector_bg"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_padding_gridview_edge"
+                        android:src="@drawable/album_icon_no" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cancel"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/default_textsize_15" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/net_photolist_ll_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/person_bg_white"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/net_photolist_tv_uplod_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ProgressBar
+                android:id="@+id/net_photolist_pb"
+                style="@style/ProgressBar_Upload"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/net_photolist_lin_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_padding_gridview_edge"
+                        android:background="@drawable/album_icon_no" />
+
+                    <TextView
+                        android:id="@+id/net_photolist_tv_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="取消上传"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/net_photolist_ll_reupload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/album_icon_upload" />
+
+                    <TextView
+                        android:id="@+id/net_photolist_tv_reupload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/default_padding_gridview_edge"
+                        android:text="继续上传"
+                        android:textColor="@color/peach" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FullScreenStyle"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <TextView
+        style="@style/WrapContentStyle"
+        android:layout_margin="@dimen/default_padding_view_edge"
+        android:text="@string/str_sig"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/et_sig"
+        style="@style/FullWdithStyle"
+        android:layout_marginLeft="@dimen/default_padding_view_edge"
+        android:layout_marginRight="@dimen/default_padding_view_edge"
+        android:background="@drawable/main_img_list0_un"
+        android:gravity="top|left"
+        android:maxLength="257"
+        android:minHeight="@dimen/mine_edit_sig_height"
+        android:padding="@dimen/default_padding_view_edge"
+        android:textColorHint="@color/mine_sig_count"
+        android:textSize="@dimen/default_textsize_13" />
+
+    <TextView
+        android:id="@+id/tv_sig_count"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/default_padding_view_edge"
+        android:layout_marginTop="@dimen/default_padding_view_edge"
+        android:textColor="@color/mine_sig_count"
+        android:textSize="@dimen/default_textsize_13" />
+
+</LinearLayout>

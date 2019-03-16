@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FullScreenStyle"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_head_chat"
+        android:background="@drawable/main_bar_nav_un"
+        android:orientation="horizontal" >
+
+        <!-- 左边,返回键 -->
+
+        <TextView
+            android:id="@+id/title_tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_bar_nav_selector_two"
+            android:drawableLeft="@drawable/icon_black_back"
+            android:drawablePadding="@dimen/default_padding_gridview_edge"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/default_padding_view_edge"
+            android:paddingRight="@dimen/default_padding_view_text"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_15" />
+
+        <TextView
+            android:id="@+id/title_tv_mid"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/default_padding_view_edge"
+            android:layout_marginRight="@dimen/default_padding_view_edge"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_17" />
+
+        <!-- 中间显示的标题 -->
+
+        <TextView
+            android:id="@+id/title_tv_right"
+            style="@style/WrapContentStyle"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/default_padding_gridview_edge"
+            android:layout_marginRight="@dimen/default_padding_view_edge"
+            android:background="@drawable/activity_hot_rank_more_bg"
+            android:contentDescription="@null"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/rank_title_arrow"
+            android:gravity="center"
+            android:text="@string/beauty"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_head_chat"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            style="@style/FullScreenStyle"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/rank_text_new"
+                style="@style/FullScreenStyle"
+                android:background="@drawable/main_bar_tab1_bg_pr"
+                android:gravity="center"
+                android:text="@string/new_rank"
+                android:textColor="@color/peach"
+                android:textSize="@dimen/default_textsize_14" />
+
+            <View
+                android:id="@+id/rank_text_new_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/rank_bottom_line" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="@color/rank_vertical_divider_line" />
+
+        <RelativeLayout
+            style="@style/FullScreenStyle"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/rank_text_queen"
+                style="@style/FullScreenStyle"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="@string/glamour_rank"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/default_textsize_14" />
+
+            <View
+                android:id="@+id/rank_text_queen_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/rank_bottom_line"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="@color/rank_vertical_divider_line" />
+
+        <RelativeLayout
+            style="@style/FullScreenStyle"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/rank_text_king"
+                style="@style/FullScreenStyle"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="@string/riches_rank"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/default_textsize_14" />
+
+            <View
+                android:id="@+id/rank_text_king_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/rank_bottom_line"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="@color/rank_vertical_divider_line" />
+
+        <RelativeLayout
+            style="@style/FullScreenStyle"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/rank_text_game"
+                style="@style/FullScreenStyle"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="@string/game_rank"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/default_textsize_14" />
+
+            <View
+                android:id="@+id/rank_text_game_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/rank_bottom_line"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/FullScreenStyle">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/rank_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+        
+        <include layout="@layout/suspension_icon"/>
+    </RelativeLayout>
+
+</LinearLayout>

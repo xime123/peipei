@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_pop_braodcast_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="68dip"
+        android:background="@drawable/main_bg_black70" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dip"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/default_padding_gridview_edge" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/broadcast_img_pop" />
+
+            <RelativeLayout
+                android:id="@+id/pop_broadcast_all_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height_title"
+                android:background="@drawable/main_img_list1_selector"
+                android:padding="@dimen/default_padding_view_edge" >
+
+                <ImageView
+                    android:id="@+id/pop_broadcast_all_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/default_padding_gridview_edge"
+                    android:layout_toLeftOf="@+id/pop_broadcast_all_tv"
+                    android:src="@drawable/broadcast_img_choosel" />
+
+                <TextView
+                    android:id="@+id/pop_broadcast_all_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/str_all_broadcast"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_13" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pop_broadcast_my_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height_title"
+                android:background="@drawable/main_img_list2_selector"
+                android:padding="@dimen/default_padding_view_edge" >
+
+                <ImageView
+                    android:id="@+id/pop_broadcast_my_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/default_padding_gridview_edge"
+                    android:layout_toLeftOf="@+id/pop_broadcast_my_tv"
+                    android:src="@drawable/broadcast_img_choosel"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pop_broadcast_my_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/str_my_broadcast"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_13" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pop_broadcast_about_me_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height_title"
+                android:background="@drawable/main_img_list3_selector"
+                android:padding="@dimen/default_padding_view_edge" >
+
+                <ImageView
+                    android:id="@+id/pop_broadcast_about_me_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/default_padding_gridview_edge"
+                    android:layout_toLeftOf="@+id/pop_broadcast_about_me_iv"
+                    android:src="@drawable/broadcast_img_choosel"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pop_broadcast_about_me_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/str_about_me"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <TextView
+                    android:id="@+id/pop_broadcast_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/default_padding_gridview_edge"
+                    android:layout_toRightOf="@+id/pop_broadcast_about_me_tv"
+                    android:background="@drawable/message_img_redot1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize_10"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+</RelativeLayout>

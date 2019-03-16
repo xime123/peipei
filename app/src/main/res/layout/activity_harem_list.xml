@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#F8F8F8">
+    
+    <include 
+        layout="@layout/title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.tshang.peipei.vender.pulltoprefresh.library.PullToRefreshListView
+            android:id="@+id/harem_list_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/line_color"
+            android:fadingEdge="@color/transparent"
+            android:fastScrollEnabled="false"
+            android:listSelector="@color/transparent"
+            android:overScrollMode="never" />
+
+        <TextView
+            android:id="@+id/harem_list_not_data_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="20dip"
+            android:drawablePadding="5dip"
+            android:gravity="center"
+            android:text="@string/reward_list_empty"
+            android:textColor="@color/gray"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

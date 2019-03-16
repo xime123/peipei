@@ -1,0 +1,304 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
+-ignorewarnings
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-libraryjars libs/eventbus.jar
+
+-libraryjars libs/pushservice-4.5.1.8.jar
+-dontwarn com.baidu.**
+
+-keep class com.tencent.mm.sdk.openapi.WXMediaMessage {*;}
+-keep class com.tencent.mm.sdk.openapi.** implements com.tencent.mm.sdk.openapi.WXMediaMessage$IMediaObject {*;}
+
+-keep class com.alipay.android.app.IAlipay{*;}
+
+-keep class com.alipay.android.app.IAlixPay{*;}
+
+-keep class com.alipay.android.app.IRemoteServiceCallback{*;}
+
+#银联需要使用的R文件，这里请注意
+-keep public class com.tshang.peipei.R$*{
+     public static final int *;
+ }
+
+
+-keep class com.tshang.peipei.model.entity.** { * ; }
+-keep class com.tshang.peipei.storage.db.** { * ; }
+-keep class com.tshang.peipei.model.xutils.** { * ; }
+-keep class com.unionpay.upomp.bypay.** {*;}
+-keep public class mm.purchasesdk.** {*;}
+-keep public class com.ccit.mmwlan.** {*;}
+-keep public class com.lidroid.xutils.DownloadInfo**{*;}
+-keep public class org.CrossApp.lib.**{* ; }
+
+-keep class com.tshang.peipei.activity.store.StoreH5RechargeActivity$* {
+    public <fields>;
+    public <methods>;
+}
+-keep class com.tshang.peipei.activity.main.MainHallFragment$* {
+    public <fields>;
+    public <methods>;
+}
+-keep class com.tshang.peipei.activity.main.hall.HallBaseFragment$* {
+    public <fields>;
+    public <methods>;
+}
+-keep class com.tshang.peipei.activity.mine.MineFaqActivity$* {
+    public <fields>;
+    public <methods>;
+}
+-keep class com.tshang.peipei.activity.dialog.UpdateVoiceDialog$* {
+    public <fields>;
+    public <methods>;
+}
+
+-keep class com.tshang.peipei.activity.suspension.SuspensionActivity$* {
+    public <fields>;
+    public <methods>;
+}
+
+-keep class org.CrossApp.niuniuapp.NiuniuAppMain$* {
+    public <fields>;
+    public <methods>;
+}
+
+-keepattributes Exceptions,InnerClasses
+-keep public class com.alipay.android.app.** {
+    public <fields>;
+    public <methods>;
+}
+
+-keep public class com.tenpay.android.service.** {
+    public <fields>;
+    public <methods>;
+}
+
+
+#iapppay
+-keep class com.iapppay.mpay.** {*;}
+-keep public class com.iapppay.pay.mobile.iapppaysecservice.utils.DesProxy{
+    native <methods>;
+}
+-keep public class com.iapppay.pay.mobile.iapppaysecservice.ui.AlwaysMarqueeTextView{*;}
+
+ -keep public class com.iapppay.pay.mobile.iapppaysecservice.ui.MyGridView {*;}
+
+
+-keep public class com.iapppay.pay.mobile.iapppaysecservice.res2jar.String_List{
+     public <fields>;
+ }
+
+-keep public class  com.iapppay.pay.mobile.iapppaysecservice.res2jar.Id_List{
+     public <fields>;
+ }
+
+-keep public class com.iapppay.oneclickpay.PayUtil{*;}
+-keep public class com.iapppay.oneclickpay.IPayCallBack{*;}
+-keep public class com.yintong.pay.sdk.** {*;}
+-keep public class com.iapppay.fastpay.util.DesProxy{
+    native <methods>;
+}
+
+-keepattributes *Annotation*
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keep class com.path.android.jobqueue.** { *; }
+-keep class de.greenrobot.event.** { *; }
+-keep class com.baidu.** { *; }
+-keep class vi.com.** { *; }
+
+-keepclassmembers public class * extends android.view.View {
+   void set*(***);
+   *** get*();
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class com.tencent.open.TDialog$*
+-keep class com.tencent.open.TDialog$* {*;}
+-keep class com.tencent.open.PKDialog
+-keep class com.tencent.open.PKDialog {*;}
+-keep class com.tencent.open.PKDialog$*
+-keep class com.tencent.open.PKDialog$* {*;}
+
+-dontwarn sdk.**
+-keep class sdk.** { *; }
+
+-keepclassmembers class ** {
+    public void onEvent*(**);
+}
+
+-dontwarn cn.dm.**
+-keep class cn.dm.** { *; }
+
+-keep class cn.dm.android.ui.interaction.** {*;}  
+
+-keepattributes *Annotation*
+
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+#-dontpreverify
+-dontwarn
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+
+#-libraryjars ./libs/iapppay_plugin.jar
+
+#-----------keep-------------------
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class com.android.vending.licensing.ILicensingService
+
+-keepattributes Exceptions,InnerClasses
+-keep public class com.alipay.android.app.** {
+    public <fields>;
+    public <methods>;
+}
+
+# Keep names - Native method names. Keep all native class/method names.
+-keepclasseswithmembers,allowshrinking class * {
+    native <methods>;
+}
+
+-keepclasseswithmembers,allowshrinking class * {
+    public <init>(android.content.Context,android.util.AttributeSet);
+}
+
+-keepclasseswithmembers,allowshrinking class * {
+    public <init>(android.content.Context,android.util.AttributeSet,int);
+}
+
+-keepclassmembers enum  * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * extends android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+
+
+#--------------baidu-------------
+-keep class com.baidu.android.pay.** {*;}
+-keep class com.baidu.mtjstatsdk.** { *;}
+-keep class com.baidu.android.bba.common.** { *;}
+-keep class com.baidu.android.account.** {*;}
+
+
+#--------------unionpay--------------
+-keep class com.unionpay.** {*;}
+-keep class com.UCMobile.PayPlugin.** {*;}
+
+#--------------ecopay2.0--------------
+-keep class com.payeco.android.plugin.** {*;}
+-keep class org.apache.http.entity.mime.** {*;}
+-dontwarn com.payeco.android.plugin.**
+
+-keepclassmembers class com.payeco.android.plugin {
+  public *;
+}
+
+-keepattributes *Annotation*
+-keepattributes *JavascriptInterface*
+
+#--------------tenpay--------------
+-keep public class com.tenpay.android.service.** {
+    public <fields>;
+    public <methods>;
+}
+
+#--------------sms--------------
+-keep class com.iapppay.sms.** {*;}
+
+#--------------alipay-------------
+-keep class com.ta.utdid2.** {
+    public <fields>;
+    public <methods>;
+}
+-keep class com.ut.device.** {
+    public <fields>;
+    public <methods>;
+}
+-keep class com.alipay.android.app.** {
+    public <fields>;
+    public <methods>;
+}
+-keep class com.alipay.sdk.** {
+    public <fields>;
+    public <methods>;
+}
+-keep class com.alipay.mobilesecuritysdk.** {
+    public <fields>;
+    public <methods>;
+}
+-keep class HttpUtils.** {*;}
+
+
+#-----------keep iapppay-------------------
+-keep class com.iapppay.accountid.channel.ipay.IpayAccountApi {*;}
+-keep class com.iapppay.openid.channel.ipay.IpayOpenidApi {*;}
+-keep class com.iapppay.pay.channel.oneclickpay.OnekeyPayHandler {*;}
+-keep class com.iapppay.utils.RSAHelper {*;}
+-keep class com.iapppay.sdk.main.** {*;}
+-keep class com.iapppay.interfaces.callback.** {*;}
+
+-keep class com.iapppay.interfaces.** {
+    public <fields>;
+    public <methods>;
+}
+
+
+#iapppay UI
+-keep public class com.iapppay.ui.activity.** {
+    public <fields>;
+    public <methods>;
+}
+
+# View
+-keep public class com.iapppay.ui.widget.**{*;}
+
+#iapppay_sub_pay
+-keep public class com.iapppay.pay.channel.** {*;}
+
+-ignorewarning
+-keep public class * extends android.widget.TextView
+

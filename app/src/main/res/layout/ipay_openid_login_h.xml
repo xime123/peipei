@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/ipay_openid_color_value_1"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/v_title_aipay"
+        layout="@layout/ipay_openid_ui_title_bar_activity" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:fadingEdge="none"
+        android:scrollbarThumbVertical="@drawable/ipay_openid_scrollbar" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ipay_openid_color_value_1"
+            android:orientation="vertical" >
+
+            <!-- 注册tip ：请输入用户名和密码 -->
+
+            <LinearLayout
+                android:id="@+id/relativeLayout_login_register_tip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ipay_openid_color_value_2"
+                android:orientation="vertical" 
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_tips"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ipay_openid_margin_15"
+                    android:layout_marginRight="@dimen/ipay_openid_margin_15"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="@dimen/ipay_openid_margin_4"
+                    android:text="你已支付成功！为保证账户余额安全，请注册并设置支付密码"
+                    android:textColor="@color/ipay_openid_color_value_5"
+                    android:textSize="@dimen/ipay_openid_text_size_12" 
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/ipay_openid_margin_10"
+                    android:layout_marginBottom="@dimen/ipay_openid_margin_10"
+                    />
+
+            </LinearLayout>
+
+            <!-- 登录tip ：请输入用户名和密码 -->
+
+            <LinearLayout
+                android:id="@+id/relativeLayout_login_login_tip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ipay_openid_margin_17"
+                android:layout_marginRight="@dimen/ipay_openid_margin_17"
+                android:layout_marginTop="@dimen/ipay_openid_margin_20"
+                android:orientation="vertical" 
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="请输入您的爱贝帐号和密码"
+                    android:textColor="@color/ipay_openid_color_value_4"
+                    android:textSize="@dimen/ipay_openid_text_size_13" />
+
+                <View
+                    android:id="@+id/tv_tips_line2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginTop="@dimen/ipay_openid_margin_5"
+                    android:background="@color/ipay_openid_color_value_3"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ipay_openid_margin_15"
+                android:layout_marginRight="@dimen/ipay_openid_margin_15"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/ipay_openid_height_48"
+                android:layout_marginLeft="@dimen/ipay_openid_margin_15"
+                android:layout_marginRight="@dimen/ipay_openid_margin_15"
+                android:layout_marginTop="@dimen/ipay_openid_margin_40"
+                android:background="@drawable/ipay_openid_common_btn_bg_color"
+                android:textColor="@drawable/ipay_openid_common_btn_text_color"
+                android:textSize="@dimen/ipay_openid_text_size_14" 
+                android:text="登录"
+                />
+            
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ipay_openid_margin_17"
+	            android:layout_marginRight="@dimen/ipay_openid_margin_17"
+	            android:gravity="right"
+                >
+	            <TextView 
+	                android:id="@+id/tv_goto_font_msg"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="已有账户，"
+	                android:textSize="12sp"
+	                android:visibility="gone"
+	                />
+	            <TextView 
+	                android:id="@+id/tv_goto_regist"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="注册账号"
+	                 android:textColor="@color/ipay_openid_color_value_7_5"
+	                 android:textSize="@dimen/ipay_openid_text_size_12"
+	                />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/write_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg_pink"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title" />
+
+        <RelativeLayout
+            android:id="@+id/write_public_et_layout"
+            android:layout_width="match_parent"
+            android:layout_height="160dip"
+            android:layout_margin="@dimen/default_padding_queen_bottom"
+            android:background="@drawable/main_img_list0_un"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/topic_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/write_public_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topic_tv"
+                android:background="@color/transparent"
+                android:gravity="top"
+                android:hint="@string/write_hint"
+                android:imeOptions="actionSend|flagNoEnterAction"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+                android:lines="7"
+                android:maxLength="88"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/write_public_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="0/88"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/write_private_et_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_padding_queen_bottom"
+            android:background="@drawable/main_img_list0_un"
+            android:minHeight="140dip"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/write_et_sent_texts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:gravity="top"
+                android:hint="@string/write_hint"
+                android:imeOptions="actionSend|flagNoEnterAction"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+                android:lines="4"
+                android:paddingBottom="10dip"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <com.tshang.peipei.view.UnScrollGridview
+                android:id="@+id/write_gv_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="3dp"
+                android:listSelector="@drawable/click_selector_peach"
+                android:numColumns="3"
+                android:verticalSpacing="3dp" >
+            </com.tshang.peipei.view.UnScrollGridview>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/write_dynamic_checkbox"
+            style="@style/GiftCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="18dip"
+            android:checked="false"
+            android:gravity="center"
+            android:text="匿名发布"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/write_bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/default_height_title_tabhost"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <RelativeLayout
+                android:id="@+id/write_text_photo_take_photos"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/click_bottom_selector_bg"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/write_icon_camera"
+                    android:drawablePadding="@dimen/default_padding_gridview_edge"
+                    android:gravity="center"
+                    android:text="@string/take_photo"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/write_text_photo_choose_picture"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/click_bottom_selector_bg"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/write_icon_pic"
+                    android:drawablePadding="@dimen/default_padding_gridview_edge"
+                    android:gravity="center"
+                    android:text="@string/choose_picutre"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/write_text_photo_choose_emoji"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/click_bottom_selector_bg"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/write_text_photo_tv_emoji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/write_icon_emotion_selector"
+                    android:drawablePadding="@dimen/default_padding_gridview_edge"
+                    android:gravity="center"
+                    android:text="@string/emoji"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/write_ll_emoji_select"
+            android:layout_width="match_parent"
+            android:layout_height="195dip"
+            android:layout_gravity="bottom"
+            android:background="@drawable/person_bg_white"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/emoji_viewpager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none"
+                android:overScrollMode="never" />
+
+            <com.tshang.peipei.view.PageControlView
+                android:id="@+id/pageControlView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="18dip"
+                android:gravity="center" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

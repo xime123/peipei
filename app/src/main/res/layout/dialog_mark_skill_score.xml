@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop_bg_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding_view_text" >
+
+    <RatingBar
+        android:id="@+id/rb_dialog_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:max="50"
+        android:numStars="5"
+        android:progressDrawable="@drawable/rating_bar_full_big"
+        android:rating="5"
+        android:stepSize="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_padding_view_text"
+        android:layout_marginTop="@dimen/default_padding_view_text"
+        android:gravity="center_horizontal"
+        android:text="@string/str_click_the_stars_to_score"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/default_textsize_13" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ok_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/default_padding_view_text"
+            android:layout_weight="1"
+            android:background="@drawable/main_btn_big_selector"
+            android:paddingBottom="@dimen/default_padding_gridview_edge"
+            android:paddingTop="@dimen/default_padding_gridview_edge"
+            android:text="@string/cancel"
+            android:textSize="@dimen/default_textsize_15" />
+
+        <Button
+            android:id="@+id/ok_sure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/main_btn_big_selector"
+            android:paddingBottom="@dimen/default_padding_gridview_edge"
+            android:paddingTop="@dimen/default_padding_gridview_edge"
+            android:text="@string/submit"
+            android:textColor="@color/peach"
+            android:textSize="@dimen/default_textsize_15" />
+    </LinearLayout>
+
+</LinearLayout>

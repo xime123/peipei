@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="@dimen/default_padding_view_edge" >
+
+    <ImageView
+        android:id="@+id/dynamic_detail_reply_head"
+        android:layout_width="@dimen/default_height_head_chat"
+        android:layout_height="@dimen/default_height_head_chat"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/main_img_defaulthead_un" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip" >
+
+        <TextView
+            android:id="@+id/dynamic_detail_reply_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nice"
+            android:textColor="@color/peach"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/dynamic_detail_reply_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dynamic_detail_reply_nick"
+            android:text="你好我可以认识你么"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/dynamic_detail_reply_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dynamic_detail_reply_content"
+            android:text="2分钟前"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/dynamic_detail_reply_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dip"
+            android:src="@drawable/person_icon_reply" />
+
+        <com.tshang.peipei.view.ReplyChildListView
+            android:id="@+id/dynamic_detail_reply_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dynamic_detail_reply_time"
+            android:layout_marginTop="10dip"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:listSelector="@android:color/transparent" />
+    </RelativeLayout>
+
+</LinearLayout>

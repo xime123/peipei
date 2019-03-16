@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FullWdithStyle"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding_view_edge" >
+
+    <LinearLayout
+        style="@style/FullWdithStyle"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/WrapContentStyle"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/str_she_can_do_for_you"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            style="@style/WrapContentStyle"
+            android:layout_gravity="right|center_vertical"
+            android:contentDescription="@null"
+            android:src="@drawable/chat_skill_close"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.tshang.peipei.view.HorizontalListView
+        android:id="@+id/skill_hzlistview"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="@dimen/default_height_skill_popupwindow"
+        android:fadingEdge="@android:color/transparent"
+        android:scrollbars="none" />
+
+</LinearLayout>

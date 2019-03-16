@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_chat_right_head"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:paddingRight="@dimen/default_padding_gridview_edge" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_img_bubble2_pink"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/chat_item_head_right"
+        android:layout_width="@dimen/default_height_head_chat"
+        android:layout_height="@dimen/default_height_head_chat"
+        android:src="@drawable/main_img_defaulthead_pr" />
+
+</LinearLayout>

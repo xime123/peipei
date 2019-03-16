@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/default_height_title_tabhost"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/space_custom_talk"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_bar_menu_selector"
+            android:drawableLeft="@drawable/person_icon_chat"
+            android:drawablePadding="@dimen/default_padding_gridview_edge"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/default_padding_setting_tiltle"
+            android:text="@string/chat"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_13" />
+
+        <TextView
+            android:id="@+id/space_custom_attention"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_bar_menu_selector"
+            android:drawableLeft="@drawable/person_icon_attention_un"
+            android:drawablePadding="@dimen/default_padding_gridview_edge"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/default_padding_setting_tiltle"
+            android:text="@string/attention"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_13" />
+
+        <TextView
+            android:id="@+id/space_custom_warn"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_bar_menu_selector"
+            android:drawableLeft="@drawable/person_icon_warn_2"
+            android:drawablePadding="@dimen/default_padding_gridview_edge"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/default_padding_setting_tiltle"
+            android:text="@string/report"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_13" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/head_include"
+        layout="@layout/title" />
+
+    <LinearLayout
+        android:id="@+id/mine_male_lin_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head_include" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/mine_iv_background"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/person_img_defaultpic_small" />
+
+            <LinearLayout
+                android:id="@+id/head_feamale_ll_head"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/main_bg_black30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="90dp"
+                android:paddingTop="5dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/head_male_include_tv_nick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLength="8"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/default_textsize_15" />
+
+                        <TextView
+                            android:id="@+id/head_male_include_tv_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/default_textsize_15" />
+
+                        <TextView
+                            android:id="@+id/head_male_include_tv_constellation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/default_textsize_15" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rank_img_orange1"
+                                android:padding="2dp"
+                                android:text="金币"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/default_textsize_11" />
+
+                            <TextView
+                                android:id="@+id/head_male_include_tv_glamour"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/person_img_inforbg"
+                                android:padding="2dp"
+                                android:text="0"
+                                android:textColor="@color/orange"
+                                android:textSize="@dimen/default_textsize_11" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/rank_img_grey1"
+                                android:padding="2dp"
+                                android:text="银币"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/default_textsize_11" />
+
+                            <TextView
+                                android:id="@+id/head_male_include_tv_score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/person_img_inforbg"
+                                android:padding="2dp"
+                                android:text="0"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/default_textsize_11" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/head_male_include_tv_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/default_padding_gridview_edge"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/default_textsize_13" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/head_male_include_iv_head"
+                android:layout_width="@dimen/default_head_update_height"
+                android:layout_height="@dimen/default_head_update_height"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/main_img_defaulthead_selector" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mine_male_lin_head"
+        android:layout_margin="@dimen/default_padding_view_edge"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/custom_space_gender"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:background="@drawable/main_img_list1_selector"
+            android:padding="@dimen/default_padding_view_edge" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/gender"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <TextView
+                android:id="@+id/custom_space_gender_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/male"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/custom_space_age"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:background="@drawable/main_img_list2_selector"
+            android:padding="@dimen/default_padding_view_edge" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/age"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <TextView
+                android:id="@+id/custom_space_age_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/custom_space_constellation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:background="@drawable/main_img_list3_selector"
+            android:padding="@dimen/default_padding_view_edge" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/constellation"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <TextView
+                android:id="@+id/custom_space_constellation_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="无"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

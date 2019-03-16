@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/show_member_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/black"
+        android:background="@color/show_num_backgroud"
+        android:textSize="@dimen/default_textsize_13" />
+
+    <ListView
+        android:id="@+id/show_member_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:listSelector="@drawable/click_selector_peach" />
+
+    <TextView
+        android:id="@+id/show_member_empty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20dip"
+        android:drawablePadding="5dip"
+        android:gravity="center"
+        android:text="@string/str_no_data"
+        android:textColor="@color/gray"
+        android:visibility="gone" />
+
+</LinearLayout>

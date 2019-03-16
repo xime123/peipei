@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_show_room_item"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/default_padding_gridview_edge"
+    android:paddingLeft="@dimen/default_padding_gridview_edge"
+    android:paddingTop="@dimen/default_padding_gridview_edge" >
+
+    <ImageView
+        android:id="@+id/iv_show_room_user"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/iv_show_room_offical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/casino_xiu_guanicon"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/ll_show_room_item_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/casino_pic_bottom"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/default_padding_gridview_edge" >
+
+        <ImageView
+            android:id="@+id/iv_show_room_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@anim/fat_po_onshow" />
+
+        <TextView
+            android:id="@+id/tv_show_room_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_padding_gridview_edge"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_10" />
+    </LinearLayout>
+
+</RelativeLayout>

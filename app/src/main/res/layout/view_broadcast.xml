@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/ll_top_broadcast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.tshang.peipei.view.AutoScrollViewPager
+                android:id="@+id/autopager_topbroadcast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="6dip" />
+
+            <com.tshang.peipei.view.PageControlView
+                android:id="@+id/pageControlView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <ViewStub
+                android:id="@+id/viewstub_braodcast_animation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout="@layout/view_broadcast_animation" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/autopager_topbroadcast"
+                android:background="@drawable/main_top_line" />
+        </RelativeLayout>
+
+        <include layout="@layout/pulltorefreshlistview_not_clickcolor" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_redpacket"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="140dip"
+        android:layout_marginRight="7dip"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_redpacket_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:contentDescription="@null"
+            android:src="@drawable/chat_item_redpacket_bubble" />
+
+        <ImageView
+            android:id="@+id/iv_redpacket"
+            style="@style/WrapContentStyle"
+            android:layout_gravity="right"
+            android:background="@drawable/message_img_redot1"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_10" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_hall_redpacket"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="190dip"
+        android:layout_marginRight="7dip"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_hall_redpacket_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:contentDescription="@null"
+            android:src="@drawable/hall_redpacket_bubble" />
+
+        <ImageView
+            android:id="@+id/iv_hall_redpacket"
+            style="@style/WrapContentStyle"
+            android:layout_gravity="right"
+            android:background="@drawable/message_img_redot1"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_10" />
+    </FrameLayout>
+
+</FrameLayout>

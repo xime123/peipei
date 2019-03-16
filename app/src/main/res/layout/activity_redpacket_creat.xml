@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red_packet_bg_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/message_img_packet" />
+
+    <Button
+        android:id="@+id/btn_send_packet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_title"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/btn_send_red_envelope_bg_selector"
+        android:gravity="center"
+        android:text="@string/str_send_red_packet"
+        android:textColor="@color/red_packet_btn_text_color"
+        android:textSize="@dimen/default_textsize_18" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_receiver_red_packet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding_view_edge"
+            android:text="@string/str_my_receiver_red_packet"
+            android:textColor="@color/red_packet_common_text_color"
+            android:textSize="@dimen/default_textsize_14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/message_img_packet_1" />
+
+        <TextView
+            android:id="@+id/tv_send_red_packet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding_view_edge"
+            android:text="@string/str_my_send_red_packet"
+            android:textColor="@color/red_packet_common_text_color"
+            android:textSize="@dimen/default_textsize_14" />
+    </LinearLayout>
+
+</LinearLayout>

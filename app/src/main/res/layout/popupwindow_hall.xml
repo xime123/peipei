@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_pop_hall_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="68dip"
+        android:background="@drawable/main_bg_black70" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_padding_view_edge"
+        android:layout_marginRight="@dimen/default_padding_view_edge"
+        android:layout_marginTop="70dip"
+        android:background="@drawable/makefriend_select_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_padding_between_view"
+            android:layout_marginTop="@dimen/default_padding_view_text"
+            android:text="@string/str_sex"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_16" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_padding_between_view"
+            android:layout_marginRight="@dimen/default_padding_between_view"
+            android:layout_marginTop="@dimen/default_padding_view_edge"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_male"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/default_height_head_chat"
+                android:layout_weight="1"
+                android:background="@drawable/rb_hall_selector"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:gravity="center"
+                android:text="@string/male"
+                android:textColor="@drawable/rb_hall_textcolor_selector" />
+
+            <RadioButton
+                android:id="@+id/rb_female"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/default_height_head_chat"
+                android:layout_marginLeft="@dimen/default_padding_view_edge"
+                android:layout_weight="1"
+                android:background="@drawable/rb_hall_selector"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/female"
+                android:textColor="@drawable/rb_hall_textcolor_selector" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_padding_between_view"
+            android:layout_marginTop="@dimen/default_padding_between_view"
+            android:text="@string/str_type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_16" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_padding_between_view"
+            android:layout_marginRight="@dimen/default_padding_between_view"
+            android:layout_marginTop="@dimen/default_padding_view_edge"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_online"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/default_height_head_chat"
+                android:layout_weight="1"
+                android:background="@drawable/rb_hall_selector"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/hall_time"
+                android:textColor="@drawable/rb_hall_textcolor_selector" />
+
+            <RadioButton
+                android:id="@+id/rb_near"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/default_height_head_chat"
+                android:layout_marginLeft="@dimen/default_padding_view_edge"
+                android:layout_weight="1"
+                android:background="@drawable/rb_hall_selector"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:gravity="center"
+                android:text="@string/near"
+                android:textColor="@drawable/rb_hall_textcolor_selector" />
+
+            <RadioButton
+                android:id="@+id/rb_new"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/default_height_head_chat"
+                android:layout_marginLeft="@dimen/default_padding_view_edge"
+                android:layout_weight="1"
+                android:background="@drawable/rb_hall_selector"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:gravity="center"
+                android:text="@string/hall_new"
+                android:textColor="@drawable/rb_hall_textcolor_selector" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:layout_marginTop="@dimen/default_padding_between_view"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_hall_cancel_selector"
+                android:paddingBottom="@dimen/default_padding_gridview_edge"
+                android:paddingTop="@dimen/default_padding_gridview_edge"
+                android:text="@string/cancel"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/main_line_2" />
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@drawable/btn_hall_confirm_selector"
+                android:paddingBottom="@dimen/default_padding_gridview_edge"
+                android:paddingTop="@dimen/default_padding_gridview_edge"
+                android:text="@string/ok"
+                android:textColor="@color/peach"
+                android:textSize="@dimen/default_textsize_15" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

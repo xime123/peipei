@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/my_harem_brand_bg"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title" />
+
+        <RelativeLayout
+            android:layout_width="230dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/my_harem_brand_luck_box" >
+
+            <ImageView
+                android:id="@+id/patronize_head_iv"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/main_img_defaultpic_small" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/patronize_nick_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/my_harem_brand_luck_name_box"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_11" />
+
+        <Button
+            android:id="@+id/patronize_sure_btn"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/my_harem_homes_management_kicked_selector_bg"
+            android:text="@string/str_patronize"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_17" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/patronize_anim_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translucent_background"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/my_harem_brand_luck_head_box" >
+
+            <ImageView
+                android:id="@+id/patronize_head_self_iv"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/patronize_heart_self_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/my_harem_brand_luck_heart" />
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="260dp"
+            android:background="@drawable/my_harem_brand_luck_head_box" >
+
+            <ImageView
+                android:id="@+id/patronize_head_friend_iv"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/patronize_heart_friend_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="33dp"
+            android:layout_marginTop="230dp"
+            android:background="@drawable/my_harem_brand_luck_heart" />
+    </RelativeLayout>
+
+</FrameLayout>

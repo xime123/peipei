@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg_pink"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/str_set_passwd_title"
+            android:textColor="@color/red_findpwd"
+            android:textSize="@dimen/default_textsize_12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/main_img_list0_un"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edt_setpasswd_phone"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/str_input_phone"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="@dimen/default_padding_view_edge"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_16" />
+
+            <Button
+                android:id="@+id/btn_setpasswd_phone_code"
+                android:layout_width="105dp"
+                android:layout_height="33dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/main_btn_logout_selector"
+                android:text="@string/str_get_code"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_12" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_setpasswd_code"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/main_img_list0_un"
+            android:gravity="center_vertical"
+            android:hint="@string/str_input_code"
+            android:inputType="phone"
+            android:paddingLeft="@dimen/default_padding_view_edge"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/str_set_passwd_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_12" />
+
+        <EditText
+            android:id="@+id/edt_setpasswd_newpwd1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/main_img_list0_un"
+            android:gravity="center_vertical"
+            android:hint="@string/input_newpassword1"
+            android:inputType="textPassword"
+            android:maxLength="11"
+            android:paddingLeft="@dimen/default_padding_view_edge"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_16" />
+
+        <EditText
+            android:id="@+id/edt_setpasswd_newpwd2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/main_img_list0_un"
+            android:gravity="center_vertical"
+            android:hint="@string/input_newpassword2"
+            android:inputType="textPassword"
+            android:maxLength="11"
+            android:paddingLeft="@dimen/default_padding_view_edge"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_16" />
+
+        <Button
+            android:id="@+id/btn_setpasswd_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:layout_marginLeft="@dimen/default_padding_view_edge"
+            android:layout_marginRight="@dimen/default_padding_view_edge"
+            android:layout_marginTop="@dimen/default_padding_title_top"
+            android:background="@drawable/main_btn_big_selector"
+            android:paddingLeft="@dimen/default_padding_view_edge"
+            android:paddingRight="@dimen/default_padding_view_edge"
+            android:text="@string/submit"
+            android:textColor="@color/peach"
+            android:textSize="@dimen/default_textsize_15" />
+    </LinearLayout>
+
+</ScrollView>

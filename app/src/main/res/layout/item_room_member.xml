@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/click_list_selector_new"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/item_room_member_head"
+            android:layout_width="@dimen/default_height_head_chat"
+            android:layout_height="@dimen/default_height_head_chat"
+            android:background="@drawable/main_img_defaulthead_selector" />
+
+        <ImageView
+            android:id="@+id/item_room_member_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_padding_gridview_edge"
+            android:src="@drawable/broadcast_img_boy" />
+
+        <TextView
+            android:id="@+id/item_room_member_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:ellipsize="middle"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_15" />
+
+        <ImageView
+            android:id="@+id/iv_room_member_gradeinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_padding_gridview_edge" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/default_textsize_15" />
+
+        <Button
+            android:id="@+id/item_room_member_vip"
+            android:layout_width="60dp"
+            android:layout_height="34dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/casino_home_honored_selector"
+            android:text="@string/str_show_delete_vip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_13" />
+
+        <Button
+            android:id="@+id/item_room_member_out"
+            android:layout_width="50dp"
+            android:layout_height="34dp"
+            android:background="@drawable/casino_home_kicked_selector"
+            android:text="@string/str_harem_kicked_out"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_13" />
+
+        <TextView
+            android:id="@+id/item_room_member_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/peach"
+            android:textSize="@dimen/default_textsize_15"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/main_line" />
+
+</LinearLayout>

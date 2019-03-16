@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|left"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/default_padding_view_edge"
+    android:paddingRight="50dp"
+    android:paddingTop="@dimen/default_padding_view_edge" >
+
+    <include layout="@layout/item_chat_left_head" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_padding_image_text_small"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/chat_item_content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_img_bubblebg_white"
+            android:padding="@dimen/default_padding_view_edge"
+            android:textColor="@color/black"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/chat_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_padding_image_text_small"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_10" />
+    </LinearLayout>
+
+</LinearLayout>

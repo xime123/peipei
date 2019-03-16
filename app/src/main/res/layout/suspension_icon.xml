@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_susp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone" >
+
+    <ImageView
+        android:id="@+id/iv_susp_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="110dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="160dp"
+        android:contentDescription="@null"
+        android:src="@drawable/suspension_close" />
+
+</FrameLayout>

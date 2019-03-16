@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <com.tshang.peipei.activity.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom"
+        android:layout_marginBottom="-1dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/realtabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </com.tshang.peipei.activity.FragmentTabHost>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_title"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_bottom_hall"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_tabhost_hall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="@dimen/default_padding_image_text_small"
+                    android:text="@string/hall"
+                    android:textColor="@drawable/tabitem_txt_sel"
+                    android:textSize="@dimen/default_textsize_11" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_bottom_message"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_tabhost_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="@dimen/default_padding_image_text_small"
+                    android:text="@string/message"
+                    android:textColor="@drawable/tabitem_txt_sel"
+                    android:textSize="@dimen/default_textsize_11" />
+
+                <TextView
+                    android:id="@+id/tabText_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="-4dip"
+                    android:layout_toRightOf="@+id/tv_tabhost_message"
+                    android:background="@drawable/message_img_redot1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize_10" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_bottom_broadcast"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_tabhost_broadcast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="@dimen/default_padding_image_text_small"
+                    android:text="@string/str_broadcast"
+                    android:textColor="@drawable/tabitem_txt_sel"
+                    android:textSize="@dimen/default_textsize_11" />
+
+                <TextView
+                    android:id="@+id/tv_broadcast_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="-4dip"
+                    android:layout_toRightOf="@+id/tv_tabhost_broadcast"
+                    android:background="@drawable/message_img_redot1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize_10"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_bottom_rank"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_tabhost_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="@dimen/default_padding_image_text_small"
+                    android:text="发现"
+                    android:textColor="@drawable/tabitem_txt_sel"
+                    android:textSize="@dimen/default_textsize_11" />
+                
+                <ImageView
+                    android:id="@+id/tabText_new_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="-4dip"
+                    android:layout_toRightOf="@+id/tv_tabhost_rank"
+                    android:background="@drawable/message_img_redot0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_bottom_mine"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_tabhost_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="@dimen/default_padding_image_text_small"
+                    android:text="@string/mine"
+                    android:textColor="@drawable/tabitem_txt_sel"
+                    android:textSize="@dimen/default_textsize_11" />
+
+                <ImageView
+                    android:id="@+id/tabText_new_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="-4dip"
+                    android:layout_toRightOf="@+id/tv_tabhost_mine"
+                    android:background="@drawable/message_img_redot0" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_main_bottom_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_bg_black70"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+    </RelativeLayout>
+    
+    <include layout="@layout/suspension_icon"/>
+
+</RelativeLayout>

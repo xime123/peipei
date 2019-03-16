@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/str_please_select_gold_or_silver_redpacket"
+                android:textColor="@color/dialog_title" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <com.tshang.peipei.view.RedpacketCheckButton1
+                    android:id="@+id/redpacket_money_gold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+                <com.tshang.peipei.view.RedpacketCheckButton1
+                    android:id="@+id/redpacket_money_silver"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/hall_redpacket_num_bg"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:minWidth="70dp"
+                    android:text="@string/str_redpacket_num"
+                    android:textColor="@color/dialog_title" />
+
+                <EditText
+                    android:id="@+id/et_redpacket_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="numberSigned"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical|right"
+                    android:layout_weight="1"
+                    android:maxLength="2"
+                    android:singleLine="true"
+                    android:textSize="@dimen/default_textsize_13"
+                    android:background="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/str_a"
+                    android:textColor="@color/dialog_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/hall_redpacket_num_bg"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_total_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:minWidth="70dp"
+                    android:text="@string/str_total_amount_fight"
+                    android:textColor="@color/dialog_title" />
+
+                <EditText
+                    android:id="@+id/et_redpacket_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical|right"
+                    android:layout_weight="1"
+                    android:inputType="numberSigned"
+                    android:maxLength="18"
+                    android:singleLine="true"
+                    android:textSize="@dimen/default_textsize_13"
+                    android:background="@null" />
+
+                <TextView
+                    android:id="@+id/tv_money_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/gold_money"
+                    android:textColor="@color/dialog_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_everyone_amount_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_get_amount_random_everyone"
+                    android:textColor="@color/dialog_title"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <TextView
+                    android:id="@+id/tv_change_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/str_change_normal_redpacket"
+                    android:textColor="@color/default_redpacket_type"
+                    android:textSize="@dimen/default_textsize_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/hall_redpacket_num_bg"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/str_leave_message"
+                    android:textColor="@color/dialog_title" />
+
+                <EditText
+                    android:id="@+id/et_leave"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/str_good_luck"
+                    android:maxLength="25"
+                    android:textSize="@dimen/default_textsize_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_money"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/default_amount_num"
+                    android:textSize="@dimen/default_textsize_30" />
+
+                <TextView
+                    android:id="@+id/tv_total_money_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gold_money"
+                    android:singleLine="true"
+                    android:textColor="@color/dialog_title"
+                    android:textSize="@dimen/default_textsize_13" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_send"
+                style="@style/WrapContentStyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="23dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/solitaire_redpacket_send_bg"
+                android:gravity="center"
+                android:minWidth="200dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/str_the_money_to_redpacket"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_16" />
+
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/mine_sig_count"
+                android:layout_marginBottom="20dp"
+                android:textSize="@dimen/default_textsize_12" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

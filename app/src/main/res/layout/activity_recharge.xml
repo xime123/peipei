@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_padding_view_edge"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_balance"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_11" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/rank_img_orange1"
+            android:text="@string/gold_money"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_11" />
+
+        <TextView
+            android:id="@+id/recharge_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rank_img_orange2"
+            android:textColor="@color/orange2"
+            android:textSize="@dimen/default_textsize_11" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/rank_img_grey1"
+            android:text="@string/silver_money"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_11" />
+
+        <TextView
+            android:id="@+id/recharge_silver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rank_img_grey2"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/default_textsize_11" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/recharge_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_padding_view_edge"
+        android:background="@drawable/main_img_list0_un"
+        android:cacheColorHint="@null"
+        android:divider="@drawable/main_line"
+        android:fadingEdge="none"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_padding_between_view"
+        android:layout_marginRight="@dimen/default_padding_between_view"
+        android:layout_marginTop="@dimen/default_padding_view_edge"
+        android:text="@string/recharge_context"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/default_textsize_13" />
+
+</LinearLayout>

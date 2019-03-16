@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/title"
+        android:visibility="gone" />
+
+    <com.tshang.peipei.vender.pulltoprefresh.library.PullToRefreshListView
+        android:id="@+id/follower_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@android:color/transparent"
+        android:fadingEdge="@color/transparent"
+        android:fastScrollEnabled="false"
+        android:listSelector="@drawable/click_selector_peach"
+        android:overScrollMode="never" />
+
+    <TextView
+        android:id="@+id/follower_empty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20dip"
+        android:drawablePadding="5dip"
+        android:gravity="center"
+        android:text="@string/no_dynamic"
+        android:textColor="@color/gray"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/followers_for_me"
+        layout="@layout/view_dynamic_head" />
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_skill_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dip"
+        android:gravity="center"
+        android:minWidth="80dp"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textColor="@color/red"
+        android:textSize="@dimen/default_textsize_12" />
+
+    <TextView
+        android:id="@+id/tv_add_skill"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/default_padding_image_text_small"
+        android:background="@drawable/activity_space_skill_add_bg"
+        android:drawableLeft="@drawable/activity_space_skill_add"
+        android:drawablePadding="3dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:minWidth="80dp"
+        android:singleLine="true"
+        android:text="@string/str_space_skill_add"
+        android:textColor="@color/main_broadcast_item_text_color"
+        android:textSize="@dimen/default_textsize_12" />
+
+</LinearLayout>

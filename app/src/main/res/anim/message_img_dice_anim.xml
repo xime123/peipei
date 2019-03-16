@@ -1,0 +1,23 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/message_img_dice1"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/message_img_dice2"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/message_img_dice3"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/message_img_dice4"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/message_img_dice5"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/message_img_dice6"
+        android:duration="100"/>
+
+</animation-list>

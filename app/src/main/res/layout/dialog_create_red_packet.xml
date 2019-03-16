@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_send_redpacket_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/message_img_packet_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dip"
+        android:text="@string/str_account_coin"
+        android:textColor="@color/red_packet_dialog_text_color"
+        android:textSize="@dimen/default_textsize_13" />
+
+    <TextView
+        android:id="@+id/tv_account_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/orange2"
+        android:textSize="@dimen/default_textsize_18"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="250dip"
+        android:layout_height="@dimen/default_height_head_chat"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/message__packet_input"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/default_padding_view_text"
+        android:paddingRight="@dimen/default_padding_view_text" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_send_count"
+            android:textColor="@color/redpacket_send_text_color"
+            android:textSize="@dimen/default_textsize_16" />
+
+        <EditText
+            android:id="@+id/edt_send_red_envelope_count"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingLeft="@dimen/default_padding_gridview_edge"
+            android:paddingRight="@dimen/default_padding_gridview_edge"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/default_textsize_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_fen"
+            android:textColor="@color/redpacket_send_text_color"
+            android:textSize="@dimen/default_textsize_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dip"
+        android:layout_height="@dimen/default_height_head_chat"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/message__packet_input"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/default_padding_view_text"
+        android:paddingRight="@dimen/default_padding_view_text" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_send_total_money"
+            android:textColor="@color/redpacket_send_text_color"
+            android:textSize="@dimen/default_textsize_16" />
+
+        <EditText
+            android:id="@+id/edt_send_red_envelope_money"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:inputType="number"
+            android:maxLength="8"
+            android:paddingLeft="@dimen/default_padding_gridview_edge"
+            android:paddingRight="@dimen/default_padding_gridview_edge"
+            android:singleLine="true"
+            android:textColor="@color/orange2"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/default_textsize_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gold_money"
+            android:textColor="@color/redpacket_send_text_color"
+            android:textSize="@dimen/default_textsize_16" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_padding_gridview_edge"
+        android:gravity="right"
+        android:paddingLeft="@dimen/default_padding_view_text"
+        android:paddingRight="@dimen/default_padding_view_edge"
+        android:text="@string/str_get_random_coin"
+        android:textColor="@color/red_packet_dialog_text_color"
+        android:textSize="@dimen/default_textsize_16" />
+
+    <EditText
+        android:id="@+id/edt_send_red_envelope_describe"
+        android:layout_width="250dp"
+        android:layout_height="84dip"
+        android:layout_marginTop="@dimen/default_padding_view_text"
+        android:background="@drawable/message__packet_input"
+        android:gravity="top|left"
+        android:hint="恭喜发财~"
+        android:maxLength="20"
+        android:maxLines="4"
+        android:padding="@dimen/default_padding_view_text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="@dimen/default_textsize_16" />
+
+    <LinearLayout
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_padding_gridview_edge"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/default_padding_view_edge"
+        android:paddingRight="@dimen/default_padding_view_edge" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_pay_coin"
+            android:textColor="@color/red_packet_dialog_text_color"
+            android:textSize="@dimen/default_textsize_16" />
+
+        <TextView
+            android:id="@+id/tv_send_total_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gold_money"
+            android:textColor="@color/red_packet_dialog_text_color"
+            android:textSize="@dimen/default_textsize_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dip"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_send_envelope_cancel"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/default_height_head_chat"
+            android:layout_weight="1"
+            android:background="@drawable/message__packet_input"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/redpacket_send_text_color"
+            android:textSize="@dimen/default_textsize_18" />
+
+        <Button
+            android:id="@+id/btn_charity"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/default_height_head_chat"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_send_red_envelope_bg_selector"
+            android:gravity="center"
+            android:text="@string/str_charity"
+            android:textColor="@color/redpacket_send_text_color"
+            android:textSize="@dimen/default_textsize_18" />
+    </LinearLayout>
+
+</LinearLayout>

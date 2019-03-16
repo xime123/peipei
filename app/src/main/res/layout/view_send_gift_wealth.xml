@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/default_padding_view_edge" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_balance"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textsize_11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/rank_img_orange1"
+        android:padding="@dimen/default_padding_image_text_small"
+        android:text="@string/gold_money"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_textsize_11" />
+
+    <TextView
+        android:id="@+id/gift_gold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rank_img_orange2"
+        android:padding="@dimen/default_padding_image_text_small"
+        android:textColor="@color/orange2"
+        android:textSize="@dimen/default_textsize_11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/rank_img_grey1"
+        android:padding="@dimen/default_padding_image_text_small"
+        android:text="@string/silver_money"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_textsize_11" />
+
+    <TextView
+        android:id="@+id/gift_silver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rank_img_grey2"
+        android:padding="@dimen/default_padding_image_text_small"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/default_textsize_11" />
+
+    <View
+        android:layout_width="0dip"
+        android:layout_height="1dip"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/gift_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_btn_send_selector"
+        android:paddingBottom="@dimen/default_padding_gridview_edge"
+        android:paddingLeft="@dimen/default_padding_view_edge"
+        android:paddingRight="@dimen/default_padding_view_edge"
+        android:paddingTop="@dimen/default_padding_gridview_edge"
+        android:text="@string/recharge"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_textsize_15" />
+
+</LinearLayout>

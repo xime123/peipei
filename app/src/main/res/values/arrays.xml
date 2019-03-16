@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="fobiddenList">
+        <item>1.恶意辱骂</item>
+        <item>2.黄色信息</item>
+        <item>3.垃圾广告</item>
+        <item>4.政治敏感信息</item>
+    </string-array>
+    
+    <string-array name="aipay_charge_values">
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+    </string-array>
+
+</resources>

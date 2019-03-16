@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_chat_recording"
+    android:layout_width="140dp"
+    android:layout_height="80dp"
+    android:background="@drawable/message_img_recordingbg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="visible" >
+
+    <TextView
+        android:id="@+id/tv_chat_recording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/60“"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/iv_chat_recording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/message_img_recording"
+        android:contentDescription="@string/app_name" />
+
+</LinearLayout>

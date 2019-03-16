@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/iv_left_couplet"
+                style="@style/WrapContentStyle"
+                android:layout_gravity="center"
+                android:background="@anim/broadcast_magic_couplet_left_anim"
+                android:contentDescription="@null" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="165dp"
+                android:layout_marginLeft="5dp" >
+
+                <ImageView
+                    style="@style/WrapContentStyle"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:src="@drawable/couplet_post_decorate" />
+
+                <ImageView
+                    style="@style/WrapContentStyle"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/couplet_monekey_avatar" />
+
+                <ImageView
+                    android:id="@+id/iv_left_avatar"
+                    style="@style/WrapContentStyle"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@null"
+                    android:visibility="visible"
+                    android:background="@drawable/couplet_monekey_face" />
+
+                <ImageView
+                    style="@style/WrapContentStyle"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/couplet_magic_spell" />
+
+                <ImageView
+                    style="@style/WrapContentStyle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/couplet_monekey_blush" />
+
+                <ImageView
+                    style="@style/WrapContentStyle"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="3dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/couplet_monekey_blush" />
+
+                <ImageView
+                    style="@style/WrapContentStyle"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/couplet_monekey_hand" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/iv_right_couplet"
+                style="@style/WrapContentStyle"
+                android:layout_gravity="center"
+                android:background="@anim/broadcast_magic_couplet_right_anim"
+                android:contentDescription="@null" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="165dp"
+                android:layout_marginLeft="5dp" >
+
+                <ImageView
+                    style="@style/WrapContentStyle"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:src="@drawable/couplet_post_decorate" />
+
+                <ImageView
+                    style="@style/WrapContentStyle"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/couplet_monekey_avatar" />
+
+                <ImageView
+                    android:id="@+id/iv_right_avatar"
+                    style="@style/WrapContentStyle"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@null"
+                    android:visibility="visible"
+                    android:background="@drawable/couplet_monekey_face" />
+
+                <ImageView
+                    style="@style/WrapContentStyle"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/couplet_magic_spell" />
+
+                <ImageView
+                    style="@style/WrapContentStyle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/couplet_monekey_blush" />
+
+                <ImageView
+                    style="@style/WrapContentStyle"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="3dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/couplet_monekey_blush" />
+
+                <ImageView
+                    style="@style/WrapContentStyle"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/couplet_monekey_hand" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_floral"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:src="@drawable/couplet_floral"
+        android:visibility="gone" />
+
+</FrameLayout>

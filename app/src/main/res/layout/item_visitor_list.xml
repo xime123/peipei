@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/default_padding_view_edge" >
+
+    <ImageView
+        android:id="@+id/message_list_header_image"
+        android:layout_width="@dimen/default_height_head_chat"
+        android:layout_height="@dimen/default_height_head_chat"
+        android:background="@drawable/main_img_defaulthead_selector" />
+
+    <ImageView
+        android:id="@+id/message_list_header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_img_redot0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/default_padding_gridview_edge" >
+
+        <TextView
+            android:id="@+id/message_list_chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_15" />
+
+        <ImageView
+            android:id="@+id/message_list_chat_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/message_list_chat_name" />
+
+        <TextView
+            android:id="@+id/message_list_chat_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/default_textsize_13" />
+    </RelativeLayout>
+
+</LinearLayout>

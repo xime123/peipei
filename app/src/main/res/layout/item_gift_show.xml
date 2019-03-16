@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/gift_img_kuang_h"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/item_show_gift_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/item_show_gift_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textsize_12" />
+
+    <TextView
+        android:id="@+id/item_show_gift_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/default_textsize_10" />
+
+    <TextView
+        android:id="@+id/item_show_gift_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/gift_ranknum"
+        android:textSize="@dimen/default_textsize_10" />
+
+</LinearLayout>

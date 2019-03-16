@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:id="@+id/dare_item_user_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/dare_item_user_head_1"
+            android:layout_width="@dimen/default_height_head_chat"
+            android:layout_height="@dimen/default_height_head_chat"
+            android:src="@drawable/main_img_defaulthead_pr" />
+
+        <TextView
+            android:id="@+id/dare_item_user_nick_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_padding_image_text_small"
+            android:lineSpacingExtra="3dip"
+            android:minWidth="45dip"
+            android:padding="@dimen/default_padding_view_edge"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dare_item_user_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/dare_item_user_head_2"
+            android:layout_width="@dimen/default_height_head_chat"
+            android:layout_height="@dimen/default_height_head_chat"
+            android:src="@drawable/main_img_defaulthead_pr" />
+
+        <TextView
+            android:id="@+id/dare_item_user_nick_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_padding_image_text_small"
+            android:lineSpacingExtra="3dip"
+            android:minWidth="45dip"
+            android:padding="@dimen/default_padding_view_edge"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_13" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_img_dice_line" />
+
+    <TextView
+        android:id="@+id/dare_item_user_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="3dip"
+        android:padding="@dimen/default_padding_view_edge"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textsize_15" />
+
+</LinearLayout>

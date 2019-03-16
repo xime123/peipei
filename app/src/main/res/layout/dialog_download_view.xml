@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop_bg_white"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding_view_text" >
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:minHeight="89dip"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/default_padding_view_text" >
+
+            <TextView
+                android:id="@+id/download_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/default_padding_view_text"
+                android:layout_marginRight="@dimen/default_padding_view_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <ProgressBar
+                android:id="@+id/down_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="240dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/default_padding_view_text"
+                android:layout_marginRight="@dimen/default_padding_view_text"
+                android:layout_marginTop="@dimen/default_padding_view_text"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/default_padding_view_edge"
+        android:paddingTop="@dimen/default_padding_view_edge" >
+
+        <Button
+            android:id="@+id/download_cancel"
+            android:layout_width="81dip"
+            android:layout_height="@dimen/default_height_title"
+            android:layout_centerInParent="true"
+            android:background="@drawable/main_btn_big_selector"
+            android:text="@string/cancel"
+            android:textSize="@dimen/default_textsize_15" />
+    </RelativeLayout>
+
+</LinearLayout>

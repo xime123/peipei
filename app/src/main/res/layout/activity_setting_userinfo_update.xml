@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <EditText
+        android:id="@+id/setting_user_update_et1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/default_height_title"
+        android:layout_margin="@dimen/default_padding_view_edge"
+        android:background="@drawable/main_img_list0_un"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:maxLength="16"
+        android:paddingLeft="@dimen/default_padding_view_edge"
+        android:paddingRight="@dimen/default_padding_view_edge"
+        android:singleLine="true"
+        android:textSize="@dimen/default_textsize_13" />
+
+    <LinearLayout
+        android:id="@+id/setting_user_update_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/default_padding_view_edge"
+        android:layout_marginRight="@dimen/default_padding_view_edge"
+        android:layout_marginTop="@dimen/default_padding_view_edge"
+        android:background="@drawable/main_img_list0_un"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="原密码"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/setting_user_update_et2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:digits="._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ!@#$~^*()?{}:|;,[]+-="
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:hint="请输入原始密码"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_user_update_ll3"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="@dimen/default_padding_view_edge"
+        android:layout_marginRight="@dimen/default_padding_view_edge"
+        android:layout_marginTop="@dimen/default_padding_view_edge"
+        android:background="@drawable/main_img_list0_un"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="新密码"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/setting_user_update_et3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:digits="._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ!@#$~^*()?{}:|;,[]+-="
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:hint="6-16个字符"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/setting_user_update_btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_title"
+        android:layout_marginLeft="@dimen/default_padding_view_edge"
+        android:layout_marginRight="@dimen/default_padding_view_edge"
+        android:layout_marginTop="@dimen/default_padding_view_edge"
+        android:background="@drawable/main_btn_big_selector"
+        android:text="@string/save"
+        android:textColor="@color/peach"
+        android:textSize="@dimen/default_textsize_15" />
+
+</LinearLayout>

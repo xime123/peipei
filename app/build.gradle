@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+
+android {
+    //基本配置，编译的一些版本号及工具
+    compileSdkVersion VERSION_SDK as int
+    buildToolsVersion VERSION_BUILD_TOOLS as String
+    useLibrary 'org.apache.http.legacy'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion VERSION_BUILD_TOOLS as String
+    compileSdkVersion VERSION_SDK as int
+    //默认配置
+    defaultConfig {
+        aaptOptions.cruncherEnabled = false
+        aaptOptions.useNewCruncher = false
+        applicationId  APP_PACKAGE_NAME as String
+        minSdkVersion VERSION_MIN_SDK as int
+        targetSdkVersion VERSION_SDK as int
+        versionCode APP_VERSION_CODE as int
+        versionName APP_VERSION_NAME
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //ndk默认编译
+        ndk {
+            moduleName "Neptune"
+            abiFilters "armeabi", "armeabi-v7a"
+        }
+        //与ARouter有关，直接应用 lib包的，必须要加上这段，不然编译有问题
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+                includeCompileClasspath = true
+            }
+        }
+        //默认分包
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+        debug {
+            debuggable true
+            shrinkResources false
+            minifyEnabled false
+            zipAlignEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+    }
+
+
+    //一些lint的排错连接
+    lintOptions {
+        quiet true
+        abortOnError false
+        xmlOutput file("lint-report.xml")
+        htmlOutput file("lint-report.html")
+        //disable 'DefaultLocale','InvalidPackage','OldTargetApi','InflateParams','AppCompatCustomView','GradleDependency','GradleOverrides','Deprecated','StringFormatMatches','TrulyRandom','BadHostnameVerifier','HardwareIds','TrustAllX509TrustManager','Recycle','ObsoleteSdkInt', 'UseCompoundDrawables','UseSparseArrays','IconLocation','IconDensities','IconMissingDensityFolder','ContentDescription','RtlSymmetry','RtlHardcoded'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:support-v4:20.0.0'
+    implementation files('libs/BDAutoUpdateSDK_20150605_V1.2.0.jar')
+    implementation files('libs/eventbus.jar')
+    implementation files('libs/flexjson-2.1.jar')
+    implementation files('libs/iapppay_plugin.jar')
+    implementation files('libs/javabase64-1.3.1.jar')
+    implementation files('libs/jobqueue.jar')
+    implementation files('libs/libammsdk.jar')
+    implementation files('libs/locSDK_5.3.jar')
+    implementation files('libs/mta-sdk-1.0.0.jar')
+    implementation files('libs/need_lib.jar')
+    implementation files('libs/nineoldandroids-2.4.0.jar')
+    implementation files('libs/open_sdk.jar')
+    implementation files('libs/patchupdate.jar')
+    implementation files('libs/pushservice-4.5.1.8.jar')
+    implementation files('libs/snacc-2.3.jar')
+    implementation files('libs/weiboSDKCore_3.1.2.jar')
+    implementation files('libs/xUtils-2.6.14.jar')
+}

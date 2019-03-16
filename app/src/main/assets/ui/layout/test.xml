@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<view type="image" name="chat_icon" tag="10001" color="00ff00ff" image_path="png/chat_selected.png" x="100" y="100" width="120" height="105">
+		<view type="image" name="find_icon1" tag="10002" image_path="png/found_selected.png" x="100" y="100" width="120" height="105">
+					<view type="label" name="find_icon2" text="test" tag="10003" color="00ff00ff" x="0" y="50" width="120" height="105"/> 
+			</view> 
+		<view type="image" name="selected_icon" tag="10004" image_path="png/list_selected.png" x="200" y="200" width="120" height="105"/> 
+</view>
+	 
+ 
+	 

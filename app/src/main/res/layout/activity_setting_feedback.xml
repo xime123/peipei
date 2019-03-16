@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <EditText
+        android:id="@+id/setting_feedback_et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_padding_view_edge"
+        android:layout_marginRight="@dimen/default_padding_view_edge"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/main_img_list0_un"
+        android:gravity="top"
+        android:hint="写下您的宝贵建议~"
+        android:minLines="6"
+        android:padding="@dimen/default_padding_view_edge"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/setting_feedback_lin_contact"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_title"
+        android:layout_marginLeft="@dimen/default_padding_view_edge"
+        android:layout_marginRight="@dimen/default_padding_view_edge"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/main_img_list0_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/default_padding_view_edge"
+        android:paddingRight="@dimen/default_padding_view_edge" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系方式"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_15" />
+
+        <EditText
+            android:id="@+id/setting_feedback_edt_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/transparent"
+            android:hint="选填,QQ或Email"
+            android:inputType="textWebEmailAddress"
+            android:textSize="@dimen/default_textsize_15" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/setting_feedback_lin_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_title"
+        android:layout_marginLeft="@dimen/default_padding_view_edge"
+        android:layout_marginRight="@dimen/default_padding_view_edge"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/main_img_list0_selector"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textColor="@color/peach"
+        android:textSize="@dimen/default_textsize_15" />
+
+</LinearLayout>

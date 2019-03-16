@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/item_sdc_photo_grid_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@drawable/main_bg_pink"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/item_sdc_photo_grid_ivuncheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_sdc_photo_grid_iv"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/default_padding_view_text"
+        android:layout_marginRight="@dimen/default_padding_view_text"
+        android:background="@drawable/album_img_choose_un"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/item_sdc_photo_grid_ivcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_sdc_photo_grid_iv"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/default_padding_view_text"
+        android:layout_marginRight="@dimen/default_padding_view_text"
+        android:background="@drawable/album_img_choose_pr"
+        android:visibility="gone" />
+
+</RelativeLayout>

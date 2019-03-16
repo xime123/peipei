@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_dialog_select_sex_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hall_screening_horizontal_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="360dip"
+            android:layout_marginRight="360dip"
+            android:singleLine="true"
+            android:text="1"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/default_textsize_13"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_padding_view_text"
+            android:layout_marginTop="@dimen/default_padding_view_text"
+            android:text="@string/str_want_to_see_user"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/default_textsize_13" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_title"
+        android:layout_marginLeft="@dimen/default_padding_view_text"
+        android:layout_marginRight="@dimen/default_padding_view_text"
+        android:layout_marginTop="@dimen/default_padding_view_edge"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_sex_dialog_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_sex_dialog_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/default_padding_gridview_edge"
+                android:src="@drawable/hall_screening_ic_man_un" />
+
+            <TextView
+                android:id="@+id/tv_sex_dialog_man"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/male"
+                android:textColor="@color/blue_color"
+                android:textSize="@dimen/default_textsize_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sex_dialog_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/peach"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_sex_dialog_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/default_padding_gridview_edge"
+                android:src="@drawable/hall_screening_ic_woman_press" />
+
+            <TextView
+                android:id="@+id/tv_sex_dialog_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/female"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/hall_screening_horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_title"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_sex_cancel"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/click_selector_peach"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="#202020"
+            android:textSize="@dimen/default_textsize_15" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/hall_screening_vertical_line" />
+
+        <Button
+            android:id="@+id/btn_sex_ok"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/click_selector_peach"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/peach"
+            android:textSize="@dimen/default_textsize_15" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FullScreenStyle"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView style="@style/FullWdithStyle" >
+
+        <LinearLayout
+            style="@style/FullWdithStyle"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/FullWdithStyle"
+                android:layout_marginTop="@dimen/default_padding_view_text"
+                android:background="@drawable/find_item_selector"
+                android:orientation="vertical"
+                android:padding="@dimen/default_padding_view_text" >
+
+                <LinearLayout
+                    style="@style/FullWdithStyle"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/WrapContentStyle"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="@string/str_hope_goddess_skill"
+                        android:textColor="@color/space_black"
+                        android:textSize="@dimen/default_textsize_15" />
+
+                    <TextView
+                        android:id="@+id/tv_skill"
+                        style="@style/WrapContentStyle"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/default_textsize_12" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_skill_des"
+                    style="@style/WrapContentStyle"
+                    android:textSize="@dimen/default_textsize_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/FullWdithStyle"
+                android:orientation="horizontal"
+                android:padding="@dimen/default_padding_view_text" >
+
+                <TextView
+                    style="@style/WrapContentStyle"
+                    android:text="@string/reward_gift_title"
+                    android:textColor="@color/space_black"
+                    android:textSize="@dimen/default_textsize_15" />
+
+                <TextView
+                    android:id="@+id/tv_gift_name"
+                    style="@style/WrapContentStyle"
+                    android:layout_marginLeft="@dimen/default_margin_view"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/default_textsize_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/FullWdithStyle"
+                android:background="@drawable/find_item_selector"
+                android:orientation="vertical" >
+
+                <com.tshang.peipei.view.RewardGiftViewPager
+                    android:id="@+id/skill_gift_viewpage"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center"
+                    android:overScrollMode="never" />
+
+                <EditText
+                    android:id="@+id/et_postscript"
+                    style="@style/FullWdithStyle"
+                    android:layout_marginLeft="@dimen/default_padding_view_text"
+                    android:layout_marginRight="@dimen/default_padding_view_text"
+                    android:layout_marginTop="@dimen/default_padding_setting_tiltle"
+                    android:background="@drawable/chat_input_bg"
+                    android:gravity="top"
+                    android:hint="@string/str_input_postscript"
+                    android:maxLength="50"
+                    android:minHeight="@dimen/skill_invite_edit_height"
+                    android:textColorHint="@color/default_hint_color"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <TextView
+                    android:id="@+id/tv_postscript_count"
+                    style="@style/WrapContentStyle"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/default_padding_view_edge"
+                    android:layout_marginRight="@dimen/default_padding_view_text"
+                    android:layout_marginTop="@dimen/default_padding_view_edge"
+                    android:text="0/50"
+                    android:textColor="@color/mine_sig_count"
+                    android:textSize="@dimen/default_textsize_13" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/WrapContentStyle"
+                android:layout_marginLeft="@dimen/default_padding_view_text"
+                android:layout_marginTop="@dimen/default_padding_view_edge"
+                android:text="@string/reward_agree_hint"
+                android:textColor="@color/space_black"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <TextView
+                android:id="@+id/tv_tip"
+                style="@style/FullWdithStyle"
+                android:layout_marginLeft="@dimen/default_padding_view_text"
+                android:layout_marginRight="@dimen/default_padding_view_text"
+                android:layout_marginTop="@dimen/default_padding_view_edge"
+                android:layout_marginBottom="@dimen/default_padding_view_edge"
+                android:textColor="@color/mine_sig_count"
+                android:textSize="@dimen/default_textsize_13" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

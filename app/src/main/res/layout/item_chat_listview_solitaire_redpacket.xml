@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/solitaire_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/default_padding_view_edge"
+    android:paddingLeft="@dimen/default_padding_view_edge"
+    android:paddingRight="@dimen/default_padding_view_edge"
+    android:paddingTop="@dimen/default_padding_view_edge" >
+
+    <LinearLayout
+        android:id="@+id/ll_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/chat_item_skill_left_head_layout"
+            layout="@layout/item_chat_left_head"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/chat_item_solitair_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/chat_item_nick_solitair_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_marginBottom="3dip"
+                    android:layout_marginRight="7dip"
+                    android:gravity="right|top"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <include layout="@layout/item_chat_listview_solitaire_redpacket_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chat_item_solitair_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/chat_item_nick_solitair_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|top"
+                    android:layout_marginBottom="3dip"
+                    android:layout_marginLeft="15dip"
+                    android:gravity="left|top"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <include layout="@layout/item_chat_listview_solitaire_redpacket_left" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/chat_item_skill_right_head_layout"
+            layout="@layout/item_chat_right_head"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/chat_item_notice"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="@dimen/default_padding_view_edge"
+        android:background="@drawable/chat_item_notice_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_textsize_11"
+        android:visibility="gone" />
+
+</LinearLayout>

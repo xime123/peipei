@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_padding_view_edge"
+        android:layout_marginRight="@dimen/default_padding_view_edge"
+        android:layout_marginTop="@dimen/default_padding_view_edge"
+        android:background="@drawable/main_img_list1_selector"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_padding_view_edge" >
+
+        <TextView
+            android:id="@+id/skill_order_type"
+            android:layout_width="@dimen/default_padding_setting_tiltle"
+            android:layout_height="18dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_11" />
+
+        <TextView
+            android:id="@+id/skill_order_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_15" />
+
+        <TextView
+            android:id="@+id/skill_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/default_textsize_11" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/skill_order_content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_padding_view_edge"
+        android:layout_marginRight="@dimen/default_padding_view_edge"
+        android:background="@drawable/main_img_list2_selector"
+        android:orientation="vertical"
+        android:padding="@dimen/default_padding_view_edge" >
+
+        <TextView
+            android:id="@+id/skill_order_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_13" />
+
+        <TextView
+            android:id="@+id/skill_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_13" />
+
+        <LinearLayout
+            android:id="@+id/skill_order_operate_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="操　　　作："
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_13" />
+
+            <Button
+                android:id="@+id/skill_order_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:background="@drawable/person_order_reward_btn_accept_selector"
+                android:gravity="center"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <Button
+                android:id="@+id/skill_order_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/person_order_reward_btn_repulse_selector"
+                android:gravity="center"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <TextView
+                android:id="@+id/skill_order_operate_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/peach"
+                android:textSize="@dimen/default_textsize_13" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/skill_order_toast_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_padding_view_edge"
+        android:layout_marginRight="@dimen/default_padding_view_edge"
+        android:background="@drawable/person_order_reward_hint_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_padding_view_edge" >
+
+        <TextView
+            android:id="@+id/skill_order_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/default_textsize_11" />
+    </LinearLayout>
+
+</LinearLayout>

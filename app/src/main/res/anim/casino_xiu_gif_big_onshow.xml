@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 指定动画循环播放 -->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <!-- 添加多个帧 -->
+    <item
+        android:drawable="@drawable/casino_xiu_gif_big01"
+        android:duration="180"/>
+    <item
+        android:drawable="@drawable/casino_xiu_gif_big02"
+        android:duration="180"/>
+    <item
+        android:drawable="@drawable/casino_xiu_gif_big03"
+        android:duration="180"/>
+    <item
+        android:drawable="@drawable/casino_xiu_gif_big04"
+        android:duration="180"/>
+
+</animation-list>

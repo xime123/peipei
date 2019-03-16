@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FullScreenStyle"
+    android:background="@color/space_bottom_line"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <TextView
+        style="@style/FullWdithStyle"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/default_height_title"
+        android:paddingLeft="@dimen/default_padding_view_edge"
+        android:text="@string/report_select_reason"
+        android:textColor="@color/space_black" />
+
+    <TextView
+        android:id="@+id/report_abuse"
+        style="@style/FullWdithStyle"
+        android:background="@drawable/activity_report_unselected_item_bg"
+        android:gravity="center"
+        android:minHeight="@dimen/default_height_title"
+        android:text="@string/report_abuse"
+        android:textColor="@color/space_black" />
+
+    <TextView
+        android:id="@+id/report_sex"
+        style="@style/FullWdithStyle"
+        android:background="@drawable/activity_report_unselected_item_bg"
+        android:gravity="center"
+        android:minHeight="@dimen/default_height_title"
+        android:text="@string/report_sex"
+        android:textColor="@color/space_black" />
+
+    <TextView
+        android:id="@+id/report_ad"
+        style="@style/FullWdithStyle"
+        android:background="@drawable/activity_report_unselected_item_bg"
+        android:gravity="center"
+        android:minHeight="@dimen/default_height_title"
+        android:text="@string/report_ad"
+        android:textColor="@color/space_black" />
+
+    <TextView
+        android:id="@+id/report_political"
+        style="@style/FullWdithStyle"
+        android:background="@drawable/activity_report_unselected_item_bg"
+        android:gravity="center"
+        android:minHeight="@dimen/default_height_title"
+        android:text="@string/report_political"
+        android:textColor="@color/space_black" />
+
+    <TextView
+        android:id="@+id/report_other"
+        style="@style/FullWdithStyle"
+        android:background="@drawable/activity_report_unselected_item_bg"
+        android:gravity="center"
+        android:minHeight="@dimen/default_height_title"
+        android:text="@string/report_other"
+        android:textColor="@color/space_black" />
+</LinearLayout>

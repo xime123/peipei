@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/casino_xiu_bg"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:id="@+id/float_pb"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/show_loading" />
+
+        <ImageView
+            android:id="@+id/float_id"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:src="@drawable/casino_xiu_moren"
+            android:background="@drawable/casino_xiu_white"
+            android:padding="2dp" />
+
+        <ImageView
+            android:id="@+id/float_show_room_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:background="@anim/casino_xiu_gif_big_onshow" />
+    </RelativeLayout>
+
+</LinearLayout>

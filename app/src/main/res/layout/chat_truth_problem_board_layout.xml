@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/chat_truth_problem_board_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_icon_truth_broblem_board_selector"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/aipay_margin_vertical"
+        android:text="正常"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dip"
+        android:textSize="@dimen/text_size_15" />
+
+</LinearLayout>

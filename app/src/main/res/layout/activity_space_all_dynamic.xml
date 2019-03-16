@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FullScreenStyle"
+    android:background="@color/report_selected_item_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <com.tshang.peipei.vender.pulltoprefresh.library.PullToRefreshListView
+        android:id="@+id/space_custom_pulllistview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:fadingEdge="@color/transparent"
+        android:fastScrollEnabled="false"
+        android:listSelector="@drawable/click_selector_peach"
+        android:overScrollMode="never" />
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_head_chat2"
+        android:background="@drawable/main_bar_nav_un" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/default_padding_gridview_edge"
+            android:paddingTop="@dimen/default_padding_gridview_edge" >
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_weight="0.6" />
+
+            <LinearLayout
+                android:id="@+id/ll_broadcast"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="@dimen/default_height_change_table"
+                android:background="@drawable/main_bar_tab_left_pr"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_broadcast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/str_all_broadcast"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize_14" />
+
+                <ImageView
+                    android:id="@+id/iv_broadcast_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/default_padding_gridview_edge"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/broadcast_myreform_icon_pr" />
+
+                <ImageView
+                    android:id="@+id/iv_broadcast_new_notify_about_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/default_padding_image_text_small"
+                    android:paddingTop="@dimen/default_padding_view_edge"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/message_img_redot0"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_game"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minHeight="@dimen/default_height_change_table"
+                android:text="@string/str_game_hall"
+                android:visibility="gone"
+                android:textColor="@color/peach"
+                android:textSize="@dimen/default_textsize_14"
+                android:background="@drawable/main_bar_tab_center_un" />
+            
+            <TextView
+                android:id="@+id/tv_reward"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minHeight="@dimen/default_height_change_table"
+                android:text="@string/str_reward"
+                android:textColor="@color/peach"
+                android:textSize="@dimen/default_textsize_14"
+                android:visibility="gone"
+                android:background="@drawable/main_bar_tab_right_un" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_weight="0.6" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ibtn_broadcast_write"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/main_bar_nav_selector_two"
+            android:paddingLeft="@dimen/default_padding_view_text"
+            android:paddingRight="@dimen/default_padding_view_text"
+            android:scaleType="center"
+            android:src="@drawable/broadcast_icon_write" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/broadcast_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+
+        <ImageView
+            android:id="@+id/iv_broadcast_scroll_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/default_padding_view_edge"
+            android:src="@drawable/iv_scrollbottom_selector"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

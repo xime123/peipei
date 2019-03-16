@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/homepage_myflow_radiusbg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/str_about_me_title"
+            android:textColor="@color/peach"
+            android:textSize="@dimen/default_textsize_13" />
+
+        <TextView
+            android:id="@+id/dynamic_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/message_img_redot1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_11" />
+
+        <include layout="@layout/layout_right_arrow" />
+    </LinearLayout>
+
+</LinearLayout>

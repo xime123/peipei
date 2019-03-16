@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_head"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:background="@drawable/broadcast_magic_fist_head"
+        android:contentDescription="@null"
+        android:padding="2dp" />
+
+    <ImageView
+        android:id="@+id/iv_left_blast"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@null"
+        android:src="@drawable/broadcast_magic_fist_left_blast"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_left_fist"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:layout_marginRight="110dp"
+        android:layout_marginTop="70dp"
+        android:contentDescription="@null"
+        android:src="@drawable/broadcast_magic_fist_left_fist"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_right_blast"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/broadcast_magic_fist_right_blast"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_right_fist"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@null"
+        android:src="@drawable/broadcast_magic_fist_right_fist" />
+
+    <ImageView
+        android:id="@+id/iv_left_bubble"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="70dp"
+        android:contentDescription="@null"
+        android:visibility="gone"
+        android:src="@drawable/broadcast_magic_fist_bubble2" />
+
+    <ImageView
+        android:id="@+id/iv_right_bubble"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="90dp"
+        android:contentDescription="@null"
+        android:visibility="gone"
+        android:src="@drawable/broadcast_magic_fist_bubble" />
+
+</FrameLayout>

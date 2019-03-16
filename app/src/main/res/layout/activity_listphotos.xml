@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <GridView
+            android:id="@+id/listphotos_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/photolist_photo_bottom"
+            android:cacheColorHint="@null"
+            android:fadingEdge="none"
+            android:horizontalSpacing="@dimen/default_padding_image_text_small"
+            android:listSelector="@drawable/click_selector_peach"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/default_padding_image_text_small" />
+
+        <LinearLayout
+            android:id="@+id/photolist_photo_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title_tabhost"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/photolist_photo_upload"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/click_bottom_selector_bg"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/default_padding_gridview_edge"
+                    android:src="@drawable/album_icon_yes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_photos_ok"
+                    android:textColor="@color/peach"
+                    android:textSize="@dimen/default_textsize_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/photolist_photo_manage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/click_bottom_selector_bg"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/default_padding_gridview_edge"
+                    android:src="@drawable/album_icon_no" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_photos_cancel"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/photolist_photo_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/click_bottom_selector_bg"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/default_padding_gridview_edge"
+                    android:src="@drawable/album_icon_delete" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/photo_list_delete"
+                    android:textColor="@color/peach"
+                    android:textSize="@dimen/default_textsize_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/photolist_photo_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/click_bottom_selector_bg"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/default_padding_gridview_edge"
+                    android:src="@drawable/album_icon_delete" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_15" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

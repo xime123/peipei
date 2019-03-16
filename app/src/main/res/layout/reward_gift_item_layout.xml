@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/reward_gift_item_gift_iv"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:scaleType="fitXY" />
+        
+
+        <ImageView
+            android:id="@+id/reward_gift_item_seletor_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/reward_gift_item_gift_iv"
+            android:layout_alignRight="@id/reward_gift_item_gift_iv"
+            android:src="@drawable/reward_gift_seletor_pr"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/reward_gift_item_glod_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:padding="3dip"
+        android:singleLine="true"
+        android:textColor="@color/dialog_content"
+        android:textSize="13sp" />
+
+</LinearLayout>

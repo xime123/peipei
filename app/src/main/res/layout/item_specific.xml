@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/item_gv_chat_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/item_gv_chat_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/album_img_choose_pr"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/item_gv_chat_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_gv_chat_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dip"
+        android:textColor="@color/gray"
+        android:textSize="13sp" />
+
+</RelativeLayout>

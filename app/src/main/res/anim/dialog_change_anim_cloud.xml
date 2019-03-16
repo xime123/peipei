@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 指定动画循环播放 -->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true" >
+
+    <!-- 添加多个帧 -->
+    <item
+        android:drawable="@drawable/broadcast_magic_change_cloud1"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/broadcast_magic_change_cloud2"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/broadcast_magic_change_cloud3"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/broadcast_magic_change_cloud4"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/broadcast_magic_change_cloud5"
+        android:duration="150"/>
+
+</animation-list>

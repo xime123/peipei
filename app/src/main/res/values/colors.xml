@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="fall_bg_color">#30000000</color>
+    <color name="login_bg_red">#e02d57</color>
+    <color name="login_bg_line">#790b25</color>
+    <color name="login_line_hint">#ffb0c3</color>
+    <color name="login_forget_password">#ffd6e0</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_half_background">#40000000</color>
+    <color name="black">#202020</color>
+    <color name="gray">#808080</color>
+    <color name="gray1">#d1d1d1</color>
+    <color name="harem_type_color">#e2d7da</color>
+    <color name="gray60">#606060</color>
+    <color name="gray_low">#323232</color>
+    <color name="gray_add_black">#4d4d4d</color>
+    <color name="near_km_text_color">#3edefc</color>
+    <color name="white">#ffffff</color>
+    <color name="white1">#fa82a0</color>
+    <color name="show_share_color">#005bd7</color>
+    <color name="peach">#ef5a59</color>
+    <color name="new_bg_color">#faf7f8</color>
+    <color name="red_findpwd">#ff3434</color>
+    <color name="redpacket_send_text_color">#490a05</color>
+    <color name="integer_value_color">#f59845</color>
+    <color name="redpacket_status_complete_color">#4bb31d</color>
+    <color name="redpacket_status_getting_color">#ff1e1e</color>
+    <color name="orange">#ff5400</color>
+    <color name="orange2">#ff762c</color>
+    <color name="purple">#9a76cf</color>
+    <color name="green">#7ead55</color>
+    <color name="green_color">#369a00</color>
+    <color name="blue_color">#0876e6</color>
+    <color name="bule">#1d54f3</color>
+    <color name="blue_nick">#0776ee</color>
+    <color name="my_favor_red">#ff1920</color>
+    <color name="write_broadcast_text_color">#7e7e7e</color>
+    <color name="red">#ef5a59</color>
+    <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
+    <color name="upload">#dedede</color>
+    <color name="skill_blue_color">#6b9fff</color>
+    <color name="skill_red_color">#fe756f</color>
+    <color name="skill_purple_color">#b882f0</color>
+    <color name="skill_yellow_color">#ffa753</color>
+    <color name="task_point_d_color">#a4acb3</color>
+    <color name="task_point_c_color">#74ab3d</color>
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+    <color name="delete_color">#8d757c</color>
+    <color name="finger_silver_color">#c4c4c4</color>
+    <color name="finger_gold_color">#a9450a</color>
+    <color name="finger_backgroud_silver">#757a80</color>
+    <color name="near_online_text_color">#3ba321</color>
+    <color name="new_skill_text_color">#5c5c5c</color>
+    <color name="show_room_purple">#a000d3</color>
+    <color name="red_nick">#ff2357</color>
+    <color name="gift_ranknum">#b66ade</color>
+    <color name="gift_num_orange">#ff6600</color>
+    <color name="gift_num_gray">#505050</color>
+    <color name="open_show_default_color">#ff6b9c</color>
+    <color name="open_show_click_color">#e5608c</color>
+    <color name="show_num_backgroud">#edede4</color>
+    <color name="show_broadcast_system_color">#be01e6</color>
+    <color name="show_broadcast_bottom_color">#f5f0f5</color>
+    <color name="show_broadcast_content_num_color">#adadad</color>
+    <color name="show_gift_bg_color1">#faf7f8</color>
+    <color name="show_gift_bg_color2">#fcfcfc</color>
+    <color name="show_openbox_content_color">#b20700</color>
+    <color name="show_praise">#f92a2a</color>
+    <color name="show_gift">#ffc629</color>
+    <color name="city_gray">#f4f4f4</color>
+
+    <!-- 发红包的字体颜色 -->
+    <color name="red_packet_bg_color">#fbedc9</color>
+    <color name="red_packet_btn_text_color">#df0916</color>
+    <color name="red_packet_common_text_color">#8f7048</color>
+    <color name="red_packet_dialog_text_color">#801008</color>
+    <color name="red_packet_dialog_get_text_color">#f23f00</color>
+
+    <!-- 广播语音发送的颜色 -->
+    <color name="broadcast_text_color_one">#ac131e</color>
+    <color name="broadcast_text_color_two">#7c0e6b</color>
+    <color name="broadcast_text_color_three">#311e94</color>
+    <color name="broadcast_text_charge_color">#2a76d8</color>
+    <color name="ring_two_color">#ffede9ed </color>
+    <color name="ring_three_color">#ef5a59</color>
+    <color name="ring_color">#ef5a59</color>
+    <color name="aipay_transparent">#00000000</color>
+    <color name="aipay_blue">#33b5e5</color>
+    <color name="aipay_black_1">#303030</color>
+    <color name="aipay_black_2">#515151</color>
+    <color name="aipay_white">#ffffff</color>
+    <color name="aipay_white_light">#f8f8f8</color>
+    <color name="aipay_orange">#fe6700</color>
+    <color name="aipay_grey">#8a8a8a</color>
+    <color name="aipay_grey_light">#b5b5b5</color>
+    <color name="aipay_red">#ff0e0e</color>
+    <color name="aipay_exctra_info_bg">#eff6ff</color>
+
+    <!-- listview色值使用 -->
+    <color name="aipay_divider_line">#e5e5e5</color>
+    <color name="aipay_item_pressed">#f2f5f9</color>
+
+    <!-- 弹窗底部按钮色值使用 -->
+    <color name="aipay_button_noraml_confirm_color">#cfcfcf</color>
+    <color name="aipay_button_pressed_confirm_color">#dcdcdc</color>
+    <color name="aipay_button_noraml_cancel_color">#c7c7c7</color>
+    <color name="aipay_button_pressed_cancel_color">#d1d1d1</color>
+
+    <!-- 36变颜色 -->
+    <color name="magic_01">#37ffdb29</color>
+    <color name="magic_02">#37e8d841</color>
+    <color name="magic_03">#37c7d565</color>
+    <color name="magic_04">#379ed18f</color>
+    <color name="magic_05">#3775cbba</color>
+    <color name="magic_06">#3753c3dd</color>
+    <color name="magic_07">#373fb8f3</color>
+    <color name="magic_08">#373cabf4</color>
+    <color name="magic_09">#374c96e3</color>
+    <color name="magic_10">#37667bc5</color>
+    <color name="magic_11">#37885fa0</color>
+    <color name="magic_12">#37ad4577</color>
+    <color name="magic_13">#37ce3152</color>
+    <color name="magic_14">#37e82837</color>
+    <color name="magic_15">#37f82c29</color>
+    <color name="magic_16">#37ff4129</color>
+    <color name="magic_17">#37ff5f29</color>
+    <color name="magic_18">#37ff8229</color>
+    <color name="magic_19">#37ffa729</color>
+    <color name="magic_20">#37ffc629</color>
+
+    <!-- 动态话题背景 -->
+    <color name="official_bg1">#30b063</color>
+    <color name="official_bg2">#eb713c</color>
+    <color name="official_bg3">#468cd3</color>
+    <color name="official_bg4">#ef4753</color>
+    <color name="official_bg5">#8c4cbe</color>
+    <color name="official_bg6">#be61c1</color>
+    <color name="official_bg7">#5252d2</color>
+    <color name="official_bg8">#75a338</color>
+    <color name="official_bg9">#dfb91f</color>
+    <color name="dialog_line">#dedede</color>
+    <color name="dialog_content">#888888</color>
+    <color name="dialog_title">#333333</color>
+    <color name="dialog_cancel">#888888</color>
+    <color name="dialog_confirm">#fe2d5d</color>
+    <!-- 悬赏 -->
+    <color name="line_color">#D8D8D8</color>
+    <!-- 悬浮窗的分割线 -->
+    <color name="devider_line">#ff2c5d</color>
+    <color name="find_line">#D8D8D8</color>
+
+    <color name="space_black">#333333</color>
+    <color name="space_photo_num">#888888</color>
+    <color name="space_bottom_line">#dedede</color>
+    <color name="space_bottom_txt_color">#ef5a59</color>
+    <color name="report_selected_item_bg">#f8f8f8</color>
+    <color name="space_title_bg">#1b1b26</color>
+    <color name="main_broadcast_top_item_bg">#ffece8</color>
+    <color name="rank_vertical_divider_line">#f4f3f4</color>
+    <color name="rank_bottom_line">#fbc5d2</color>
+    <color name="space_shadow_color">#888888</color>
+    <color name="main_bottom_bg_pre">#ef5a59</color>
+    <color name="main_broadcast_item_text_color">#666666</color>
+    <color name="main_broadcast_female_name_color">#ef595a</color>
+    <color name="main_broadcast_male_name_color">#007ee8</color>
+    <color name="main_broadcast_at_name_color">#0c9788</color>
+    <color name="userinfo_goddess_skill_color">#56a2e9</color>
+    
+    <color name="mine_sig_count">#888888</color>
+    <color name="select_skill_text">#ff2c5e</color>
+    
+    <!-- 女神技 -->
+    <color name="chat_item_skill_blue">#0071da</color>
+    <color name="default_hint_color">#dedede</color>
+    
+    <color name="default_solitaire_redpacket_open">#f33d31</color>
+    <color name="default_solitaire_redpacket_bg">#f6f6f6</color>
+    <color name="default_solitaire_redpacket_text_color">#ea4d43</color>
+    <color name="default_solitaire_redpacket_list_title_color">#926e0e</color>
+    <color name="default_join_person_color">#7b3f00</color>
+    <color name="default_checked_gold_text_color">#ffde00</color>
+    <color name="default_car_nick_color">#ffe641</color>
+    <color name="default_car_name_color">#ff3333</color>
+    <color name="transparent_max_half_background">#70000000</color>
+    
+    <!-- 大厅红包 -->
+    <color name="default_redpacket_type">#258ae6</color>
+    <color name="default_amount_num">#f2645a</color>
+    <color name="default_click_get_redpacket">#ffdb24</color>
+    <color name="default_redpacket_desc">#ffe200</color>
+    <color name="default_hall_redpacket_desc">#979797</color>
+    <color name="default_deposit_id">#2c7cc7</color>
+    <color name="default_redpacket_no1">#ffc000</color>
+    <color name="default_specfic_gift_txt">#ffffb8</color>
+</resources>

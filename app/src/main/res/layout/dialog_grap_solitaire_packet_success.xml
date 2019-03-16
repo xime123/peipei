@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@null"
+        android:src="@drawable/solitaire_redpacket_diaglog_light" />
+
+    <ImageView
+        style="@style/FullWdithStyle"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/solitaire_redpacket_diaglog_shadow"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        style="@style/FullWdithStyle"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            style="@style/FullWdithStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/solitaire_redpacket_requestion_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_money_type"
+                style="@style/WrapContentStyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:text="@string/str_open_solitaire_redpacket_success"
+                android:textColor="@color/space_black"
+                android:textSize="@dimen/default_textsize_13" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                style="@style/WrapContentStyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@null"
+                android:textColor="@color/default_solitaire_redpacket_text_color"
+                android:textSize="@dimen/default_textsize_50" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/FullWdithStyle"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/solitaire_redpacket_diaglog_shell"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_ok"
+                style="@style/WrapContentStyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="23dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/solitaire_redpacket_diaglog_open_button"
+                android:gravity="center"
+                android:minWidth="200dp"
+                android:padding="10dp"
+                android:text="@string/str_get_redpacket"
+                android:textColor="@color/default_solitaire_redpacket_open"
+                android:textSize="@dimen/default_textsize_17" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/solitaire_redpacket_title"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:text="@string/str_congratulations"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_textsize_15" />
+
+    <ImageView
+        style="@style/WrapContentStyle"
+        android:contentDescription="@null"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/solitaire_redpacket_diaglog_ribbon" />
+
+</FrameLayout>

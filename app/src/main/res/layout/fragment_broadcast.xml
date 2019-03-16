@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_broadcast_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/broadcast_img_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_head_chat"
+            android:background="@drawable/main_bar_nav_un" >
+
+            <!-- 中间显示的标题 -->
+
+            <TextView
+                android:id="@+id/tv_broadcase_forbitspeak"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="@string/str_forbit_speak"
+                android:textColor="@color/peach"
+                android:textSize="@dimen/default_textsize_14" />
+
+            <TextView
+                android:id="@+id/tv_broadcast_center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="@string/str_all_broadcast"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_17" />
+
+            <ImageView
+                android:id="@+id/iv_broadcast_center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_broadcast_center"
+                android:paddingLeft="@dimen/default_padding_gridview_edge"
+                android:scaleType="fitCenter"
+                android:src="@drawable/broadcast_img_arrow_un" />
+
+            <ImageView
+                android:id="@+id/iv_broadcast_new_notify_about_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_broadcast_center"
+                android:paddingLeft="@dimen/default_padding_image_text_small"
+                android:paddingTop="@dimen/default_padding_view_edge"
+                android:scaleType="fitCenter"
+                android:src="@drawable/message_img_redot0"/>
+
+            <ImageView
+                android:id="@+id/ibtn_broadcast_write"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/main_bar_nav_selector_two"
+                android:paddingLeft="@dimen/default_padding_view_text"
+                android:paddingRight="@dimen/default_padding_view_text"
+                android:scaleType="center"
+                android:src="@drawable/broadcast_icon_write" />
+        </RelativeLayout>
+        <!-- 导航 上的 那根虚线 -->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_img_navshadow" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_top_broadcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.tshang.peipei.view.AutoScrollViewPager
+            android:id="@+id/autopager_topbroadcast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="6dip" />
+
+        <com.tshang.peipei.view.PageControlView
+            android:id="@+id/pageControlView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <include layout="@layout/pulltorefreshlistview_not_clickcolor" />
+
+        <ImageView
+            android:id="@+id/iv_broadcast_scroll_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/default_padding_view_edge"
+            android:src="@drawable/iv_scrollbottom_selector"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

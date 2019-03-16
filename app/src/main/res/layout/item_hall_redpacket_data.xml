@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        style="@style/FullWdithStyle"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/default_height_head_chat"
+            android:layout_height="@dimen/default_height_head_chat"
+            android:contentDescription="@null"
+            android:src="@drawable/main_img_defaulthead_pr" />
+
+        <LinearLayout
+            style="@style/FullWdithStyle"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/FullWdithStyle"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_nick"
+                    style="@style/WrapContentStyle"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/space_black"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <ImageView
+                    android:id="@+id/iv_level"
+                    style="@style/WrapContentStyle"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/ll_braodcast_item_redpacket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/hall_item_redpacket_left"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        style="@style/FullWdithStyle"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            style="@style/WrapContentStyle"
+                            android:contentDescription="@null"
+                            android:src="@drawable/hall_item_redpacket_icon" />
+
+                        <LinearLayout
+                            style="@style/FullScreenStyle"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_hall_desc"
+                                style="@style/WrapContentStyle"
+                                android:textColor="@color/white"
+                                android:singleLine="true"
+                                android:maxLength="10"
+                                android:textSize="@dimen/default_textsize_13" />
+
+                            <TextView
+                                style="@style/WrapContentStyle"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/str_click_get_redpacket"
+                                android:textColor="@color/default_click_get_redpacket"
+                                android:textSize="@dimen/default_textsize_9" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_hall_redpacket_type"
+                        style="@style/FullScreenStyle"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/chat_item_redpacket_person_bg"
+                        android:gravity="right|center_vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/default_join_person_color"
+                        android:textSize="@dimen/default_textsize_9" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_official"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:contentDescription="@null"
+                    android:src="@drawable/hall_recpacket_official_icon"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ImageView
+        style="@style/FullWdithStyle"
+        android:background="@drawable/hall_redpacket_devider_line"
+        android:contentDescription="@null" />
+
+</LinearLayout>

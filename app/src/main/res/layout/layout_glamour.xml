@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_glamour"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rank_img_purple1"
+        android:padding="2dp"
+        android:text="@string/glamour"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_textsize_11" />
+
+    <TextView
+        android:id="@+id/layout_tv_glamour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rank_img_purple2"
+        android:gravity="center"
+        android:minWidth="@dimen/default_padding_between_view"
+        android:padding="2dp"
+        android:text="0"
+        android:textColor="@color/purple"
+        android:textSize="@dimen/default_textsize_11" />
+
+</LinearLayout>

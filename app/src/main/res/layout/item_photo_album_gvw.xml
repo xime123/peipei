@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/album_img_picbg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding_gridview_edge" >
+
+    <RelativeLayout
+        android:id="@+id/item_photo_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/main_img_defaultpic_small" >
+
+        <ImageView
+            android:id="@+id/photo_ivw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/photo_iv_secret"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/album_img_picmask"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/photo_ivw_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/photo_ivw"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/default_padding_queen_bottom"
+            android:layout_marginRight="@dimen/default_padding_view_text"
+            android:background="@drawable/album_img_choose_un"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/item_photo_album_tv_updatetime"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_padding_view_text"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/main_bg_black30"
+            android:gravity="center"
+            android:text="2月16号更新"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_10" />
+
+        <ImageView
+            android:id="@+id/item_sdc_photo_grid_ivuncheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/item_photo_album_tv_updatetime"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/default_padding_gridview_edge"
+            android:layout_marginRight="@dimen/default_padding_gridview_edge"
+            android:background="@drawable/album_img_choose_un"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/default_padding_image_text_small"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/item_photo_abum_tv_albumname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_15" />
+
+        <TextView
+            android:id="@+id/item_photo_album_tv_loyaltiy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/default_textsize_10" />
+    </LinearLayout>
+
+</LinearLayout>

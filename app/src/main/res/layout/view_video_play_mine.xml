@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <ProgressBar
+        android:id="@+id/view_mine_voice_pb"
+        style="?android:attr/progressBarStyleSmallInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:visibility="gone" >
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/view_mine_video_play_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/homepage_introduction_record_selector"
+        android:gravity="center"
+        android:minWidth="110dp"
+        android:paddingLeft="65dp"
+        android:paddingRight="10dp"
+        android:layout_toRightOf="@id/view_mine_voice_pb"
+        android:text="0/60“"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textsize_10" />
+
+    <ImageView
+        android:id="@+id/view_mine_video_play_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/view_mine_voice_pb"
+        android:background="@anim/view_play_green"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/view_mine_video_replay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/view_mine_video_play_tv"
+        android:src="@drawable/homepage_introduction_recorded_dis" />
+
+</RelativeLayout>

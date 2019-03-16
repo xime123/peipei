@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_decree"
+    android:layout_width="293dip"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/broadcast_list_bg" >
+
+    <ImageView
+        android:id="@+id/iv_broad_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/tv_broadcast_pop_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_broad_title"
+        android:paddingBottom="10dip"
+        android:paddingLeft="35dip"
+        android:paddingRight="35dip"
+        android:paddingTop="15dip"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textsize_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_broadcast_pop_content"
+        android:layout_marginRight="40dip"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"
+        android:paddingBottom="30dip" >
+
+        <TextView
+            android:id="@+id/tv_decree_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/peach"
+            android:textSize="@dimen/default_textsize_12" />
+
+        <ImageView
+            android:id="@+id/iv_decree_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:src="@drawable/broadcast_toplist_print_man" />
+    </LinearLayout>
+
+</RelativeLayout>

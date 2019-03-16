@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_head"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:background="@drawable/broadcast_magic_lips_head"
+        android:contentDescription="@null"
+        android:padding="2dp" />
+    
+    <ImageView
+        android:id="@+id/iv_crown"
+        style="@style/WrapContentStyle"
+        android:contentDescription="@null"
+        android:layout_gravity="center"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="73dp"
+        android:src="@drawable/crown" />
+    
+    <ImageView
+        android:id="@+id/iv_star1"
+        style="@style/WrapContentStyle"
+        android:contentDescription="@null"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/crown_start1"
+        android:visibility="gone" />
+    
+    <ImageView
+        android:id="@+id/iv_star2"
+        style="@style/WrapContentStyle"
+        android:contentDescription="@null"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="40dp"
+        android:src="@drawable/crown_start1"
+        android:visibility="gone" />
+    
+    <ImageView
+        android:id="@+id/iv_star3"
+        style="@style/WrapContentStyle"
+        android:contentDescription="@null"
+        android:layout_gravity="center"
+        android:layout_marginBottom="75dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/crown_start2"
+        android:visibility="gone" />
+
+</FrameLayout>

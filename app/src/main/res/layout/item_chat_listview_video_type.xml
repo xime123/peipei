@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/default_padding_view_edge"
+    android:paddingLeft="@dimen/default_padding_view_edge"
+    android:paddingRight="@dimen/default_padding_view_edge"
+    android:paddingTop="@dimen/default_padding_view_edge" >
+
+    <LinearLayout
+        android:id="@+id/ll_chat_left_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <include layout="@layout/item_chat_left_head" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_padding_image_text_small"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_left_video_download_and_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chat_item_left"
+                    android:paddingLeft="7dip"
+                    android:paddingTop="1dip"
+                    android:paddingRight="1dip"
+                    android:paddingBottom="1dip" >
+
+                    <ImageView
+                        android:id="@+id/chat_item_video_left_pic"
+                        android:layout_width="144dip"
+                        android:layout_height="180dip"
+                        android:layout_gravity="center"
+                        android:background="@drawable/message_icon_video_file_play_default"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/message_icon_video_file_play" />
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/chat_item_video_left_receive_pb"
+                    style="?android:attr/progressBarStyleSmallInverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/default_padding_view_text"
+                    android:visibility="gone" >
+                </ProgressBar>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/chat_item_video_receive_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="2dip"
+                android:background="@drawable/chat_item_time_bg"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_10" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_chat_right_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <include layout="@layout/item_chat_right_send_progress" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_item_right"
+                android:paddingRight="7dip"
+                android:paddingLeft="1dip"
+                    android:paddingTop="1dip"
+                    android:paddingBottom="1dip" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_right_video_download_and_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/chat_item_video_right_pic"
+                        android:layout_width="144dip"
+                        android:layout_height="180dip"
+                        android:background="@drawable/message_icon_video_file_play_default"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/message_icon_video_file_play" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/chat_item_send_video_time_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="@dimen/default_padding_image_text_small"
+                android:background="@drawable/chat_item_time_bg"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_10" />
+        </LinearLayout>
+
+        <include layout="@layout/item_chat_right_head" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/default_padding_view_edge"
+    android:paddingLeft="@dimen/default_padding_view_edge"
+    android:paddingRight="@dimen/default_padding_view_edge"
+    android:paddingTop="@dimen/default_padding_view_edge" >
+
+    <LinearLayout
+        android:id="@+id/ll_chat_left_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|left"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/item_chat_left_head" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_padding_image_text_small"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.tshang.peipei.view.RepeatButton
+                    android:id="@+id/chat_item_content_pic_left_burn_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:contentDescription="@string/app_name" />
+
+                <RelativeLayout
+                    android:id="@+id/chat_item_content_iv_ll_left_burn_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/message_img_firepic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/default_padding_between_view"
+                        android:layout_marginTop="60dp"
+                        android:text="@string/long_press"
+                        android:textColor="@color/peach"
+                        android:textSize="@dimen/default_textsize_13" />
+
+                    <ProgressBar
+                        android:id="@+id/chat_item_left_burn_pb"
+                        style="@style/ProgressBar_Mini"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/default_padding_image_text_small"
+                        android:max="@integer/default_size_burn_time"
+                        android:padding="@dimen/default_padding_view_text" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/chat_item_image_receive_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_padding_image_text_small"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_10" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_chat_right_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <include layout="@layout/item_chat_right_send_progress" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/default_padding_image_text_small"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.tshang.peipei.view.RepeatButton
+                    android:id="@+id/chat_item_content_pic_right_burn_image"
+                    android:layout_width="80dip"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name" />
+
+                <RelativeLayout
+                    android:id="@+id/chat_item_content_iv_ll_right_burn_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/message_img_firepic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="60dp"
+                        android:text="@string/long_press"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/default_textsize_13" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/default_padding_image_text_small"
+                android:text="@string/un_read"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_10" />
+        </LinearLayout>
+
+        <include layout="@layout/item_chat_right_head" />
+    </LinearLayout>
+
+</RelativeLayout>

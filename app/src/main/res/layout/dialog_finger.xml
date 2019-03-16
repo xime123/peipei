@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop_bg_white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/default_padding_view_text"
+    android:paddingLeft="@dimen/default_padding_view_text"
+    android:paddingRight="@dimen/default_padding_view_text"
+    android:paddingTop="20dp" >
+
+    <LinearLayout
+        android:id="@+id/play_monkey_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/str_finger"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <TextView
+                android:id="@+id/play_finger_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_finger_record"
+                android:textColor="@color/peach"
+                android:textSize="@dimen/default_textsize_15" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/message_chatdoor_2line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_finger_select"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/play_monkey_ll"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.tshang.peipei.view.PeiPeiCheckButton1
+            android:id="@+id/play_finger_gold"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.tshang.peipei.view.PeiPeiCheckButton1
+            android:id="@+id/play_finger_silver"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_coin_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dip"
+        android:text="@string/finger_dialog_content1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textsize_15" />
+
+    <LinearLayout
+        android:id="@+id/ll_view_coin_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_padding_gridview_edge"
+        android:layout_marginTop="@dimen/default_padding_gridview_edge"
+        android:orientation="horizontal" >
+
+        <com.tshang.peipei.view.PeiPeiCheckButton
+            android:id="@+id/dialog_finger_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <com.tshang.peipei.view.PeiPeiCheckButton
+            android:id="@+id/dialog_finger_1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <com.tshang.peipei.view.PeiPeiCheckButton
+            android:id="@+id/dialog_finger_5000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_guess_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_finger_dialog_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textsize_15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_padding_gridview_edge"
+        android:orientation="horizontal" >
+
+        <com.tshang.peipei.view.PeiPeiCheckButton
+            android:id="@+id/dialog_finger_stone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <com.tshang.peipei.view.PeiPeiCheckButton
+            android:id="@+id/dialog_finger_scissors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <com.tshang.peipei.view.PeiPeiCheckButton
+            android:id="@+id/dialog_finger_cloth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="@dimen/default_padding_view_text"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ok_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/default_padding_view_edge"
+            android:layout_weight="1"
+            android:background="@drawable/main_btn_big_selector"
+            android:paddingBottom="@dimen/default_padding_gridview_edge"
+            android:paddingTop="@dimen/default_padding_gridview_edge"
+            android:text="@string/cancel"
+            android:textSize="@dimen/default_textsize_15" />
+
+        <Button
+            android:id="@+id/ok_sure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/main_btn_big_selector"
+            android:paddingBottom="@dimen/default_padding_gridview_edge"
+            android:paddingTop="@dimen/default_padding_gridview_edge"
+            android:text="@string/ok"
+            android:textColor="@color/peach"
+            android:textSize="@dimen/default_textsize_15" />
+    </LinearLayout>
+
+</LinearLayout>

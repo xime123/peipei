@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/default_height_face"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/record_gold_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rank_btn_left_pr"
+            android:text="@string/record_gold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_14" />
+
+        <Button
+            android:id="@+id/record_silver_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rank_btn_right_un"
+            android:text="@string/record_silver"
+            android:textColor="@color/peach"
+            android:textSize="@dimen/default_textsize_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_gold"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.tshang.peipei.vender.pulltoprefresh.library.PullToRefreshListView
+            android:id="@+id/record_consumption_gold_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/main_line"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:listSelector="@drawable/click_selector_peach" >
+        </com.tshang.peipei.vender.pulltoprefresh.library.PullToRefreshListView>
+
+        <TextView
+            android:id="@+id/tv_empty_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/str_no_consume_recode"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_silver"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.tshang.peipei.vender.pulltoprefresh.library.PullToRefreshListView
+            android:id="@+id/record_consumption_silver_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/main_line"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:listSelector="@drawable/click_selector_peach" >
+        </com.tshang.peipei.vender.pulltoprefresh.library.PullToRefreshListView>
+
+        <TextView
+            android:id="@+id/tv_empty_data_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/str_no_consume_recode"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+</LinearLayout>

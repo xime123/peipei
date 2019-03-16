@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/reward_join_comfir_skill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我点你唱："
+            android:textColor="@color/dialog_confirm"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/reward_join_comfir_skill_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="参与者要语音唱悬赏指定的歌"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:text="参加悬赏后请记得秀出相应表演哦，出现欺骗等行为将会受到处罚哟"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+
+</LinearLayout>

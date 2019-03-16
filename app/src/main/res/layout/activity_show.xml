@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/show_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2" >
+
+                <ListView
+                    android:id="@+id/show_listview_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/casino_video_default"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="@android:color/transparent"
+                    android:fadingEdge="@color/transparent"
+                    android:fastScrollEnabled="false"
+                    android:listSelector="@android:color/transparent" />
+
+                <LinearLayout
+                    android:id="@+id/show_left_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/ll_show_heart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/casino_btn_bg" />
+
+                        <ImageView
+                            android:id="@+id/show_heat_add_hot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:src="@drawable/casino_btn_praise_dis1" />
+
+                        <ImageView
+                            android:id="@+id/show_heat_add_hot_dot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/show_heat_add_hot"
+                            android:layout_centerHorizontal="true"
+                            android:background="@anim/casino_btn_praise_pr"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/show_praise_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/show_praise"
+                        android:textSize="@dimen/default_textsize_12" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/casino_btn_bg"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/show_gift_casino"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:src="@drawable/casino_icon_gift" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/show_gift_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/show_gift"
+                        android:textSize="@dimen/default_textsize_12" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_show_enter_room"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/main_bar_tab1_bg_on"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/casino_trends_horn" />
+
+                <TextView
+                    android:id="@+id/show_horn_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_12" />
+
+                <TextView
+                    android:id="@+id/show_member_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/bule"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <ImageView
+                    android:id="@+id/show_trends_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/casino_trends_arrow" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3" >
+
+                <LinearLayout
+                    android:id="@+id/show_bottom_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/show_listview_chat"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:cacheColorHint="@color/transparent"
+                        android:divider="@android:color/transparent"
+                        android:fadingEdge="@color/transparent"
+                        android:fastScrollEnabled="false"
+                        android:listSelector="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_show_send_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/main_bar_menu_un"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical" >
+
+                            <ImageButton
+                                android:id="@+id/ibtn_show_left_plus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="3dp"
+                                android:background="@android:color/transparent"
+                                android:contentDescription="@string/app_name"
+                                android:padding="10dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/show_putbox_plusicon" />
+
+                            <ImageView
+                                android:id="@+id/ibtn_show_box_tip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@anim/casino_openbox_tip" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_show_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/message_input_text_un"
+                            android:gravity="center_vertical" >
+
+                            <EditText
+                                android:id="@+id/et_show_text"
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:gravity="left|center_vertical"
+                                android:hint="最多40字符"
+                                android:imeOptions="actionSend|flagNoEnterAction"
+                                android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+                                android:maxHeight="120dip"
+                                android:maxLines="4"
+                                android:minHeight="36dp"
+                                android:paddingBottom="3dip"
+                                android:paddingLeft="5dip"
+                                android:paddingRight="5dip"
+                                android:paddingTop="3dip"
+                                android:textColor="@android:color/black"
+                                android:textColorHint="@color/gray"
+                                android:textSize="15sp" />
+
+                            <ImageButton
+                                android:id="@+id/ibtn_show_emotion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:contentDescription="@string/app_name"
+                                android:paddingLeft="@dimen/default_padding_view_edge"
+                                android:paddingRight="@dimen/default_padding_view_edge"
+                                android:src="@drawable/message_icon_emotion_selector" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_show_send_voice"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/main_bar_menu_un"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <Button
+                                android:id="@+id/show_send_voice_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/message_voice_btn_selector"
+                                android:text="@string/press_on_record"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/default_textsize_15" />
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:id="@+id/ibtn_show_plus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/message_btn_icon_gift" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_show_set_gift_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/main_bar_menu_un"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <EditText
+                            android:id="@+id/et_show_gift_num"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/message_gift_number_input"
+                            android:gravity="left|center_vertical"
+                            android:hint="输入赠送数量"
+                            android:imeOptions="actionSend|flagNoEnterAction"
+                            android:inputType="numberSigned"
+                            android:maxHeight="120dip"
+                            android:maxLength="5"
+                            android:minHeight="36dp"
+                            android:paddingBottom="3dip"
+                            android:paddingLeft="5dip"
+                            android:paddingRight="5dip"
+                            android:paddingTop="3dip"
+                            android:singleLine="true"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@color/gray"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/et_show_gift_btn"
+                            android:layout_width="60dp"
+                            android:layout_height="36dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/message_gift_give_selector"
+                            android:text="@string/ok"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/default_textsize_15" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ViewStub
+                    android:id="@+id/vs_show_animation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_padding_gridview_edge"
+                    android:layout="@layout/view_show_animation" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/show_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_head_chat"
+            android:background="@drawable/casino_navigation_bar"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/show_title_back_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/message_img_arrow1"
+                android:drawablePadding="@dimen/default_padding_gridview_edge"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/default_padding_view_edge"
+                android:paddingRight="@dimen/default_padding_view_text"
+                android:text="@string/back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <TextView
+                android:id="@+id/show_title_tv_mid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="XXXXX的秀场"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_17" />
+
+            <ImageView
+                android:id="@+id/show_title_more"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/default_padding_gridview_edge"
+                android:paddingRight="@dimen/default_padding_view_edge"
+                android:scaleType="fitCenter"
+                android:src="@drawable/message_icon_more1" />
+        </LinearLayout>
+
+        <ViewStub
+            android:id="@+id/viewstub_show_gift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout="@layout/view_show_gift" />
+
+        <ViewStub
+            android:id="@+id/viewstub_show_record"
+            android:layout_width="140dp"
+            android:layout_height="80dip"
+            android:layout_centerInParent="true"
+            android:layout="@layout/view_chat_record" />
+
+        <ViewStub
+            android:id="@+id/viewstub_show_baohe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout="@layout/view_show_baohe" />
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/viewstub_show_emotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/view_emotion" />
+
+    <GridView
+        android:id="@+id/gv_show_plus_select"
+        android:layout_width="match_parent"
+        android:layout_height="195dip"
+        android:background="@drawable/message_bg_white"
+        android:cacheColorHint="@null"
+        android:fadingEdge="none"
+        android:horizontalSpacing="@dimen/default_padding_image_text_small"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/default_padding_image_text_small"
+        android:visibility="gone" />
+
+</LinearLayout>

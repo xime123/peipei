@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_car"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:src="@drawable/broadcast_magic_car" />
+
+    <LinearLayout
+        style="@style/WrapContentStyle"
+        android:layout_marginBottom="100dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/broadcast_magic_car_text_bg" >
+
+        <TextView
+            android:id="@+id/tv_nick"
+            style="@style/WrapContentStyle"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/default_car_nick_color"
+            android:textSize="@dimen/default_textsize_20" />
+
+        <LinearLayout
+            style="@style/WrapContentStyle"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/WrapContentStyle"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/str_car_run"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_20" />
+
+            <TextView
+                android:id="@+id/tv_gift_name"
+                style="@style/WrapContentStyle"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/default_car_name_color"
+                android:textSize="@dimen/default_textsize_20" />
+            
+            <TextView
+                style="@style/WrapContentStyle"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/str_car_login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_20" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,19 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true" >
+
+    <item
+        android:drawable="@drawable/show_openbox1"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/show_openbox2"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/show_openbox3"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/show_openbox4"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/show_openbox5"
+        android:duration="200"/>
+</animation-list>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 指定动画循环播放 -->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true" >
+
+    <!-- 添加多个帧 -->
+    <item
+        android:drawable="@drawable/broadcast_magic_flower1"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/broadcast_magic_flower2"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/broadcast_magic_flower3"
+        android:duration="100"/>
+
+</animation-list>

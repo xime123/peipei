@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WrapContentStyle"
+    android:background="@drawable/activity_space_popupwindow_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@+id/space_custom_attention_tv"
+        style="@style/WrapContentStyle"
+        android:text="@string/myfollower"
+        android:textColor="@color/white"
+        android:minWidth="50dp"
+        android:gravity="center"
+        android:textSize="@dimen/default_textsize_16"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/space_popupwindow_devider_line"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/space_custom_warn_tv"
+        style="@style/WrapContentStyle"
+        android:text="@string/report"
+        android:layout_marginTop="10dp"
+        android:minWidth="50dp"
+        android:gravity="center"
+        android:textSize="@dimen/default_textsize_16"
+        android:textColor="@color/white" />
+
+</LinearLayout>

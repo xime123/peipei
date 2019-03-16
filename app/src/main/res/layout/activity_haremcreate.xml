@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <com.tshang.peipei.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/default_padding_gridview_edge"
+                android:paddingTop="@dimen/default_padding_gridview_edge" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/default_padding_gridview_edge"
+                    android:paddingLeft="@dimen/default_padding_queen_bottom"
+                    android:paddingRight="@dimen/default_padding_view_edge"
+                    android:paddingTop="@dimen/default_padding_gridview_edge"
+                    android:text="@string/str_harem_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_14" />
+
+                <EditText
+                    android:id="@+id/edt_create_harem_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/default_padding_view_edge"
+                    android:background="@android:color/transparent"
+                    android:hint="3-12个字"
+                    android:maxLength="12"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_12" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/default_padding_gridview_edge"
+                android:paddingTop="@dimen/default_padding_gridview_edge" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="@dimen/default_padding_gridview_edge"
+                    android:paddingLeft="@dimen/default_padding_queen_bottom"
+                    android:paddingRight="@dimen/default_padding_view_edge"
+                    android:paddingTop="@dimen/default_padding_gridview_edge"
+                    android:text="@string/str_harem_image"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_14" />
+
+                <ImageView
+                    android:id="@+id/iv_create_harem_image"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/btn_create_harem_image_selector" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingLeft="@dimen/default_padding_gridview_edge"
+                    android:text="@string/str_click_change_image"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_10" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/default_padding_gridview_edge"
+                android:paddingTop="@dimen/default_padding_gridview_edge" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/default_padding_gridview_edge"
+                    android:paddingLeft="@dimen/default_padding_queen_bottom"
+                    android:paddingRight="@dimen/default_padding_view_edge"
+                    android:paddingTop="@dimen/default_padding_gridview_edge"
+                    android:text="@string/str_harem_sign"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_14" />
+
+                <EditText
+                    android:id="@+id/edt_create_harem_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dip"
+                    android:layout_marginRight="@dimen/default_padding_view_edge"
+                    android:background="@android:color/transparent"
+                    android:gravity="top"
+                    android:hint="@string/str_harem_fourty_length_limit"
+                    android:maxLength="40"
+                    android:maxLines="4"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_12" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_create_harem_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height_title"
+                android:layout_margin="@dimen/default_padding_queen_bottom"
+                android:background="@drawable/main_btn_logout_selector"
+                android:gravity="center"
+                android:padding="@dimen/default_padding_view_edge"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_15" />
+        </LinearLayout>
+    </com.tshang.peipei.view.ReboundScrollView>
+
+</LinearLayout>

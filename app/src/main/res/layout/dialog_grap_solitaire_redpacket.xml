@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/solitaire_redpacket_diaglog_bg" >
+
+    <ImageView
+        style="@style/FullScreenStyle"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/solitaire_redpacket_diaglog_top"
+        android:contentDescription="@null"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_question"
+        style="@style/WrapContentStyle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/solitaire_redpacket_diaglog_question" />
+    
+    <ImageView
+        android:id="@+id/iv_close"
+        style="@style/WrapContentStyle"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:contentDescription="@null"
+        android:src="@drawable/solitaire_redpacket_diaglog_close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/WrapContentStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/str_solitaire_redpacket"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_30" />
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/broadcast_magic_balloon_head"
+            android:contentDescription="@null"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/tv_sponsor"
+            style="@style/WrapContentStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/str_open_redpacket_pay_for"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_17" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            style="@style/WrapContentStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@null"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_50" />
+
+        <TextView
+            android:id="@+id/tv_open_redpacket"
+            style="@style/WrapContentStyle"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/solitaire_redpacket_diaglog_open_button"
+            android:gravity="center"
+            android:minWidth="200dp"
+            android:padding="10dp"
+            android:text="@string/str_open_redpacket"
+            android:textColor="@color/default_solitaire_redpacket_open"
+            android:textSize="@dimen/default_textsize_17" />
+        
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/WrapContentStyle"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/solitaire_redpacket_diaglog_cancel_button"
+            android:gravity="center"
+            android:minWidth="200dp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/reward_slete_age"
+            android:textColor="@color/main_broadcast_item_text_color"
+            android:textSize="@dimen/default_textsize_17" />
+    </LinearLayout>
+
+</FrameLayout>

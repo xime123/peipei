@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_pig"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:src="@drawable/broadcast_magic_change_pig"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_head"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/broadcast_magic_change_head"
+        android:contentDescription="@null"
+        android:padding="2dp" />
+
+    <ImageView
+        android:id="@+id/iv_hat"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:layout_marginBottom="75dp"
+        android:layout_marginLeft="15dp"
+        android:contentDescription="@null"
+        android:src="@drawable/broadcast_magic_change_hat"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_nose"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@null"
+        android:src="@drawable/broadcast_magic_change_nose"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_tie"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="90dp"
+        android:contentDescription="@null"
+        android:src="@drawable/broadcast_magic_change_tie"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_cloud"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:background="@anim/dialog_change_anim_cloud"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_wand"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="150dp"
+        android:contentDescription="@null"
+        android:src="@drawable/broadcast_magic_change_wand" />
+
+</FrameLayout>

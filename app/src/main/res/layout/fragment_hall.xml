@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_head_chat2"
+        android:background="@drawable/main_bar_nav_un" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/online"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_17" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dip"
+            android:layout_marginRight="@dimen/default_padding_view_edge"
+            android:layout_marginTop="8dip"
+            android:layout_toLeftOf="@+id/tv_select"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_line_2" />
+
+        <TextView
+            android:id="@+id/tv_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/default_padding_gridview_edge"
+            android:paddingRight="@dimen/default_padding_view_edge"
+            android:text="@string/str_main_select"
+            android:textColor="@color/peach"
+            android:textSize="@dimen/default_textsize_15" />
+    </RelativeLayout>
+
+    <include layout="@layout/pulltorefreshlistview_not_clickcolor" />
+
+</LinearLayout>

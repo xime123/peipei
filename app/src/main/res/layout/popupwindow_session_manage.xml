@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop_bg_white90"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_popuptitle"
+        android:background="@drawable/main_bg_pink2"
+        android:gravity="center"
+        android:text="@string/manage"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_textsize_13" />
+
+    <TextView
+        android:id="@+id/session_chat_limit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_popuplist"
+        android:background="@drawable/click_selector_peach"
+        android:gravity="center"
+        android:text="@string/setting_chat"
+        android:textColor="@color/peach"
+        android:textSize="@dimen/default_textsize_13" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_line" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/session_my_black"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_popuplist"
+        android:background="@drawable/click_selector_peach"
+        android:gravity="center"
+        android:text="@string/my_black"
+        android:textColor="@color/peach"
+        android:textSize="@dimen/default_textsize_13" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_line" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/session_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_popuplist"
+        android:background="@drawable/click_selector_peach"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textsize_15" />
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/default_padding_view_edge"
+    android:paddingLeft="@dimen/default_padding_view_edge"
+    android:paddingRight="@dimen/default_padding_view_edge"
+    android:paddingTop="@dimen/default_padding_view_edge" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/chat_item_skill_left_head_layout"
+            layout="@layout/item_chat_left_head"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <include layout="@layout/item_chat_listview_goddess_skill_right" />
+
+            <include layout="@layout/item_chat_listview_goddess_skill_left" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/chat_item_skill_right_head_layout"
+            layout="@layout/item_chat_right_head"
+            android:visibility="visible" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/chat_item_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/default_padding_view_edge"
+        android:background="@drawable/chat_item_notice_bg"
+        android:gravity="center"
+        android:padding="@dimen/default_padding_view_edge"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_textsize_15"
+        android:visibility="gone" />
+    
+    <LinearLayout
+        android:layout_marginTop="@dimen/default_padding_view_edge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/chat_item_skill_gift_left_head_layout"
+            layout="@layout/item_chat_left_head2"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <include layout="@layout/item_chat_listview_goddess_gift_skill_right" />
+
+            <include layout="@layout/item_chat_listview_goddess_gift_skill_left" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/chat_item_skill_gift_right_head_layout"
+            layout="@layout/item_chat_right_head2"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

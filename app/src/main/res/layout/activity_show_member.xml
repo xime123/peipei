@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_head_chat"
+        android:background="@drawable/main_bar_nav_un"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/default_padding_gridview_edge"
+        android:paddingTop="@dimen/default_padding_gridview_edge" >
+
+        <TextView
+            android:id="@+id/show_member_title_tv_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_bar_nav_selector_two"
+            android:drawableLeft="@drawable/main_img_arrow"
+            android:drawablePadding="@dimen/default_padding_gridview_edge"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/default_padding_view_edge"
+            android:paddingRight="@dimen/default_padding_view_text"
+            android:text="@string/back"
+            android:textColor="@color/peach"
+            android:textSize="@dimen/default_textsize_15" />
+
+        <TextView
+            android:id="@+id/show_member_title_tv_member"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_bar_tab_pr"
+            android:gravity="center"
+            android:text="@string/str_show_menber"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_14" />
+
+        <TextView
+            android:id="@+id/show_member_title_tv_devote"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/str_show_devote_hank"
+            android:textColor="@color/peach"
+            android:textSize="@dimen/default_textsize_14" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+    </LinearLayout>
+    
+     <android.support.v4.view.ViewPager
+        android:id="@+id/show_member_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+</LinearLayout>

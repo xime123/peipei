@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_face"
+            android:layout_marginLeft="@dimen/default_padding_view_edge"
+            android:layout_marginRight="@dimen/default_padding_view_edge"
+            android:layout_marginTop="@dimen/default_padding_view_edge"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_text_broadcast"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/broadcast_voice_bg_pr"
+                android:gravity="center"
+                android:text="@string/str_text_broadcast"
+                android:textColor="@color/peach"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <Button
+                android:id="@+id/btn_voice_broadcast"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/broadcast_voice_bg"
+                android:gravity="center"
+                android:text="@string/str_voice_broadcast"
+                android:textColor="@color/write_broadcast_text_color"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <Button
+                android:id="@+id/btn_finger_broadcast"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/broadcast_voice_bg"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/str_solitaire_redpacket"
+                android:textColor="@color/write_broadcast_text_color"
+                android:textSize="@dimen/default_textsize_15" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_broadcase_content"
+            android:layout_width="match_parent"
+            android:layout_height="160dip"
+            android:layout_marginBottom="@dimen/default_padding_view_edge"
+            android:layout_marginLeft="@dimen/default_padding_view_edge"
+            android:layout_marginRight="@dimen/default_padding_view_edge"
+            android:layout_marginTop="-1dip"
+            android:background="@drawable/main_img_list3_un"
+            android:paddingBottom="@dimen/default_padding_view_edge"
+            android:paddingLeft="@dimen/default_padding_view_text"
+            android:paddingRight="@dimen/default_padding_view_edge"
+            android:paddingTop="@dimen/default_padding_view_edge" >
+
+            <LinearLayout
+                android:id="@+id/ll_voice_broadcast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/default_padding_view_edge"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <com.tshang.peipei.view.TasksCompletedView
+                    android:id="@+id/task_voice_broadcast"
+                    android:layout_width="76dip"
+                    android:layout_height="76dip"
+                    android:background="@drawable/task_braodcast_voice_recording_selector"
+                    tc:circleColor="@color/white"
+                    tc:circleradius="32dip"
+                    tc:circlestrokeWidth="3dip"
+                    tc:ringColor="@color/ring_color" />
+
+                <TextView
+                    android:id="@+id/tv_broadcast_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_padding_gridview_edge"
+                    android:text="@string/str_click_recording"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_15" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dip"
+                android:layout_toRightOf="@+id/ll_voice_broadcast" >
+
+                <Button
+                    android:id="@+id/btn_rerecording"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/broadcast_voice_restart"
+                    android:gravity="center"
+                    android:text="@string/str_rerecording"
+                    android:textSize="@dimen/default_textsize_14"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_broadcast_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="top"
+                android:hint="@string/str_input_broadcast"
+                android:imeOptions="actionSend|flagNoEnterAction"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+                android:minLines="4"
+                android:paddingBottom="@dimen/default_padding_view_edge"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.tshang.peipei.view.MySlipSwitch
+                        android:id="@+id/myslipswitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_padding_gridview_edge" />
+
+                    <com.tshang.peipei.view.MySlipSwitchTwo
+                        android:id="@+id/myslipswitch_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_padding_gridview_edge"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_show_mind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginRight="@dimen/default_padding_view_edge"
+                    android:singleLine="true"
+                    android:text="@string/str_not_enough_money"
+                    android:textColor="@color/integer_value_color"
+                    android:textSize="@dimen/default_textsize_13" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_12" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_broadcast_finger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_padding_view_edge"
+                    android:layout_marginLeft="@dimen/default_padding_view_edge"
+                    android:layout_marginRight="@dimen/default_padding_view_edge"
+                    android:layout_marginTop="-1dip"
+                    android:background="@drawable/main_img_list3_un"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/default_padding_view_edge"
+                    android:paddingLeft="@dimen/default_padding_view_text"
+                    android:paddingRight="@dimen/default_padding_view_edge"
+                    android:paddingTop="@dimen/default_padding_view_edge"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        style="@style/FullWdithStyle"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/WrapContentStyle"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/str_redpacket_money"
+                            android:textColor="@color/space_black"
+                            android:textSize="@dimen/default_textsize_18" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dip"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <com.tshang.peipei.view.RedPacketCheckButton
+                                android:id="@+id/redpacket_money1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center" />
+
+                            <com.tshang.peipei.view.RedPacketCheckButton
+                                android:id="@+id/redpacket_money2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center" />
+
+                            <com.tshang.peipei.view.RedPacketCheckButton
+                                android:id="@+id/redpacket_money3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_send"
+                            style="@style/WrapContentStyle"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="23dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/solitaire_redpacket_send_bg"
+                            android:gravity="center"
+                            android:minWidth="200dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/str_money_to_redpacket"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/default_textsize_16" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_tips"
+                    style="@style/FullWdithStyle"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/WrapContentStyle"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/str_hall_solitaire_redpacket_rule"
+                        android:textColor="@color/space_black"
+                        android:textSize="@dimen/default_textsize_15" />
+
+                    <com.tshang.peipei.view.PeiPeiListView
+                        android:id="@+id/tips_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:cacheColorHint="@android:color/transparent"
+                        android:divider="@android:color/transparent"
+                        android:fadingEdge="none"
+                        android:fastScrollEnabled="false"
+                        android:listSelector="@android:color/transparent"
+                        android:overScrollMode="never" >
+                    </com.tshang.peipei.view.PeiPeiListView>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_broadcast_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+        <ViewStub
+            android:id="@+id/viewstub_select_text_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title_tabhost"
+            android:layout_gravity="bottom"
+            android:layout="@layout/view_broadcast_text_color_select" />
+
+        <LinearLayout
+            android:id="@+id/ll_writebroadcast_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title_tabhost"
+            android:background="@drawable/click_bottom_selector_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_broadcast_emoji"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/write_icon_emotion_selector" />
+
+            <ImageView
+                android:id="@+id/iv_broadcast_follower"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/write_icon_select_selector" />
+
+            <ImageView
+                android:id="@+id/iv_broadcast_color"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/write_icon_broadcastcolor_selector" />
+
+            <ImageView
+                android:id="@+id/iv_broadcast_special_effects"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:visibility="gone"
+                android:src="@drawable/write_icon_special_effects_selector" />
+
+            <ImageView
+                android:id="@+id/iv_broadcast_redpacket"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:visibility="gone"
+                android:src="@drawable/write_icon_redpacket_selector" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" >
+
+            <ViewStub
+                android:id="@+id/viewstub_write_broadcast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/view_emotion" />
+
+            <GridView
+                android:id="@+id/gv_specific"
+                android:layout_width="match_parent"
+                android:layout_height="231dip"
+                android:background="@drawable/message_bg_white"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

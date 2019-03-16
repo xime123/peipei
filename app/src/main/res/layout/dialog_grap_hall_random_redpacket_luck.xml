@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        style="@style/FullScreenStyle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/redpacket_dialog_bottom_bg"
+        android:contentDescription="@null" />
+
+    <ImageView
+        style="@style/FullWdithStyle"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/hall_redpacket_list_title"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        style="@style/FullScreenStyle"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/WrapContentStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="@string/str_hall_redpacket_detail"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_25" />
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/hall_redpacket_avatar_bg"
+            android:contentDescription="@null"
+            android:padding="2dp" />
+
+        <ScrollView
+            android:id="@+id/sv_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp" >
+
+            <LinearLayout
+                style="@style/FullScreenStyle"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_sender"
+                    style="@style/WrapContentStyle"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/dialog_title" />
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    style="@style/WrapContentStyle"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/default_hall_redpacket_desc" />
+
+                <TextView
+                    android:id="@+id/tv_redpacket_desc"
+                    style="@style/FullWdithStyle"
+                    android:background="@color/default_hint_color"
+                    android:padding="5dp"
+                    android:textColor="@color/main_broadcast_item_text_color" />
+
+                <FrameLayout style="@style/FullScreenStyle" >
+
+                    <com.tshang.peipei.view.PeiPeiListView
+                        android:id="@+id/listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cacheColorHint="@android:color/transparent"
+                        android:divider="@android:color/transparent"
+                        android:fadingEdge="none"
+                        android:fastScrollEnabled="false"
+                        android:listSelector="@android:color/transparent"
+                        android:overScrollMode="never"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp" >
+                    </com.tshang.peipei.view.PeiPeiListView>
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@null"
+        android:src="@drawable/solitaire_redpacket_diaglog_close" />
+
+</FrameLayout>

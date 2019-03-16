@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <TextView
+        android:id="@+id/bind_phone_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textsize_14" />
+
+    <EditText
+        android:id="@+id/bind_phone_input_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/sign_inputbox_bg"
+        android:gravity="center_vertical"
+        android:hint="@string/str_input_phone"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:paddingLeft="@dimen/default_padding_view_edge"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textsize_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <EditText
+            android:id="@+id/bind_phone_input_code"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/sign_inputbox_bg"
+            android:gravity="center_vertical"
+            android:hint="@string/str_input_code"
+            android:inputType="phone"
+            android:paddingLeft="@dimen/default_padding_view_edge"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_16" />
+
+        <Button
+            android:id="@+id/bind_phone_input_btn"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:background="@drawable/sign_code_btn_selector"
+            android:text="@string/str_get_code"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_16" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/bind_phone_input_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/sign_inputbox_bg"
+        android:digits="._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ!@#$~^*()?{}:|;,[]+-="
+        android:gravity="center_vertical"
+        android:hint="@string/str_set_password_hint"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/default_padding_view_edge"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textsize_16" />
+
+    <Button
+        android:id="@+id/bind_phone_sure_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/main_img_list0_selector"
+        android:text="@string/ok"
+        android:textColor="@color/peach"
+        android:textSize="@dimen/default_textsize_16" />
+
+</LinearLayout>

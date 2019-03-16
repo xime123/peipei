@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="@dimen/default_padding_view_edge" >
+
+    <!-- 头像 -->
+
+    <ImageView
+        android:id="@+id/item_detail_space_head"
+        android:layout_width="@dimen/default_height_head_chat"
+        android:layout_height="@dimen/default_height_head_chat"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/main_img_defaulthead_un" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_padding_view_edge"
+        android:orientation="vertical" >
+
+        <!-- 个人资料 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/item_detail_space_nick"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:textColor="@color/peach"
+                android:textSize="@dimen/default_textsize_14" />
+
+            <TextView
+                android:id="@+id/item_detail_space_create_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/default_textsize_12" />
+        </LinearLayout>
+
+        <!-- 个人动态 文字 -->
+
+        <TextView
+            android:id="@+id/item_detail_space_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_14" />
+
+        <!-- 操作按钮 -->
+
+        <TextView
+            android:id="@+id/item_detail_space_tv_oprate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:drawableRight="@drawable/person_icon_reply"
+            android:paddingBottom="5dip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_14" />
+
+        <com.tshang.peipei.view.ReplyChildListView
+            android:id="@+id/item_detail_space_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:listSelector="@android:color/transparent" >
+        </com.tshang.peipei.view.ReplyChildListView>
+    </LinearLayout>
+
+</LinearLayout>

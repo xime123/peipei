@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/default_padding_view_edge"
+        android:layout_marginRight="@dimen/default_padding_view_edge"
+        android:layout_marginTop="@dimen/default_padding_between_view"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:background="@drawable/main_img_list0_selector"
+            android:gravity="center_vertical"
+            android:padding="@dimen/default_padding_view_edge" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:digits="._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ!@#$~^*()?{}:|;,[]+-="
+                android:gravity="center_vertical"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:paddingLeft="@dimen/default_padding_view_edge"
+                android:singleLine="true"
+                android:textSize="@dimen/default_textsize_13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/main_img_list0_selector"
+            android:gravity="center_vertical"
+            android:padding="@dimen/default_padding_view_edge" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nick"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <EditText
+                android:id="@+id/register_nick"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/regist_nick_hint"
+                android:maxLength="8"
+                android:paddingLeft="@dimen/default_padding_view_edge"
+                android:singleLine="true"
+                android:textSize="@dimen/default_textsize_13" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_line"
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/main_img_list0_selector"
+            android:gravity="center_vertical"
+            android:padding="@dimen/default_padding_view_edge" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <RadioGroup
+                android:id="@+id/register_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/default_padding_view_edge"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:button="@android:color/transparent"
+                    android:drawableRight="@drawable/sign_img_choose_selector"
+                    android:text="@string/male"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:button="@android:color/transparent"
+                    android:drawableRight="@drawable/sign_img_choose_selector"
+                    android:text="@string/female"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/main_img_list0_selector"
+            android:gravity="center_vertical"
+            android:padding="@dimen/default_padding_view_edge" >
+
+            <EditText
+                android:id="@+id/register_captcha_et"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/captcha_hint"
+                android:inputType="numberSigned"
+                android:singleLine="true"
+                android:textSize="@dimen/default_textsize_13" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register_btn_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:layout_marginTop="@dimen/default_padding_view_edge"
+            android:background="@drawable/main_btn_logout_selector"
+            android:paddingLeft="@dimen/default_padding_view_edge"
+            android:paddingRight="@dimen/default_padding_view_edge"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_15" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_space_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/person_img_defaultpic_small" >
+
+    <FrameLayout
+        android:id="@+id/rl_avatar_layout"
+        style="@style/WrapContentStyle"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/head_custom_include_iv_head"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/activity_space_avatar_bg"
+            android:contentDescription="@null"
+            android:padding="2dp"
+            android:src="@drawable/homepage_headimg_defaut" />
+
+        <ImageView
+            android:id="@+id/iv_identify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/head_custom_include_iv_tips"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@null"
+            android:src="@drawable/homepage_tips_termination"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <RelativeLayout
+        style="@style/WrapContentStyle"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/rl_avatar_layout" >
+
+        <RelativeLayout
+            android:id="@+id/rl_space_info"
+            style="@style/WrapContentStyle"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/iv_userlevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_view"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/tv_age"
+                style="@style/WrapContentStyle"
+                android:layout_below="@id/iv_userlevel"
+                android:layout_marginLeft="@dimen/default_margin_view"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="@dimen/default_margin_view"
+                android:paddingTop="@dimen/default_margin_view"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_id"
+                style="@style/WrapContentStyle"
+                android:layout_alignBottom="@id/tv_age"
+                android:layout_marginLeft="@dimen/default_margin_view"
+                android:layout_toRightOf="@id/tv_age"
+                android:shadowColor="@color/space_shadow_color"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_pet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/default_padding_view_edge"
+            android:layout_marginLeft="@dimen/default_margin_view"
+            android:layout_marginRight="@dimen/default_margin_view"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_half_background" >
+
+        <TextView
+            android:id="@+id/tv_online"
+            style="@style/WrapContentStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="10dp"
+            android:shadowColor="@color/space_shadow_color"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_onshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_padding_gridview_edge"
+            android:background="@anim/fat_po_onshow"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="2dp"
+            android:layout_height="15sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_online"
+            android:background="@color/white"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            style="@style/WrapContentStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_line"
+            android:drawableLeft="@drawable/person_icon_location"
+            android:drawablePadding="5dp"
+            android:shadowColor="@color/space_shadow_color"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/homepage_firstchargr"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

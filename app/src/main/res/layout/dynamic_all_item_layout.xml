@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        android:id="@+id/dynamic_user_tops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/dynamic_item_bg"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/dynamic_head_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip" >
+
+            <ImageView
+                android:id="@+id/dynamic_head_iv"
+                android:layout_width="@dimen/default_height_head_chat"
+                android:layout_height="@dimen/default_height_head_chat"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/default_padding_view_edge"
+                android:background="@drawable/main_img_defaulthead_pr" />
+
+            <TextView
+                android:id="@+id/dynamic_nick_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/dynamic_head_iv"
+                android:text="陪陪13"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_16" />
+
+            <TextView
+                android:id="@+id/dynamic_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="12:34"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/default_textsize_12" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/dynamic_iv"
+            android:layout_width="match_parent"
+            android:layout_height="270dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/screen_img_bg"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/dynamic_content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="270dip"
+            android:layout_gravity="center"
+            android:background="@color/official_bg1"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="10"
+            android:text="你好世界"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/dynamic_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@color/transparent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/dynamic_item_chat_layout"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/click_selector_peach"
+                android:gravity="center"
+                android:padding="10dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dynamic_private_chat_selector" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="私聊"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_14" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/dynamic_item_line_1"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="13dip"
+                android:layout_marginTop="13dip"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/dynamic_item_reply_layout"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/click_selector_peach"
+                android:gravity="center"
+                android:padding="10dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dynamic_reply_selector" />
+
+                <TextView
+                    android:id="@+id/dynamic_item_msg_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="10"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="13dip"
+                android:layout_marginTop="13dip"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/dynamic_item_praise_layout"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/click_selector_peach"
+                android:gravity="center"
+                android:padding="10dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dynamic_praise_selector" />
+
+                <TextView
+                    android:id="@+id/dynamic_item_reply_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="25"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_14" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/dynamic_official_tops"
+        android:layout_width="match_parent"
+        android:layout_height="350dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/dynamic_official_item_bg1"
+        android:padding="1dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/dynamic_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/dynamic_btn"
+            android:layout_width="150dip"
+            android:layout_height="35dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dip"
+            android:background="@drawable/dynamic_official_btn_selector"
+            android:text="345"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</RelativeLayout>

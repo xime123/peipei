@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_show_adv"
+        android:layout_width="match_parent"
+        android:layout_height="78dip"
+        android:background="@color/new_bg_color" 
+        android:visibility="gone">
+
+        <com.tshang.peipei.view.AutoScrollViewPager
+            android:id="@+id/autopager_show_adv"
+            android:layout_width="match_parent"
+            android:layout_height="78dip" />
+
+        <com.tshang.peipei.view.PageControlView
+            android:id="@+id/pageControlView_show_adv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/default_padding_gridview_edge" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffe4d6"
+        android:paddingBottom="@dimen/default_padding_gridview_edge"
+        android:paddingLeft="@dimen/default_padding_view_edge"
+        android:paddingTop="@dimen/default_padding_gridview_edge"
+        android:text="@string/str_peipei_talk_room"
+        android:textColor="@color/peach"
+        android:visibility="gone"
+        android:textSize="@dimen/default_textsize_12" />
+
+    <LinearLayout
+        android:id="@+id/ll_show_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7cdb3"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_open_show"
+            android:layout_width="@dimen/default_height_title_tabhost"
+            android:layout_height="match_parent"
+            android:background="@drawable/click_open_show_selector_bg"
+            android:gravity="center"
+            android:text="@string/str_open_show"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_14" />
+
+        <com.tshang.peipei.view.HorizontalListView
+            android:id="@+id/broad_show_head_hzlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="@android:color/transparent"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#edbe94"
+        android:scaleType="fitXY" />
+
+    <include layout="@layout/pulltorefreshlistview_not_clickcolor" />
+
+</LinearLayout>

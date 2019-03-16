@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding_view_edge" >
+
+    <ImageView
+        android:id="@+id/new_dynamic_list_header_image"
+        android:layout_width="@dimen/default_height_head_chat"
+        android:layout_height="@dimen/default_height_head_chat"
+        android:background="@drawable/main_img_defaulthead_selector" />
+
+    <ImageView
+        android:id="@+id/new_dynamic_list_header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/new_dynamic_list_header_image"
+        android:background="@drawable/message_img_redot0"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_toLeftOf="@+id/new_dyanmic_right_layout"
+        android:layout_toRightOf="@+id/new_dynamic_list_header_text"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/new_dynamic_list_chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test4"
+            android:textColor="@color/peach"
+            android:textSize="@dimen/default_textsize_15" />
+
+        <TextView
+            android:id="@+id/new_dynamic_list_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是评论内容会有很多很多"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_14" />
+
+        <TextView
+            android:id="@+id/new_dynamic_list_chat_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="前天"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/default_textsize_12" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/new_dyanmic_right_layout"
+        android:layout_width="70dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/new_dynamic_list_iv"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/screen_img_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/new_dynamic_list_tv"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/official_bg1"
+            android:gravity="center"
+            android:text="内容"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

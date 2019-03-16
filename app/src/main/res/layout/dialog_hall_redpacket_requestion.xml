@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/tips_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:overScrollMode="never"
+        android:background="@drawable/solitaire_redpacket_requestion_bg" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@null"
+        android:src="@drawable/solitaire_redpacket_diaglog_close2" />
+
+    <TextView
+        style="@style/WrapContentStyle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:contentDescription="@null"
+        android:text="@string/str_peipei_redpacket"
+        android:textColor="@color/white"
+        android:paddingTop="5dp"
+        android:textSize="@dimen/default_textsize_15"
+        android:background="@drawable/solitaire_redpacket_title" />
+
+</FrameLayout>

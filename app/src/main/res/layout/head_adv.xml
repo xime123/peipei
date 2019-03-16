@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_adv"
+    android:layout_width="match_parent"
+    android:layout_height="78dip"
+    android:background="@color/new_bg_color" >
+
+    <com.tshang.peipei.view.AutoScrollViewPager
+        android:id="@+id/autopager_adv"
+        android:layout_width="match_parent"
+        android:layout_height="78dip" />
+
+    <com.tshang.peipei.view.PageControlView
+        android:id="@+id/pageControlView_adv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/default_padding_gridview_edge" />
+
+</RelativeLayout>

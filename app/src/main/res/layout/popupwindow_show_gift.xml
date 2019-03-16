@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main_message_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/popwindow_show_gift_other"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="@drawable/message_gift_number_capacity1_selector"
+            android:gravity="center"
+            android:text="@string/str_show_gift_other_num"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize_13" />
+
+        <LinearLayout
+            android:id="@+id/popwindow_show_gift_1314"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/message_gift_number_capacity2_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="1314"
+                android:textColor="@color/gift_num_orange" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/str_show_gift_num_1314"
+                android:textColor="@color/gift_num_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popwindow_show_gift_520"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/message_gift_number_capacity2_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="520"
+                android:textColor="@color/gift_num_orange" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/str_show_gift_num_520"
+                android:textColor="@color/gift_num_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popwindow_show_gift_188"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/message_gift_number_capacity2_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="188"
+                android:textColor="@color/gift_num_orange" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/str_show_gift_num_188"
+                android:textColor="@color/gift_num_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popwindow_show_gift_99"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/message_gift_number_capacity2_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="99"
+                android:textColor="@color/gift_num_orange" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/str_show_gift_num_99"
+                android:textColor="@color/gift_num_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popwindow_show_gift_10"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/message_gift_number_capacity2_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="10"
+                android:textColor="@color/gift_num_orange" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/str_show_gift_num_10"
+                android:textColor="@color/gift_num_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popwindow_show_gift_1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/message_gift_number_capacity3_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="1"
+                android:textColor="@color/gift_num_orange" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/str_show_gift_num_1"
+                android:textColor="@color/gift_num_gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

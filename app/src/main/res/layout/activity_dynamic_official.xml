@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dynamic_official_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_head_chat"
+            android:background="@drawable/main_bar_nav_un" >
+
+            <!-- 左边,返回键 -->
+
+            <TextView
+                android:id="@+id/dynamic_official_title_tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_bar_nav_selector_two"
+                android:drawableLeft="@drawable/main_img_arrow"
+                android:drawablePadding="4dip"
+                android:gravity="center_vertical"
+                android:minWidth="60dip"
+                android:paddingLeft="@dimen/default_padding_view_edge"
+                android:paddingRight="@dimen/default_padding_view_text"
+                android:singleLine="true"
+                android:text="@string/back"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <!-- 中间显示的标题 -->
+
+            <TextView
+                android:id="@+id/dynamic_official_title_tv_mid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/dynamic_official_title_lin_right"
+                android:layout_toRightOf="@+id/dynamic_official_title_tv_left"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_17" />
+
+            <!-- 右边显示的操作项 -->
+
+            <LinearLayout
+                android:id="@+id/dynamic_official_title_lin_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/main_bar_nav_selector_two"
+                android:gravity="center"
+                android:minWidth="60dip" >
+
+                <ImageView
+                    android:id="@+id/dynamic_official_title_iv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/default_padding_gridview_edge"
+                    android:scaleType="center"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/dynamic_official_title_tv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/default_padding_gridview_edge"
+                    android:paddingRight="@dimen/default_padding_view_edge"
+                    android:textColor="@color/peach"
+                    android:textSize="@dimen/default_textsize_15"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- 导航 上的 那根虚线 -->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_img_navshadow" />
+    </LinearLayout>
+
+    <com.tshang.peipei.vender.pulltoprefresh.library.PullToRefreshListView
+        android:id="@+id/dynamic_official_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dynamic_official_title"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@android:color/transparent"
+        android:fadingEdge="@color/transparent"
+        android:fastScrollEnabled="false"
+        android:listSelector="@drawable/click_selector_peach"
+        android:overScrollMode="never" />
+
+    <TextView
+        android:id="@+id/dynamic_official_empty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20dip"
+        android:drawablePadding="5dip"
+        android:gravity="center"
+        android:text="@string/no_dynamic"
+        android:textColor="@color/gray"
+        android:visibility="gone" />
+
+</RelativeLayout>

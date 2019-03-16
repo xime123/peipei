@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/solitaire_redpacket_diaglog_bg" >
+
+    <ImageView
+        style="@style/FullScreenStyle"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/solitaire_redpacket_diaglog_top"
+        android:contentDescription="@null"
+        android:visibility="visible" />
+
+    <ScrollView style="@style/FullWdithStyle" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/WrapContentStyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/str_solitaire_redpacket"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_30" />
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/broadcast_magic_balloon_head"
+                android:contentDescription="@null"
+                android:padding="2dp" />
+
+            <TextView
+                android:id="@+id/tv_sponsor"
+                style="@style/WrapContentStyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/str_current_redpacket_join_person"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_17" />
+
+            <TextView
+                android:id="@+id/tv_money_type"
+                style="@style/WrapContentStyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/str_current_redpacket_money_type"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_20" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                style="@style/WrapContentStyle"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@null"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="@dimen/default_textsize_50" />
+
+            <TextView
+                android:id="@+id/tv_open_redpacket"
+                style="@style/FullWdithStyle"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/solitaire_redpacket_diaglog_open_button"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:padding="10dp"
+                android:text="@string/str_open_redpacket"
+                android:textColor="@color/default_solitaire_redpacket_open"
+                android:textSize="@dimen/default_textsize_17" />
+
+            <TextView
+                android:id="@+id/tv_des"
+                style="@style/WrapContentStyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="@null"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_14" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/iv_question"
+        style="@style/WrapContentStyle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/solitaire_redpacket_diaglog_question" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/solitaire_redpacket_diaglog_close" />
+</FrameLayout>

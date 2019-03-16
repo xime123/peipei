@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:id="@+id/ll_show_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="15dip" >
+
+        <ImageView
+            android:id="@+id/item_custom_space_head"
+            android:layout_width="@dimen/default_height_head_chat"
+            android:layout_height="@dimen/default_height_head_chat"
+            android:layout_marginLeft="@dimen/default_padding_view_edge"
+            android:background="@drawable/main_img_defaulthead_pr" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_padding_view_edge"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/default_padding_view_edge" >
+
+            <!-- 个人资料 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/item_custom_space_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/peach"
+                    android:textSize="@dimen/default_textsize_14" />
+
+                <TextView
+                    android:id="@+id/item_custom_space_create_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_12" />
+            </RelativeLayout>
+
+            <!-- 个人动态 文字 -->
+
+            <TextView
+                android:id="@+id/item_custom_space_tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_14" />
+
+            <!-- 图片展示 -->
+
+            <com.tshang.peipei.view.UnScrollGridview
+                android:id="@+id/item_custom_space_gridview"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:horizontalSpacing="5dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="3"
+                android:verticalSpacing="5dp" >
+            </com.tshang.peipei.view.UnScrollGridview>
+
+            <ImageView
+                android:id="@+id/item_custom_space_list_rc_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/main_img_defaultpic_small" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/item_space_tv_write_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/person_img_sendfailed"
+                    android:drawablePadding="3dip"
+                    android:padding="10dip"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="@string/write_failure"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_12"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/item_custom_space_ll_reply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/item_fcustom_space_tv_appreciate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/person_icon_praise_un"
+                        android:drawablePadding="5dip"
+                        android:paddingBottom="@dimen/default_padding_gridview_edge"
+                        android:paddingLeft="@dimen/default_padding_view_edge"
+                        android:paddingRight="@dimen/default_padding_view_edge"
+                        android:paddingTop="@dimen/default_padding_gridview_edge"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/default_textsize_12" />
+
+                    <TextView
+                        android:id="@+id/item_custom_space_tv_reply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/person_icon_reply"
+                        android:drawablePadding="5dip"
+                        android:paddingBottom="@dimen/default_padding_gridview_edge"
+                        android:paddingLeft="@dimen/default_padding_view_edge"
+                        android:paddingRight="@dimen/default_padding_view_edge"
+                        android:paddingTop="@dimen/default_padding_gridview_edge"
+                        android:text="0"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/main_line" />
+
+</LinearLayout>

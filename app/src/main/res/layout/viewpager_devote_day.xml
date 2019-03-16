@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tshang.peipei.vender.pulltoprefresh.library.PullToRefreshListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/devote_day_listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:cacheColorHint="@color/transparent"
+    android:divider="@android:color/transparent"
+    android:fadingEdge="@color/transparent"
+    android:fastScrollEnabled="false"
+    android:listSelector="@drawable/click_selector_peach"
+    android:stretchMode="columnWidth" >
+
+</com.tshang.peipei.vender.pulltoprefresh.library.PullToRefreshListView>

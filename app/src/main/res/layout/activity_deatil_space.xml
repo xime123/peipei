@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink" >
+
+    <include
+        android:id="@+id/ll_titile"
+        layout="@layout/title" />
+
+    <com.tshang.peipei.vender.pulltoprefresh.library.PullToRefreshListView
+        android:id="@+id/detail_space_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/detail_space_ll_reply"
+        android:layout_below="@+id/ll_titile"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/main_line"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:overScrollMode="never" >
+    </com.tshang.peipei.vender.pulltoprefresh.library.PullToRefreshListView>
+
+    <LinearLayout
+        android:id="@+id/detail_space_ll_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/main_bar_menu_un"
+        android:gravity="center_vertical"
+        android:padding="@dimen/default_padding_gridview_edge"
+        android:visibility="visible" >
+
+        <EditText
+            android:id="@+id/detail_spacereply_input_et"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/main_img_insert"
+            android:imeOptions="actionSend|flagNoEnterAction"
+            android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+            android:maxLength="300"
+            android:maxLines="4"
+            android:minHeight="35dip"
+            android:paddingLeft="7dip"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/detail_space_reply_input_btn"
+            android:layout_width="60dp"
+            android:layout_height="35dip"
+            android:layout_marginLeft="@dimen/default_padding_gridview_edge"
+            android:background="@drawable/message_btn_send_selector"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/default_padding_view_edge"
+    android:paddingLeft="@dimen/default_padding_view_edge"
+    android:paddingRight="@dimen/default_padding_view_edge"
+    android:paddingTop="@dimen/default_padding_view_edge" >
+
+    <LinearLayout
+        android:id="@+id/ll_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/chat_item_skill_left_head_layout"
+            layout="@layout/item_chat_left_head"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <include layout="@layout/item_hall_listview_solitaire_redpacket_right" />
+
+            <include layout="@layout/item_hall_listview_solitaire_redpacket_left" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/chat_item_skill_right_head_layout"
+            layout="@layout/item_chat_right_head"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/chat_item_notice"
+        style="@style/WrapContentStyle"
+        android:layout_marginTop="@dimen/default_padding_view_edge"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/chat_item_notice_bg"
+        android:visibility="gone" />
+
+</LinearLayout>

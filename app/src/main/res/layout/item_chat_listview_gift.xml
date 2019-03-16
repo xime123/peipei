@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/default_padding_view_edge"
+    android:paddingLeft="@dimen/default_padding_view_edge"
+    android:paddingRight="@dimen/default_padding_view_edge"
+    android:paddingTop="@dimen/default_padding_view_edge" >
+
+    <LinearLayout
+        android:id="@+id/chat_item_gift_left_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/chat_item_head"
+                android:layout_width="@dimen/default_height_head_chat"
+                android:layout_height="@dimen/default_height_head_chat"
+                android:src="@drawable/main_img_defaulthead_pr" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal"
+                android:paddingLeft="5dip"
+                android:paddingRight="@dimen/default_padding_view_edge" >
+
+                <ImageView
+                    android:id="@+id/chat_item_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/message_img_bubble1_white"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/chat_item_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:background="@drawable/chat_item_left"
+                        android:minWidth="60dp"
+                        android:paddingBottom="@dimen/default_padding_view_edge"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="10dip"
+                        android:paddingTop="@dimen/default_padding_view_edge"
+                        android:textColor="@color/black"
+                        android:textIsSelectable="true" />
+
+                    <TextView
+                        android:id="@+id/chat_item_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/chat_item_time_bg"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/default_textsize_10"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chat_item_gift_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_padding_view_edge"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/chat_item_gift_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_padding_view_edge"
+                android:layout_marginRight="@dimen/default_padding_view_edge"
+                android:text="@string/chat_get_gift_context"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/default_textsize_13" />
+
+            <com.tshang.peipei.view.PeipeiGridView
+                android:id="@+id/chat_item_gift_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@null"
+                android:fadingEdge="none"
+                android:horizontalSpacing="@dimen/default_padding_image_text_small"
+                android:listSelector="#00000000"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/default_padding_image_text_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_item_gift_right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingRight="5dip" >
+
+                <TextView
+                    android:id="@+id/chat_item_right_content_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chat_item_right"
+                    android:minWidth="60dp"
+                    android:paddingBottom="@dimen/default_padding_view_edge"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="@dimen/default_padding_view_edge"
+                    android:textColor="@color/black"
+                    android:textIsSelectable="true" />
+
+                <TextView
+                    android:id="@+id/chat_item_right_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/chat_item_time_bg"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize_10"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/chat_item_right_head"
+                android:layout_width="@dimen/default_height_head_chat"
+                android:layout_height="@dimen/default_height_head_chat"
+                android:src="@drawable/main_img_defaulthead_pr" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chat_item_right_gift_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/default_padding_view_edge"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/chat_item_right_gift_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_padding_view_edge"
+                android:layout_marginRight="@dimen/default_padding_view_edge"
+                android:gravity="right"
+                android:text="送给TA的礼物"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/default_textsize_13" />
+
+            <com.tshang.peipei.view.PeipeiGridView
+                android:id="@+id/chat_right_item_gift_gv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:cacheColorHint="@null"
+                android:fadingEdge="none"
+                android:gravity="right"
+                android:horizontalSpacing="@dimen/default_padding_image_text_small"
+                android:listSelector="#00000000"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/default_padding_image_text_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

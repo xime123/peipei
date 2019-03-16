@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/write_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/default_padding_view_edge"
+        android:paddingRight="@dimen/default_padding_view_edge" >
+
+        <TextView
+            android:id="@+id/invite_tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的ＩＤ是10000"
+            android:textColor="@color/peach"
+            android:textSize="@dimen/default_textsize_15" />
+
+        <TextView
+            android:id="@+id/invite_tv_share_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="通过以下方式将它发送给你的女性朋友，或者手动发送ＩＤ，并让她在注册时填写您的ＩＤ．她在半年内赚取多少积分，系统会额外奖励给您一成积分."
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_13" />
+
+        <RelativeLayout
+            android:id="@+id/invite_share_to_qq"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/main_img_list1_selector"
+            android:gravity="center"
+            android:padding="@dimen/default_padding_view_edge" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="分享给ＱＱ好友"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_line"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/invite_share_to_weixin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:background="@drawable/main_img_list2_selector"
+            android:gravity="center"
+            android:padding="@dimen/default_padding_view_edge" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="分享给微信好友"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/setting_divide"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_line"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/invite_share_to_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:background="@drawable/main_img_list2_selector"
+            android:gravity="center"
+            android:padding="@dimen/default_padding_view_edge" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="分享到微信朋友圈"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_line"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/invite_share_to_weibo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:background="@drawable/main_img_list2_selector"
+            android:gravity="center"
+            android:padding="@dimen/default_padding_view_edge" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="分享到新浪微博"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_line"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/invite_share_to_tencent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:background="@drawable/main_img_list3_selector"
+            android:gravity="center"
+            android:padding="@dimen/default_padding_view_edge" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="分享到腾讯微博"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

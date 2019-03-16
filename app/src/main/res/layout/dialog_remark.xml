@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="142dp"
+    android:background="@drawable/pop_bg_white"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding_view_text" >
+
+    <EditText
+        android:id="@+id/edittext_remark"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_title"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/homepage_myfried_searchbox_bg"
+        android:paddingLeft="@dimen/default_padding_view_edge"
+        android:paddingRight="@dimen/default_padding_view_edge"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textsize_15" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ok_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/default_padding_view_text"
+            android:layout_weight="1"
+            android:background="@drawable/main_btn_big_selector"
+            android:paddingBottom="@dimen/default_padding_gridview_edge"
+            android:paddingTop="@dimen/default_padding_gridview_edge"
+            android:text="@string/cancel"
+            android:textSize="@dimen/default_textsize_15" />
+
+        <Button
+            android:id="@+id/ok_sure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/main_btn_big_selector"
+            android:paddingBottom="@dimen/default_padding_gridview_edge"
+            android:paddingTop="@dimen/default_padding_gridview_edge"
+            android:text="@string/ok"
+            android:textColor="@color/peach"
+            android:textSize="@dimen/default_textsize_15" />
+    </LinearLayout>
+
+</LinearLayout>

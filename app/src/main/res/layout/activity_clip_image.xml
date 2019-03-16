@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181818" >
+
+    <ImageView
+        android:id="@+id/clip_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="matrix" />
+
+    <com.tshang.peipei.view.ClipView
+        android:id="@+id/clipview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/clip_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/transparent"
+            android:paddingBottom="@dimen/default_padding_view_edge"
+            android:paddingLeft="@dimen/default_padding_view_edge"
+            android:paddingRight="@dimen/default_padding_view_edge"
+            android:paddingTop="@dimen/default_padding_gridview_edge"
+            android:text="@string/cancel"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/default_textsize_14" />
+
+        <Button
+            android:id="@+id/clip_ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:background="@android:color/transparent"
+            android:paddingBottom="@dimen/default_padding_view_edge"
+            android:paddingLeft="@dimen/default_padding_view_edge"
+            android:paddingRight="@dimen/default_padding_view_edge"
+            android:paddingTop="@dimen/default_padding_gridview_edge"
+            android:text="@string/str_select"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/default_textsize_14" />
+    </RelativeLayout>
+
+</RelativeLayout>

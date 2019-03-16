@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/default_padding_image_text_small"
+        android:paddingRight="@dimen/default_padding_image_text_small"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/chat_item_right_sent_pb"
+                style="?android:attr/progressBarStyleSmallInverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" >
+            </ProgressBar>
+
+            <ImageButton
+                android:id="@+id/chat_item_right_sentflag_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/default_padding_view_text"
+                android:background="@drawable/message_img_warnn_selector"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/chat_item_private_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/chat_bg_shape_peach"
+                    android:orientation="vertical"
+                    android:padding="@dimen/default_padding_view_edge" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical" >
+
+                            <ImageView
+                                android:id="@+id/chat_item_private_image"
+                                android:layout_width="@dimen/default_height_menu"
+                                android:layout_height="@dimen/default_height_menu"
+                                android:background="@drawable/main_bg_pink" />
+
+                            <ImageView
+                                android:layout_width="@dimen/default_height_menu"
+                                android:layout_height="@dimen/default_height_menu"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/album_img_picmask" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/chat_item_private_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/default_padding_image_text_small"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/default_textsize_13" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/message_img_line2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/message_img_arrow2"
+                        android:text="查看相册"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/default_textsize_12" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/chat_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize_11"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/chat_item_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/message_img_bubble2_pink" />
+
+        <ImageView
+            android:id="@+id/chat_item_head"
+            android:layout_width="@dimen/default_height_head_chat"
+            android:layout_height="@dimen/default_height_head_chat"
+            android:layout_gravity="bottom"
+            android:src="@drawable/main_img_defaulthead_pr" />
+    </LinearLayout>
+
+    <include layout="@layout/text_chat_black" />
+
+</LinearLayout>

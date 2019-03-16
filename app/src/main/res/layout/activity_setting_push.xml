@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/default_padding_view_edge"
+        android:layout_marginRight="@dimen/default_padding_view_edge"
+        android:layout_marginTop="@dimen/default_padding_between_view"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="消息提醒"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/default_textsize_13" />
+
+        <RelativeLayout
+            android:id="@+id/setting_sound_rlt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:background="@drawable/main_img_list1_selector"
+            android:padding="@dimen/default_padding_view_edge" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/sound"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <ToggleButton
+                android:id="@+id/setting_push_sound_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/setting_push_toggle_selector"
+                android:checked="true"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_line"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/setting_shake_rlt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:background="@drawable/main_img_list3_selector"
+            android:padding="@dimen/default_padding_view_edge" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/shake"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <ToggleButton
+                android:id="@+id/setting_push_shake_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/setting_push_toggle_selector"
+                android:checked="true"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="@dimen/default_padding_view_edge"
+            android:text="消息通知"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/default_textsize_13" />
+
+        <RelativeLayout
+            android:id="@+id/setting_userinfo_rlt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:background="@drawable/main_img_list1_selector"
+            android:padding="@dimen/default_padding_view_edge" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/chat_toggle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <ToggleButton
+                android:id="@+id/setting_push_chat_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/setting_push_toggle_selector"
+                android:checked="true"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_line"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/setting_chat_rlt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:background="@drawable/main_img_list2_selector"
+            android:padding="@dimen/default_padding_view_edge" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/sys_toggle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <ToggleButton
+                android:id="@+id/setting_push_sys_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/setting_push_toggle_selector"
+                android:checked="true"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_line"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/setting_message_rlt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:background="@drawable/main_img_list3_selector"
+            android:padding="@dimen/default_padding_view_edge" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/gift_toggle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <ToggleButton
+                android:id="@+id/setting_push_gift_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/setting_push_toggle_selector"
+                android:checked="true"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_rel_exit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:layout_marginTop="@dimen/default_padding_view_edge"
+            android:background="@drawable/main_img_list0_selector"
+            android:padding="@dimen/default_padding_view_edge" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/ignore_at_night"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <ToggleButton
+                android:id="@+id/setting_push_ignore_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/setting_push_toggle_selector"
+                android:checked="true"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding_view_edge"
+            android:text="@string/str_message_toast"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize_10" />
+    </LinearLayout>
+
+</LinearLayout>

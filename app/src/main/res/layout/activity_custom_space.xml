@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#faf7fa"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent" >
+
+        <LinearLayout
+            android:id="@+id/ll_space_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_title"
+            android:layout_alignParentBottom="true"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/space_custom_talk_ll"
+                style="@style/FullScreenStyle"
+                android:layout_weight="1"
+                android:background="@drawable/main_bar_menu_selector"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/WrapContentStyle"
+                    android:contentDescription="@null"
+                    android:src="@drawable/person_icon_chat_pr" />
+
+                <TextView
+                    style="@style/WrapContentStyle"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="@string/chat"
+                    android:textColor="@color/space_bottom_txt_color"
+                    android:textSize="@dimen/default_textsize_13" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/space_bottom_line"
+                android:contentDescription="@null" />
+
+            <LinearLayout
+                android:id="@+id/space_custom_gift_tv"
+                style="@style/FullScreenStyle"
+                android:layout_weight="1"
+                android:background="@drawable/main_bar_menu_selector"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/WrapContentStyle"
+                    android:contentDescription="@null"
+                    android:src="@drawable/person_icon_gift_2" />
+
+                <TextView
+                    style="@style/WrapContentStyle"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="@string/str_send_gifts"
+                    android:textColor="@color/space_bottom_txt_color"
+                    android:textSize="@dimen/default_textsize_13" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.tshang.peipei.view.ObservableScrollView
+            android:id="@+id/sv_scroll"
+            style="@style/FullWdithStyle"
+            android:layout_above="@id/ll_space_bottom" >
+
+            <include layout="@layout/activity_space_custom_head" />
+        </com.tshang.peipei.view.ObservableScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_head_chat"
+            android:background="@drawable/activity_space_title_bg_shadow"
+            android:orientation="horizontal" >
+
+            <!-- 左边,返回键 -->
+
+            <TextView
+                android:id="@+id/title_tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/main_icon_back"
+                android:drawablePadding="@dimen/default_padding_gridview_edge"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/default_padding_view_edge"
+                android:paddingRight="@dimen/default_padding_view_text"
+                android:shadowColor="@color/space_shadow_color"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:text="@string/back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_15" />
+
+            <LinearLayout
+                android:id="@+id/ll_space_title_click"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/default_padding_view_edge"
+                android:paddingRight="@dimen/default_padding_view_edge" >
+
+                <TextView
+                    android:id="@+id/title_tv_mid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="middle"
+                    android:shadowColor="@color/space_shadow_color"
+                    android:shadowDx="0"
+                    android:shadowDy="2"
+                    android:shadowRadius="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize_16" />
+            </LinearLayout>
+
+            <!-- 中间显示的标题 -->
+
+            <FrameLayout
+                style="@style/FullHeightStyle"
+                android:layout_marginLeft="@dimen/default_padding_gridview_edge"
+                android:layout_marginRight="@dimen/default_padding_view_edge" >
+
+                <ImageView
+                    android:id="@+id/title_iv_right"
+                    style="@style/FullHeightStyle"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:src="@drawable/person_icon_more" />
+
+                <TextView
+                    android:id="@+id/title_tv_right"
+                    style="@style/FullHeightStyle"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_edit"
+                    android:shadowColor="@color/space_shadow_color"
+                    android:shadowDx="0"
+                    android:shadowDy="2"
+                    android:shadowRadius="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize_15" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

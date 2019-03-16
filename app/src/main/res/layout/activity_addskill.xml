@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/main_bg_pink"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <com.tshang.peipei.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_skill_name"
+                style="@style/skill_text_style"
+                android:text="@string/str_skills"
+                android:textSize="@dimen/default_textsize_14" />
+
+            <EditText
+                android:id="@+id/edt_skill_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height_title"
+                android:layout_marginLeft="@dimen/default_padding_view_edge"
+                android:layout_marginRight="@dimen/default_padding_view_edge"
+                android:background="@drawable/main_img_list0_un"
+                android:gravity="center_vertical"
+                android:hint="@string/str_limit_six_length"
+                android:maxLength="8"
+                android:paddingLeft="@dimen/default_padding_view_text"
+                android:textColor="#303030"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/default_textsize_18" />
+
+            <TextView
+                style="@style/skill_text_style"
+                android:text="@string/str_describe"
+                android:textSize="@dimen/default_textsize_14" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dip" >
+
+                <EditText
+                    android:id="@+id/edt_skill_describe"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/default_padding_view_edge"
+                    android:layout_marginRight="@dimen/default_padding_view_edge"
+                    android:background="@drawable/main_img_list0_un"
+                    android:gravity="top"
+                    android:hint="@string/str_not_lower_ten_length"
+                    android:maxLength="60"
+                    android:paddingLeft="@dimen/default_padding_view_text"
+                    android:paddingTop="@dimen/default_padding_view_edge"
+                    android:textColor="#303030"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/default_textsize_18" />
+
+                <TextView
+                    android:id="@+id/tv_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/default_padding_image_text_small"
+                    android:layout_marginRight="@dimen/default_padding_view_text"
+                    android:text="0/60"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textsize_12" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/skill_text_style"
+                android:text="@string/str_need_gifts"
+                android:textSize="@dimen/default_textsize_14" />
+
+            <TextView
+                android:id="@+id/tv_gifts_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height_title"
+                android:layout_marginLeft="@dimen/default_padding_view_edge"
+                android:layout_marginRight="@dimen/default_padding_view_edge"
+                android:background="@drawable/main_img_list0_selector"
+                android:drawableRight="@drawable/homepage_skill_listarrow"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/default_padding_view_text"
+                android:paddingRight="@dimen/default_padding_view_edge"
+                android:text="@string/str_please_select_gift"
+                android:textColor="#303030"
+                android:textSize="@dimen/default_textsize_18" />
+
+            <TextView
+                style="@style/skill_text_style"
+                android:text="@string/str_gifts_count"
+                android:textSize="@dimen/default_textsize_14" />
+
+            <TextView
+                android:id="@+id/tv_gifts_count"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height_title"
+                android:layout_marginLeft="@dimen/default_padding_view_edge"
+                android:layout_marginRight="@dimen/default_padding_view_edge"
+                android:background="@drawable/main_img_list0_selector"
+                android:drawableRight="@drawable/homepage_skill_listarrow"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/default_padding_view_text"
+                android:paddingRight="@dimen/default_padding_view_edge"
+                android:text="1"
+                android:textColor="#303030"
+                android:textSize="@dimen/default_textsize_18" />
+
+            <Button
+                android:id="@+id/btn_skill_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height_title"
+                android:layout_marginBottom="32dip"
+                android:layout_marginLeft="@dimen/default_padding_view_edge"
+                android:layout_marginRight="@dimen/default_padding_view_edge"
+                android:layout_marginTop="32dip"
+                android:background="@drawable/main_btn_big_selector"
+                android:text="@string/submit"
+                android:textColor="@color/peach"
+                android:textSize="@dimen/default_textsize_15" />
+        </LinearLayout>
+    </com.tshang.peipei.view.ReboundScrollView>
+
+</LinearLayout>

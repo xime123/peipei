@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/show_gift_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/album_img_picbg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding_gridview_edge" >
+
+    <RelativeLayout
+        android:id="@+id/show_gift_item_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/main_img_defaultpic_small" >
+
+        <ImageView
+            android:id="@+id/show_gift_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/show_gift_item_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/default_padding_image_text_small"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/show_gift_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textsize_15" />
+
+    <TextView
+        android:id="@+id/show_gift_item_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/peach"
+        android:textSize="@dimen/default_textsize_11" />
+
+    <TextView
+        android:id="@+id/show_gift_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textsize_9" />
+
+    <Button
+        android:id="@+id/show_gift_item_feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_btn_send_selector"
+        android:text="@string/feed_kiss"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_textsize_15" />
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_haremface_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/default_padding_view_edge"
+    android:paddingLeft="@dimen/default_padding_view_edge"
+    android:paddingRight="@dimen/default_padding_view_edge"
+    android:paddingTop="@dimen/default_padding_view_edge" >
+
+    <LinearLayout
+        android:id="@+id/ll_chat_left_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <include layout="@layout/item_chat_left_head" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_padding_image_text_small"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/chat_item_nick_haremface_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_marginBottom="3dip"
+                android:layout_marginLeft="7dip"
+                android:gravity="left|top"
+                android:text="nick"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/chat_item_haremface_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_item_left"
+                android:paddingBottom="1dip"
+                android:paddingLeft="8dip"
+                android:paddingRight="1dip"
+                android:paddingTop="1dip" >
+
+                <ImageView
+                    android:id="@+id/chat_item_left_image_pic"
+                    android:layout_width="110dip"
+                    android:layout_height="110dip"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/iv_harem_emotion_big01" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/chat_item_image_receive_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="@dimen/default_padding_image_text_small"
+                android:background="@drawable/chat_item_time_bg"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_10" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_chat_right_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <include layout="@layout/item_chat_right_send_progress" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/default_padding_image_text_small"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/chat_item_nick_haremface_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginBottom="3dip"
+                android:layout_marginRight="7dip"
+                android:gravity="right|top"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/chat_item_haremface_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_item_right"
+                android:paddingBottom="1dip"
+                android:paddingLeft="1dip"
+                android:paddingRight="8dip"
+                android:paddingTop="1dip" >
+
+                <ImageView
+                    android:id="@+id/chat_item_image_right_pic"
+                    android:layout_width="110dip"
+                    android:layout_height="110dip"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/chat_item_send_image_time_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="@dimen/default_padding_image_text_small"
+                android:background="@drawable/chat_item_time_bg"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize_10" />
+        </LinearLayout>
+
+        <include layout="@layout/item_chat_right_head" />
+    </LinearLayout>
+
+</RelativeLayout>

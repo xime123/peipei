@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height_hint"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_show_devote_day"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_bar_tab1_bg_pr"
+            android:gravity="center"
+            android:text="@string/str_show_devote_day"
+            android:textColor="@color/peach"
+            android:textSize="@dimen/default_textsize_13" />
+
+        <TextView
+            android:id="@+id/tv_show_devote_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_bar_tab1_bg_on"
+            android:gravity="center"
+            android:text="@string/str_show_devote_all"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/default_textsize_13" />
+    </LinearLayout>
+
+    <com.tshang.peipei.vender.pulltoprefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/devote_day_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@android:color/transparent"
+        android:fadingEdge="@color/transparent"
+        android:fastScrollEnabled="false"
+        android:listSelector="@drawable/click_selector_peach"
+        android:stretchMode="columnWidth" >
+    </com.tshang.peipei.vender.pulltoprefresh.library.PullToRefreshListView>
+
+    <com.tshang.peipei.vender.pulltoprefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/devote_all_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@android:color/transparent"
+        android:fadingEdge="@color/transparent"
+        android:fastScrollEnabled="false"
+        android:listSelector="@drawable/click_selector_peach"
+        android:stretchMode="columnWidth"
+        android:visibility="gone" >
+    </com.tshang.peipei.vender.pulltoprefresh.library.PullToRefreshListView>
+
+    <TextView
+        android:id="@+id/show_devote_day_empty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20dip"
+        android:drawablePadding="5dip"
+        android:gravity="center"
+        android:text="@string/str_no_data"
+        android:textColor="@color/gray"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/show_devote_all_empty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20dip"
+        android:drawablePadding="5dip"
+        android:gravity="center"
+        android:text="@string/str_no_data"
+        android:textColor="@color/gray"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_attention_iv_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/item_attention_iv_sibe"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:background="@color/harem_type_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dip"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/click_list_selector_new"
+        android:gravity="center_vertical"
+        android:minHeight="64dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/item_attention_iv_head"
+            android:layout_width="@dimen/default_height_head_chat"
+            android:layout_height="@dimen/default_height_head_chat"
+            android:layout_marginLeft="@dimen/default_padding_view_edge"
+            android:src="@drawable/main_img_defaulthead_pr" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_padding_view_edge"
+            android:layout_marginRight="@dimen/default_padding_view_edge"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/item_attention_tv_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="3dp"
+                    android:ellipsize="middle"
+                    android:maxLength="8"
+                    android:singleLine="true"
+                    android:text="Air"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize_15" />
+
+                <ImageView
+                    android:id="@+id/iv_attention_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/broadcast_img_boy" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rank_img_green1"
+                    android:padding="@dimen/default_padding_image_text_small"
+                    android:text="魅力贡献值"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize_10" />
+
+                <TextView
+                    android:id="@+id/item_attention_tv_loyal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rank_img_green2"
+                    android:padding="@dimen/default_padding_image_text_small"
+                    android:text="0"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/default_textsize_10" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/item_attenion_btn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/follow_btn_send_selector"
+            android:padding="5dp"
+            android:text="@string/delete_follow"
+            android:textColor="@color/delete_color"
+            android:textSize="@dimen/default_textsize_12" />
+
+        <Button
+            android:id="@+id/item_attenion_btn_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/default_padding_setting_tiltle"
+            android:background="@drawable/follow_btn_send_selector"
+            android:paddingBottom="@dimen/default_padding_gridview_edge"
+            android:paddingLeft="@dimen/default_padding_gridview_edge"
+            android:paddingRight="@dimen/default_padding_gridview_edge"
+            android:paddingTop="@dimen/default_padding_gridview_edge"
+            android:text="@string/str_remark"
+            android:textColor="@color/delete_color"
+            android:textSize="@dimen/default_textsize_12" />
+    </LinearLayout>
+
+</LinearLayout>
